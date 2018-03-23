@@ -2,20 +2,21 @@
 # -*- coding: utf-8 -*-
 
 import json
-import os
-
-data_dir = '../data'
-fname = os.path.join(data_dir, "SAT-package-V3.txt")
-output = os.path.join(data_dir, "SAT.json")
-
-def split_answer(line, delimiter=" "):
-    """Split each line in the [word1, word2], [POS1:POS2]"""
-    split_line = line.split(delimiter)
-    words, pos = split_line[0:2], split_line[2:]
-    return words, pos[0].split(":")
+import data
 
 
 if __name__ == '__main__':
+
+
+    def split_answer(line, delimiter=" "):
+        """Split each line in the [word1, word2], [POS1:POS2]"""
+        split_line = line.split(delimiter)
+        words, pos = split_line[0:2], split_line[2:]
+        return words, pos[0].split(":")
+
+    fname = data.RAW_SAT_DATA_FILE
+    output = data.JSON_SAT_DATA_FILE
+
     with open(fname, 'r') as f:
         lines = f.readlines()
 
