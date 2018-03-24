@@ -102,3 +102,9 @@ ENV/
 
 # Binary embedding files
 *.bin
+
+# Ignore the virtual environment
+env/
+
+# Ignore backup files
+# *.bak

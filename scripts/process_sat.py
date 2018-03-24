@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import json
-import data
+from utils import data
 
 
 if __name__ == '__main__':
