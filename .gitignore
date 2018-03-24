@@ -102,9 +102,12 @@ ENV/
 
 # Binary embedding files
 *.bin
+glove*txt
+glove*word2vec
+*zip
 
 # Ignore the virtual environment
 env/
 
 # Ignore backup files
-# *.bak
+*.bak
