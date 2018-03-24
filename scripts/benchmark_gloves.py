@@ -6,7 +6,7 @@ from utils.score_model import score_model
 
 
 def main():
-    m = word2vec.Model('glove', dist_metric='euclidean', d=50)
+    m = word2vec.Model('glove', dist_metric='euclidean', d=300)
     score_model(m)
 
 

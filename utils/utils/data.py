@@ -8,6 +8,8 @@ package_directory = os.path.dirname(os.path.abspath(__file__))
 
 DATA_DIR = os.path.join(package_directory, '../../data')
 WORD2VEC_FILE = os.path.join(DATA_DIR, "GoogleNews-vectors-negative300.bin")
+GLOVE_TXT_FILE = os.path.join(DATA_DIR, "glove.6B.{}d.txt")
+GLOVE_WORD2VEC_FILE = os.path.join(DATA_DIR, "glove.6B.{}d.word2vec")
 RAW_SAT_DATA_FILE = os.path.join(DATA_DIR, "SAT-package-V3.txt")
 JSON_SAT_DATA_FILE = os.path.join(DATA_DIR, "SAT.json")
 

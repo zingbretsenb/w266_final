@@ -5,7 +5,6 @@ from . import data
 import math
 import numpy as np
 
-data_file = data.WORD2VEC_FILE
 
 
 def get_euclidean_dist(a, b):
@@ -13,32 +12,40 @@ def get_euclidean_dist(a, b):
 
 
 class Model:
-    def __init__(self, model, dist_metric):
+    def __init__(self, model, dist_metric, d=50):
         """Logic for storing vectors and scoring analogies"""
-        self.model = model.lower() 
-        self.dist_metric = dist_metric.lower() 
+        self.model = model.lower()
+        self.dist_metric = dist_metric.lower()
 
         if model == "word2vec":
             try:
+                data_file = data.WORD2VEC_FILE
                 self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
                                                                              binary=True)
             except:
                 print('word2vec vectors available here:')
                 print('https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit')
+        elif model == 'glove':
+            self.d = str(d)
+            data_file = data.GLOVE_WORD2VEC_FILE.format(self.d)
+            print("Loading {}".format(data_file))
+            try:
+                self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
+                                                                               binary=False)
+            except:
+                print('Could not load {}'.format(data_file))
+                print('Maybe try a different embedding dimension?')
 
         if self.dist_metric == 'euclidean':
             self.get_dist = get_euclidean_dist
 
 
     def get_word2vec_embedding(self, word):
-        return self.vectors.wv.word_vec(word)
+        return self.vectors.word_vec(word)
 
 
     def get_embedding(self, word):
-        if self.model == 'word2vec':
-            return self.get_word2vec_embedding(word)
-        else:
-            return np.zeros(1)
+        return self.get_word2vec_embedding(word)
 
 
     def get_difference_vector(self, w1, w2):
