@@ -27,7 +27,7 @@ class Model:
                 print('https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit')
 
         if self.dist_metric == 'euclidean':
-            get_dist = get_euclidean_dist
+            self.get_dist = get_euclidean_dist
 
 
     def get_word2vec_embedding(self, word):
