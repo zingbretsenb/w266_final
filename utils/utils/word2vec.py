@@ -14,7 +14,7 @@ def get_cos_dist(a, b):
     top = np.inner(a,b)
     bottom = np.dot(np.linalg.norm(a), np.linalg.norm(b))
     result = np.divide(top, bottom)
-    return (1.0 - result)
+    return result
     
 class Model:
     def __init__(self, model, dist_metric, d=50):

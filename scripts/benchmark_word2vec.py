@@ -3,10 +3,17 @@
 
 from utils import word2vec
 from utils.score_model import score_model
-
+import sys
 
 def main():
-    m = word2vec.Model('word2vec', dist_metric='cosine', d=50)
+    if len(sys.argv) == 2:
+        if sys.argv[1] == 'c':
+            dist = 'cosine'
+        elif sys.argv[1] == 'e':
+            dist = 'euclidean'
+    else:
+        dist = 'euclidean'
+    m = word2vec.Model('word2vec', dist_metric=dist, d=50)
     score_model(m)
 
 
