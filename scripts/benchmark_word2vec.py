@@ -6,7 +6,7 @@ from utils.score_model import score_model
 
 
 def main():
-    m = word2vec.Model('word2vec', dist_metric='euclidean', d=50)
+    m = word2vec.Model('word2vec', dist_metric='cosine', d=50)
     score_model(m)
 
 

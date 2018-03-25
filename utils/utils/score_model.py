@@ -48,7 +48,14 @@ def score_model(m):
 
             n_total += 1
         except:
-            pass
-
+            q = question['question']
+            a = [ans[0] for ans in question['answers']]
+            print("------------")
+            print("Question: {}".format(q))
+            for a in ans:
+                print("Words: {}".format(a))
+            print("Unknown words!")
+            n_total += 1
+            
     print("Total accuracy: {}/{} == {}".format(n_correct, n_total,
                                                n_correct/n_total))

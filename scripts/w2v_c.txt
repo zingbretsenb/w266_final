@@ -1,0 +1,4016 @@
+------------
+Question: ['lull', 'trust']
+Sorted distances:
+Words: ['cajole' 'compliance'], score: 0.9012041017413139
+Words: ['balk' 'fortitude'], score: 0.9112060889601707
+Words: ['soothe' 'passion'], score: 0.9576781019568443
+Words: ['hinder' 'destination'], score: 0.9734454713761806
+Words: ['betray' 'loyalty'], score: 0.9819803610444069
+Best answer found: cajole,compliance
+Correct answer: ['cajole', 'compliance']
+Correct!
+------------
+Question: ['ostrich', 'bird']
+Sorted distances:
+Words: ['lion' 'cat'], score: 0.8582224249839783
+Words: ['primate' 'monkey'], score: 1.1179566085338593
+Words: ['cub' 'bear'], score: 1.1527941972017288
+Words: ['goose' 'flock'], score: 1.1652350574731827
+Words: ['ewe' 'sheep'], score: 1.1843810975551605
+Best answer found: lion,cat
+Correct answer: ['lion', 'cat']
+Correct!
+------------
+Question: ['word', 'language']
+Sorted distances:
+Words: ['note' 'music'], score: 0.8316308110952377
+Words: ['week' 'year'], score: 0.9629013426601887
+Words: ['tale' 'story'], score: 0.9866760075092316
+Words: ['poetry' 'rhythm'], score: 1.0067787133157253
+Words: ['paint' 'portrait'], score: 1.0572372786700726
+Best answer found: note,music
+Correct answer: ['note', 'music']
+Correct!
+------------
+Question: ['coop', 'poultry']
+Sorted distances:
+Words: ['aquarium' 'fish'], score: 0.8143540620803833
+Words: ['forest' 'wildlife'], score: 0.844427302479744
+Words: ['crib' 'nursery'], score: 0.8593657910823822
+Words: ['fence' 'yard'], score: 0.918562576174736
+Words: ['barn' 'tool'], score: 1.0302338413894176
+Best answer found: aquarium,fish
+Correct answer: ['aquarium', 'fish']
+Correct!
+------------
+Question: ['legend', 'map']
+Sorted distances:
+Words: ['bar' 'graph'], score: 0.7189750075340271
+Words: ['footnote' 'information'], score: 0.8109271377325058
+Words: ['figure' 'blueprint'], score: 0.8115170150995255
+Words: ['key' 'chart'], score: 0.8387685716152191
+Words: ['subtitle' 'translation'], score: 1.0134254861623049
+Best answer found: bar,graph
+Correct answer: ['key', 'chart']
+Incorrect :-(
+------------
+Question: ['billboard', 'advertisement']
+Sorted distances:
+Words: ['sculpture' 'museum'], score: 0.8727015852928162
+Words: ['theater' 'intermission'], score: 0.8786818832159042
+Words: ['library' 'book'], score: 0.9196688607335091
+Words: ['store' 'window'], score: 0.9856775207445025
+Words: ['canvas' 'painting'], score: 0.9916189610958099
+Best answer found: sculpture,museum
+Correct answer: ['canvas', 'painting']
+Incorrect :-(
+------------
+Question: ['custom', 'society']
+Sorted distances:
+Words: ['contest' 'debate'], score: 0.8675051182508469
+Words: ['ballot' 'election'], score: 0.933472640812397
+Words: ['testimony' 'trial'], score: 0.9875437142327428
+Words: ['hypothesis' 'evidence'], score: 1.0534479059278965
+Words: ['rule' 'game'], score: 1.0655720457434654
+Best answer found: contest,debate
+Correct answer: ['rule', 'game']
+Incorrect :-(
+------------
+Question: ['tunnel', 'mine']
+Sorted distances:
+Words: ['corridor' 'building'], score: 0.7959221601486206
+Words: ['aisle' 'seat'], score: 0.8926606848835945
+Words: ['conduit' 'fluid'], score: 0.9424903988838196
+Words: ['corner' 'intersection'], score: 1.0525624603033066
+Words: ['sign' 'detour'], score: 1.0941848158836365
+Best answer found: corridor,building
+Correct answer: ['corridor', 'building']
+Correct!
+------------
+Question: ['diversion', 'boredom']
+Sorted distances:
+Words: ['assurance' 'uncertainty'], score: 0.8144087940454483
+Words: ['secrecy' 'curiosity'], score: 0.8394767493009567
+Words: ['enmity' 'hatred'], score: 0.8626345843076706
+Words: ['sluggishness' 'fatigue'], score: 0.8827077373862267
+Words: ['reward' 'deed'], score: 1.0497462823987007
+Best answer found: assurance,uncertainty
+Correct answer: ['assurance', 'uncertainty']
+Correct!
+------------
+Question: ['thicket', 'shrubs']
+Sorted distances:
+Words: ['grove' 'trees'], score: 0.6998077034950256
+Words: ['crop' 'plants'], score: 0.7983867675065994
+Words: ['orchard' 'apples'], score: 0.914300411939621
+Words: ['pasture' 'cows'], score: 1.007568865083158
+Words: ['reef' 'waves'], score: 1.1719237267971039
+Best answer found: grove,trees
+Correct answer: ['grove', 'trees']
+Correct!
+------------
+Question: ['condescending', 'respect']
+Sorted distances:
+Words: ['bashful' 'attention'], score: 0.675170511007309
+Words: ['insecure' 'doubt'], score: 0.7593365609645844
+Words: ['pathetic' 'pity'], score: 0.7604280412197113
+Words: ['merciless' 'compassion'], score: 0.8237458765506744
+Words: ['obliging' 'thanks'], score: 0.8600762337446213
+Best answer found: bashful,attention
+Correct answer: ['merciless', 'compassion']
+Incorrect :-(
+------------
+Question: ['livid', 'anger']
+Sorted distances:
+Words: ['radiant' 'happiness'], score: 0.8203090876340866
+Words: ['querulous' 'reconciliation'], score: 0.8393272310495377
+Words: ['forlorn' 'hope'], score: 0.8640566468238831
+Words: ['marvelous' 'wonder'], score: 0.9490508139133453
+Words: ['graceful' 'posture'], score: 0.9498745761811733
+Best answer found: radiant,happiness
+Correct answer: ['radiant', 'happiness']
+Correct!
+------------
+Question: ['fathom', 'depth']
+Sorted distances:
+Words: ['appraise' 'value'], score: 0.82309390604496
+Words: ['amplify' 'volume'], score: 0.8818979114294052
+Words: ['overflow' 'capacity'], score: 0.9025209844112396
+Words: ['weigh' 'scale'], score: 0.910601943731308
+Words: ['stump' 'answer'], score: 1.033060859888792
+Best answer found: appraise,value
+Correct answer: ['appraise', 'value']
+Correct!
+------------
+Question: ['remuneration', 'labor']
+Sorted distances:
+Words: ['apology' 'regret'], score: 0.8661430776119232
+Words: ['trophy' 'victory'], score: 0.888531967997551
+Words: ['debt' 'loan'], score: 1.0425330325961113
+Words: ['gratuity' 'bonus'], score: 1.0606422238051891
+Words: ['pledge' 'donation'], score: 1.0854479297995567
+Best answer found: apology,regret
+Correct answer: ['trophy', 'victory']
+Incorrect :-(
+------------
+Question: ['tutor', 'pupil']
+Sorted distances:
+Words: ['waiter' 'diner'], score: 0.8402062207460403
+Words: ['driver' 'passenger'], score: 0.8637657016515732
+Words: ['coach' 'athlete'], score: 0.8823208883404732
+Words: ['novelist' 'writer'], score: 0.9875507606193423
+Words: ['patron' 'client'], score: 1.0399319045245647
+Best answer found: waiter,diner
+Correct answer: ['coach', 'athlete']
+Incorrect :-(
+------------
+Question: ['decorate', 'plain']
+Sorted distances:
+Words: ['cook' 'raw'], score: 0.6760916709899902
+Words: ['sing' 'vocal'], score: 0.735721230506897
+Words: ['narrate' 'fictitious'], score: 0.8675108700990677
+Words: ['create' 'talented'], score: 0.9170332476496696
+Words: ['mend' 'repaired'], score: 1.0691918432712555
+Best answer found: cook,raw
+Correct answer: ['cook', 'raw']
+Correct!
+------------
+Question: ['pallid', 'color']
+Sorted distances:
+Words: ['parched' 'moisture'], score: 0.736099362373352
+Words: ['deliberate' 'intention'], score: 0.8735804855823517
+Words: ['restrained' 'limit'], score: 0.8801628053188324
+Words: ['measured' 'quantity'], score: 0.9332558959722519
+Words: ['vital' 'energy'], score: 0.9987572435056791
+Best answer found: parched,moisture
+Correct answer: ['parched', 'moisture']
+Correct!
+------------
+Question: ['drift', 'move']
+Sorted distances:
+Words: ['ramble' 'walk'], score: 0.7152454853057861
+Words: ['sprint' 'run'], score: 0.8897185400128365
+Words: ['boil' 'heat'], score: 0.9827479794621468
+Words: ['evade' 'elude'], score: 1.0626896023750305
+Words: ['crawl' 'creep'], score: 1.1579936891794205
+Best answer found: ramble,walk
+Correct answer: ['ramble', 'walk']
+Correct!
+------------
+Question: ['crass', 'refinement']
+Sorted distances:
+Words: ['inept' 'mistake'], score: 0.8117171972990036
+Words: ['pretentious' 'modesty'], score: 0.8202531635761261
+Words: ['inefficient' 'time'], score: 0.8807839080691338
+Words: ['prudent' 'discretion'], score: 0.9933320465497673
+Words: ['clairvoyant' 'perception'], score: 0.9989474554313347
+Best answer found: inept,mistake
+Correct answer: ['pretentious', 'modesty']
+Incorrect :-(
+------------
+Question: ['pariah', 'ostracism']
+Sorted distances:
+Words: ['idol' 'adulation'], score: 0.905008427798748
+Words: ['protagonist' 'narrative'], score: 0.9251550957560539
+Words: ['gourmand' 'food'], score: 0.9344678670167923
+Words: ['scapegoat' 'symbol'], score: 0.9380049854516983
+Words: ['collector' 'ownership'], score: 0.9486450999975204
+Best answer found: idol,adulation
+Correct answer: ['idol', 'adulation']
+Correct!
+------------
+Question: ['audience', 'theater']
+Sorted distances:
+Words: ['spectators' 'arena'], score: 0.7640054374933243
+Words: ['crew' 'ship'], score: 0.8842489719390869
+Words: ['scholars' 'library'], score: 0.9450836032629013
+Words: ['group' 'society'], score: 1.0181674230843782
+Words: ['actors' 'stage'], score: 1.1099802926182747
+Best answer found: spectators,arena
+Correct answer: ['spectators', 'arena']
+Correct!
+------------
+Question: ['quart', 'volume']
+Sorted distances:
+Words: ['mile' 'distance'], score: 0.761230543255806
+Words: ['part' 'whole'], score: 0.988779847510159
+Words: ['decade' 'century'], score: 1.0284835118800402
+Words: ['friction' 'heat'], score: 1.0580525025725365
+Words: ['day' 'night'], score: 1.0706513598561287
+Best answer found: mile,distance
+Correct answer: ['mile', 'distance']
+Correct!
+------------
+Question: ['cartographer', 'maps']
+Sorted distances:
+Words: ['architect' 'blueprints'], score: 0.6020665764808655
+Words: ['bibliographer' 'books'], score: 0.6667632162570953
+Words: ['curator' 'artworks'], score: 0.7141215205192566
+Words: ['surveyor' 'instruments'], score: 0.72703418135643
+Words: ['traveler' 'countries'], score: 0.774997353553772
+Best answer found: architect,blueprints
+Correct answer: ['architect', 'blueprints']
+Correct!
+------------
+Question: ['abrasive', 'skin']
+Sorted distances:
+Words: ['corrosive' 'iron'], score: 0.8245996832847595
+Words: ['flammable' 'fire'], score: 0.8566166013479233
+Words: ['resilient' 'shock'], score: 0.9158033803105354
+Words: ['responsive' 'stimulus'], score: 0.9298103004693985
+Words: ['soluble' 'water'], score: 0.9765820149332285
+Best answer found: corrosive,iron
+Correct answer: ['corrosive', 'iron']
+Correct!
+------------
+Question: ['canal', 'waterway']
+Sorted distances:
+Words: ['dam' 'river'], score: 0.8953720778226852
+Words: ['bank' 'stream'], score: 0.9201177060604095
+Words: ['reservoir' 'lake'], score: 0.9261897504329681
+Words: ['skyline' 'city'], score: 1.0712335705757141
+Words: ['hub' 'wheel'], score: 1.161673367023468
+Best answer found: dam,river
+Correct answer: ['reservoir', 'lake']
+Incorrect :-(
+------------
+Question: ['throng', 'people']
+Sorted distances:
+Words: ['swarm' 'insects'], score: 0.5780188143253326
+Words: ['game' 'players'], score: 0.8872699663043022
+Words: ['cat' 'kittens'], score: 0.9512866847217083
+Words: ['picnic' 'woods'], score: 0.9847461516037583
+Words: ['vase' 'flowers'], score: 1.0692677423357964
+Best answer found: swarm,insects
+Correct answer: ['swarm', 'insects']
+Correct!
+------------
+Question: ['neighbor', 'proximity']
+Sorted distances:
+Words: ['traitor' 'loyalty'], score: 0.8047048449516296
+Words: ['comrade' 'victory'], score: 0.846812054514885
+Words: ['teammate' 'competitiveness'], score: 0.8494784981012344
+Words: ['adversary' 'opposition'], score: 0.8892187029123306
+Words: ['supervisor' 'obedience'], score: 0.9408583454787731
+Best answer found: traitor,loyalty
+Correct answer: ['adversary', 'opposition']
+Incorrect :-(
+------------
+Question: ['heckler', 'disconcert']
+Sorted distances:
+Words: ['firebrand' 'soothe'], score: 0.786855161190033
+Words: ['lobbyist' 'persuade'], score: 0.8356824964284897
+Words: ['outcast' 'exclude'], score: 0.8669857233762741
+Words: ['performer' 'applaud'], score: 0.9210872128605843
+Words: ['monarch' 'depose'], score: 0.9497484676539898
+Best answer found: firebrand,soothe
+Correct answer: ['lobbyist', 'persuade']
+Incorrect :-(
+------------
+Question: ['veer', 'course']
+Sorted distances:
+Words: ['swerve' 'obstacle'], score: 0.5831753313541412
+Words: ['digress' 'subject'], score: 0.8134170174598694
+Words: ['blaze' 'paint'], score: 0.9365289807319641
+Words: ['emigrate' 'travel'], score: 0.9447888247668743
+Words: ['bar' 'door'], score: 0.9885632041841745
+Best answer found: swerve,obstacle
+Correct answer: ['digress', 'subject']
+Incorrect :-(
+------------
+Question: ['reveler', 'merrymaking']
+Sorted distances:
+Words: ['litigant' 'settlement'], score: 0.8569966405630112
+Words: ['anarchist' 'authority'], score: 0.8616513162851334
+Words: ['hedonist' 'restraint'], score: 0.8640409559011459
+Words: ['demagogue' 'emotion'], score: 0.897079236805439
+Words: ['disputant' 'argument'], score: 0.9741509240120649
+Best answer found: litigant,settlement
+Correct answer: ['disputant', 'argument']
+Incorrect :-(
+------------
+Question: ['malinger', 'work']
+Sorted distances:
+Words: ['hide' 'discovery'], score: 0.8334111124277115
+Words: ['escape' 'flight'], score: 0.9368876367807388
+Words: ['guess' 'answer'], score: 0.95205869525671
+Words: ['accuse' 'crime'], score: 0.97167375870049
+Words: ['shun' 'ridicule'], score: 1.0610840655863285
+Best answer found: hide,discovery
+Correct answer: ['hide', 'discovery']
+Correct!
+------------
+Question: ['shove', 'nudge']
+Sorted distances:
+Words: ['stare' 'glance'], score: 0.8003168404102325
+Words: ['teach' 'lecture'], score: 0.9431069456040859
+Words: ['calm' 'quell'], score: 0.9846762362867594
+Words: ['vex' 'mutter'], score: 1.0790498852729797
+Words: ['push' 'fight'], score: 1.2159259766340256
+Best answer found: stare,glance
+Correct answer: ['stare', 'glance']
+Correct!
+------------
+Question: ['barley', 'grain']
+Sorted distances:
+Words: ['yeast' 'bread'], score: 0.7606064826250076
+Words: ['vine' 'fruit'], score: 0.8675611913204193
+Words: ['pine' 'tree'], score: 0.9289345070719719
+Words: ['knot' 'rope'], score: 0.9392875730991364
+Words: ['twig' 'nest'], score: 1.0354165434837341
+Best answer found: yeast,bread
+Correct answer: ['pine', 'tree']
+Incorrect :-(
+------------
+Question: ['locomotive', 'train']
+Sorted distances:
+Words: ['tractor' 'plow'], score: 0.7333360910415649
+Words: ['camel' 'desert'], score: 0.8998105153441429
+Words: ['rudder' 'rowboat'], score: 0.8998637050390244
+Words: ['horse' 'saddle'], score: 0.9339506775140762
+Words: ['gasoline' 'automobile'], score: 1.1294528990983963
+Best answer found: tractor,plow
+Correct answer: ['tractor', 'plow']
+Correct!
+------------
+Question: ['abridge', 'novel']
+Sorted distances:
+Words: ['terminate' 'ending'], score: 0.7790468484163284
+Words: ['interrupt' 'conversation'], score: 0.8601341396570206
+Words: ['abbreviate' 'word'], score: 0.8662106096744537
+Words: ['punctuate' 'sentence'], score: 0.9352211877703667
+Words: ['rehearse' 'play'], score: 0.9359719678759575
+Best answer found: terminate,ending
+Correct answer: ['abbreviate', 'word']
+Incorrect :-(
+------------
+Question: ['chief', 'hierarchy']
+Sorted distances:
+Words: ['president' 'term'], score: 0.7540459781885147
+Words: ['office' 'rank'], score: 0.7582587897777557
+Words: ['lawyer' 'court'], score: 0.7681480050086975
+Words: ['summit' 'mountain'], score: 0.9472233727574348
+Words: ['platoon' 'army'], score: 1.1162650361657143
+Best answer found: president,term
+Correct answer: ['summit', 'mountain']
+Incorrect :-(
+------------
+Question: ['unfetter', 'pinioned']
+Sorted distances:
+Words: ['sully' 'impure'], score: 0.8709146678447723
+Words: ['enlighten' 'ignorant'], score: 0.8985501080751419
+Words: ['recite' 'practiced'], score: 0.9455784447491169
+Words: ['adore' 'cordial'], score: 0.9850677167996764
+Words: ['revere' 'unrecognized'], score: 1.0407011359930038
+Best answer found: sully,impure
+Correct answer: ['enlighten', 'ignorant']
+Incorrect :-(
+------------
+Question: ['wing', 'air']
+Sorted distances:
+Words: ['flipper' 'water'], score: 0.7359716594219208
+Words: ['lung' 'breath'], score: 0.87106853723526
+Words: ['engine' 'jet'], score: 0.9198049902915955
+Words: ['arm' 'hand'], score: 0.9483478330075741
+Words: ['cloud' 'sky'], score: 0.9633134007453918
+Best answer found: flipper,water
+Correct answer: ['flipper', 'water']
+Correct!
+------------
+Question: ['condense', 'short']
+Sorted distances:
+Words: ['deflate' 'flat'], score: 0.8312105238437653
+Words: ['shrink' 'wet'], score: 0.8548775464296341
+Words: ['magnify' 'invisible'], score: 0.8618117868900299
+Words: ['increase' 'boundless'], score: 0.9034211933612823
+Words: ['measure' 'equal'], score: 1.027027579024434
+Best answer found: deflate,flat
+Correct answer: ['deflate', 'flat']
+Correct!
+------------
+Question: ['orator', 'speech']
+Sorted distances:
+Words: ['chronicler' 'events'], score: 0.7673473954200745
+Words: ['comedian' 'jokes'], score: 0.7750193029642105
+Words: ['playwright' 'stage'], score: 0.811690554022789
+Words: ['protagonist' 'story'], score: 0.8123346716165543
+Words: ['vocalist' 'voice'], score: 0.8895499929785728
+Best answer found: chronicler,events
+Correct answer: ['comedian', 'jokes']
+Incorrect :-(
+------------
+Question: ['jubilation', 'joy']
+Sorted distances:
+Words: ['exaggeration' 'truth'], score: 0.8433255404233932
+Words: ['security' 'instability'], score: 1.0627420023083687
+Words: ['fortitude' 'danger'], score: 1.0632042214274406
+Words: ['emotion' 'anger'], score: 1.1259197443723679
+Words: ['compassion' 'sympathy'], score: 1.2759675979614258
+Best answer found: exaggeration,truth
+Correct answer: ['compassion', 'sympathy']
+Incorrect :-(
+------------
+Question: ['dingy', 'building']
+Sorted distances:
+Words: ['shabby' 'clothes'], score: 0.8347539603710175
+Words: ['discolored' 'bruise'], score: 0.836421325802803
+Words: ['chapped' 'lips'], score: 0.933508537709713
+Words: ['devastated' 'city'], score: 0.9712904654443264
+Words: ['vacant' 'apartment'], score: 0.9740479122847319
+Best answer found: shabby,clothes
+Correct answer: ['shabby', 'clothes']
+Correct!
+------------
+Question: ['rangers', 'forest']
+Sorted distances:
+Words: ['climbers' 'mountain'], score: 0.7288425862789154
+Words: ['members' 'board'], score: 0.9036129489541054
+Words: ['police' 'precinct'], score: 0.9376482591032982
+Words: ['panel' 'contest'], score: 0.9544553384184837
+Words: ['corps' 'army'], score: 1.0375298224389553
+Best answer found: climbers,mountain
+Correct answer: ['police', 'precinct']
+Incorrect :-(
+------------
+Question: ['stimulant', 'activity']
+Sorted distances:
+Words: ['fertilizer' 'growth'], score: 0.7994561791419983
+Words: ['symptom' 'disease'], score: 0.9867951506748796
+Words: ['diagnosis' 'treatment'], score: 0.9965345743112266
+Words: ['gravity' 'force'], score: 1.0178916491568089
+Words: ['food' 'hunger'], score: 1.033393271267414
+Best answer found: fertilizer,growth
+Correct answer: ['fertilizer', 'growth']
+Correct!
+------------
+Question: ['paramount', 'importance']
+Sorted distances:
+Words: ['precious' 'value'], score: 0.821492612361908
+Words: ['debatable' 'quality'], score: 0.9134553521871567
+Words: ['unheralded' 'publicity'], score: 0.9575765058398247
+Words: ['inaccurate' 'correction'], score: 0.9948206855915487
+Words: ['modulated' 'pitch'], score: 1.0312844552099705
+Best answer found: precious,value
+Correct answer: ['precious', 'value']
+Correct!
+------------
+Question: ['raucous', 'sound']
+Sorted distances:
+Words: ['rough' 'texture'], score: 0.7256371974945068
+Words: ['tanned' 'leather'], score: 0.8575741201639175
+Words: ['dim' 'light'], score: 0.9053861051797867
+Words: ['noisy' 'uproar'], score: 0.9531088806688786
+Words: ['hard' 'granite'], score: 0.9677486792206764
+Best answer found: rough,texture
+Correct answer: ['rough', 'texture']
+Correct!
+------------
+Question: ['tourniquet', 'bleeding']
+Sorted distances:
+Words: ['splint' 'movement'], score: 0.7200867831707001
+Words: ['hoist' 'elevating'], score: 0.8861710131168365
+Words: ['lotion' 'skin'], score: 0.8932940363883972
+Words: ['inflation' 'expanding'], score: 0.9505445696413517
+Words: ['relapse' 'condition'], score: 1.044856559485197
+Best answer found: splint,movement
+Correct answer: ['splint', 'movement']
+Correct!
+------------
+Question: ['cloying', 'sweetness']
+Sorted distances:
+Words: ['garish' 'brightness'], score: 0.7053998708724976
+Words: ['enchanting' 'desire'], score: 0.8262582272291183
+Words: ['raspy' 'softness'], score: 0.9184390679001808
+Words: ['pale' 'hue'], score: 0.9358328059315681
+Words: ['shiny' 'polish'], score: 0.9608197808265686
+Best answer found: garish,brightness
+Correct answer: ['garish', 'brightness']
+Correct!
+------------
+Question: ['perfidious', 'treachery']
+Sorted distances:
+Words: ['servile' 'submissiveness'], score: 0.8042348027229309
+Words: ['philanthropic' 'destitution'], score: 0.8703673034906387
+Words: ['truculent' 'temperament'], score: 0.8787570968270302
+Words: ['bereft' 'consolation'], score: 0.9171418249607086
+Words: ['resplendent' 'drabness'], score: 0.970847113057971
+Best answer found: servile,submissiveness
+Correct answer: ['servile', 'submissiveness']
+Correct!
+------------
+Question: ['corroborate', 'claim']
+Sorted distances:
+Words: ['disprove' 'evidence'], score: 0.8548235148191452
+Words: ['document' 'assertion'], score: 0.8841149136424065
+Words: ['sentence' 'punishment'], score: 0.9493064060807228
+Words: ['disseminate' 'information'], score: 0.9800139162689447
+Words: ['promise' 'advancement'], score: 1.1097656041383743
+Best answer found: disprove,evidence
+Correct answer: ['document', 'assertion']
+Incorrect :-(
+------------
+Question: ['lubricant', 'slide']
+Sorted distances:
+Words: ['glue' 'adhere'], score: 0.8146683424711227
+Words: ['poison' 'ingest'], score: 0.954595573246479
+Words: ['battery' 'discharge'], score: 0.9557617679238319
+Words: ['stain' 'cleanse'], score: 0.9826004132628441
+Words: ['water' 'drink'], score: 1.0161985475569963
+Best answer found: glue,adhere
+Correct answer: ['glue', 'adhere']
+Correct!
+------------
+Question: ['stomp', 'walk']
+Sorted distances:
+Words: ['shout' 'speak'], score: 0.7870372533798218
+Words: ['devour' 'starve'], score: 0.8761499151587486
+Words: ['prepare' 'finish'], score: 0.8980751633644104
+Words: ['deliberate' 'conclude'], score: 0.912014976143837
+Words: ['run' 'scamper'], score: 1.112671636044979
+Best answer found: shout,speak
+Correct answer: ['shout', 'speak']
+Correct!
+------------
+Question: ['index', 'topics']
+Sorted distances:
+Words: ['diary' 'secrets'], score: 0.9158916547894478
+Words: ['roster' 'names'], score: 0.9477056302130222
+Words: ['ledger' 'numbers'], score: 0.9849210884422064
+Words: ['manual' 'equipment'], score: 0.9980315456632525
+Words: ['agenda' 'meeting'], score: 1.0658834055066109
+Best answer found: diary,secrets
+Correct answer: ['roster', 'names']
+Incorrect :-(
+------------
+Question: ['mendicant', 'beg']
+Sorted distances:
+Words: ['dissembler' 'believe'], score: 0.7929733097553253
+Words: ['sycophant' 'demean'], score: 0.8645644336938858
+Words: ['parasite' 'contribute'], score: 0.916039951145649
+Words: ['braggart' 'boast'], score: 0.9365746229887009
+Words: ['hero' 'worship'], score: 0.9844686836004257
+Best answer found: dissembler,believe
+Correct answer: ['braggart', 'boast']
+Incorrect :-(
+------------
+Question: ['prudent', 'indiscretion']
+Sorted distances:
+Words: ['frugal' 'wastefulness'], score: 0.6592786014080048
+Words: ['proud' 'accomplishment'], score: 0.8472500294446945
+Words: ['disgruntled' 'cynicism'], score: 0.9459927827119827
+Words: ['generous' 'wealth'], score: 0.9629100933670998
+Words: ['disqualified' 'competition'], score: 1.1645972281694412
+Best answer found: frugal,wastefulness
+Correct answer: ['frugal', 'wastefulness']
+Correct!
+------------
+Question: ['viscous', 'flow']
+Sorted distances:
+Words: ['stiff' 'bend'], score: 0.8635144531726837
+Words: ['stationary' 'stop'], score: 0.8746819645166397
+Words: ['damp' 'soak'], score: 0.913675919175148
+Words: ['arid' 'rain'], score: 0.9266710504889488
+Words: ['transparent' 'see'], score: 0.9702494069933891
+Best answer found: stiff,bend
+Correct answer: ['stiff', 'bend']
+Correct!
+------------
+Question: ['map', 'navigate']
+Sorted distances:
+Words: ['blueprint' 'build'], score: 0.7025638222694397
+Words: ['manuscript' 'submit'], score: 0.8386216312646866
+Words: ['receipt' 'pay'], score: 0.8503431528806686
+Words: ['license' 'revoke'], score: 0.9273523986339569
+Words: ['writing' 'erase'], score: 0.9647788926959038
+Best answer found: blueprint,build
+Correct answer: ['blueprint', 'build']
+Correct!
+------------
+Question: ['skull', 'head']
+Sorted distances:
+Words: ['elbow' 'joint'], score: 0.7781344950199127
+Words: ['finger' 'hand'], score: 0.7995350807905197
+Words: ['skeleton' 'body'], score: 0.8278213441371918
+Words: ['heart' 'organ'], score: 1.0071566188707948
+Words: ['scalp' 'hair'], score: 1.0094663389027119
+Best answer found: elbow,joint
+Correct answer: ['skeleton', 'body']
+Incorrect :-(
+------------
+Question: ['accomplice', 'crime']
+Sorted distances:
+Words: ['employer' 'work'], score: 0.7919444590806961
+Words: ['partner' 'business'], score: 0.8020866811275482
+Words: ['inmate' 'prison'], score: 0.8893674314022064
+Words: ['salesperson' 'store'], score: 0.9318961277604103
+Words: ['detective' 'clue'], score: 1.085470862686634
+Best answer found: employer,work
+Correct answer: ['partner', 'business']
+Incorrect :-(
+------------
+Question: ['barricade', 'access']
+Sorted distances:
+Words: ['bind' 'movement'], score: 0.8672351092100143
+Words: ['heal' 'illness'], score: 0.9075853601098061
+Words: ['demand' 'due'], score: 0.9455314949154854
+Words: ['chat' 'conversation'], score: 0.9623738899827003
+Words: ['complete' 'task'], score: 1.0438147149980068
+Best answer found: bind,movement
+Correct answer: ['bind', 'movement']
+Correct!
+------------
+Question: ['ensemble', 'dancer']
+Sorted distances:
+Words: ['band' 'musician'], score: 0.6163860857486725
+Words: ['audience' 'performer'], score: 0.7214416265487671
+Words: ['gymnasium' 'athlete'], score: 0.7305914461612701
+Words: ['clique' 'outsider'], score: 0.8241769522428513
+Words: ['museum' 'curator'], score: 0.8965837955474854
+Best answer found: band,musician
+Correct answer: ['band', 'musician']
+Correct!
+------------
+Question: ['consider', 'contemplate']
+Sorted distances:
+Words: ['complain' 'bicker'], score: 0.8410938680171967
+Words: ['write' 'compose'], score: 0.9864360401406884
+Words: ['examine' 'scrutinize'], score: 0.987837390974164
+Words: ['ignore' 'notice'], score: 1.027596103027463
+Words: ['smile' 'greet'], score: 1.0686720833182335
+Best answer found: complain,bicker
+Correct answer: ['examine', 'scrutinize']
+Incorrect :-(
+------------
+Question: ['congeal', 'solid']
+Sorted distances:
+Words: ['melt' 'liquid'], score: 0.7921448796987534
+Words: ['breathe' 'air'], score: 0.8509431183338165
+Words: ['heat' 'fire'], score: 0.9170462563633919
+Words: ['immunize' 'disease'], score: 0.9238918200135231
+Words: ['push' 'resistance'], score: 0.9688949584960938
+Best answer found: melt,liquid
+Correct answer: ['melt', 'liquid']
+Correct!
+------------
+Question: ['shear', 'wool']
+Sorted distances:
+Words: ['whittle' 'wood'], score: 0.7971012741327286
+Words: ['reap' 'wheat'], score: 0.8472939431667328
+Words: ['prune' 'tree'], score: 0.9639605097472668
+Words: ['rake' 'leaves'], score: 1.0030366128776222
+Words: ['sweep' 'broom'], score: 1.0060934922657907
+Best answer found: whittle,wood
+Correct answer: ['reap', 'wheat']
+Incorrect :-(
+------------
+Question: ['epilogue', 'book']
+Sorted distances:
+Words: ['intermission' 'play'], score: 0.8067771941423416
+Words: ['finale' 'symphony'], score: 0.8849883005023003
+Words: ['conclusion' 'title'], score: 0.8960504308342934
+Words: ['tiff' 'quarrel'], score: 0.9256116151809692
+Words: ['sequel' 'movie'], score: 0.9568188190460205
+Best answer found: intermission,play
+Correct answer: ['finale', 'symphony']
+Incorrect :-(
+------------
+Question: ['glutton', 'moderation']
+Sorted distances:
+Words: ['gambler' 'luck'], score: 0.8796485960483551
+Words: ['scoundrel' 'virtue'], score: 0.8855865001678467
+Words: ['thief' 'larceny'], score: 0.9488928206264973
+Words: ['benefactor' 'gift'], score: 0.970035994425416
+Words: ['peer' 'nobility'], score: 1.0163133926689625
+Best answer found: gambler,luck
+Correct answer: ['scoundrel', 'virtue']
+Incorrect :-(
+------------
+Question: ['affectation', 'behavior']
+Sorted distances:
+Words: ['pretense' 'honesty'], score: 0.7834522426128387
+Words: ['tension' 'violence'], score: 0.8132109940052032
+Words: ['buffoonery' 'action'], score: 0.8294632583856583
+Words: ['facade' 'appearance'], score: 0.9430320747196674
+Words: ['speech' 'topic'], score: 0.9726171270012856
+Best answer found: pretense,honesty
+Correct answer: ['facade', 'appearance']
+Incorrect :-(
+------------
+Question: ['exhortation', 'urge']
+Sorted distances:
+Words: ['eulogy' 'praise'], score: 0.7363166213035583
+Words: ['charity' 'donate'], score: 0.8802422881126404
+Words: ['division' 'unite'], score: 0.9344955906271935
+Words: ['travesty' 'reproduce'], score: 1.0395951084792614
+Words: ['agreement' 'dissent'], score: 1.0770444199442863
+Best answer found: eulogy,praise
+Correct answer: ['eulogy', 'praise']
+Correct!
+------------
+Question: ['cooperation', 'collusion']
+Sorted distances:
+Words: ['achievement' 'reward'], score: 0.8720051050186157
+Words: ['emotion' 'ecstasy'], score: 0.9401775896549225
+Words: ['imitation' 'forgery'], score: 0.9621386304497719
+Words: ['damage' 'compensation'], score: 1.0050260643474758
+Words: ['evidence' 'proof'], score: 1.0467837378382683
+Best answer found: achievement,reward
+Correct answer: ['imitation', 'forgery']
+Incorrect :-(
+------------
+Question: ['gaze', 'observer']
+Sorted distances:
+Words: ['banish' 'exile'], score: 0.8817114233970642
+Words: ['hear' 'listener'], score: 0.9189809784293175
+Words: ['operate' 'doctor'], score: 0.9632322229444981
+Words: ['separate' 'joint'], score: 1.0474329702556133
+Words: ['sprain' 'ankle'], score: 1.0915807783603668
+Best answer found: banish,exile
+Correct answer: ['hear', 'listener']
+Incorrect :-(
+------------
+Question: ['odometer', 'distance']
+Sorted distances:
+Words: ['microscope' 'size'], score: 0.897729717195034
+Words: ['computer' 'data'], score: 0.970633752644062
+Words: ['decibel' 'loudness'], score: 0.971709905192256
+Words: ['scale' 'weight'], score: 0.9773137662559748
+Words: ['orchestra' 'instrument'], score: 1.1404982954263687
+Best answer found: microscope,size
+Correct answer: ['scale', 'weight']
+Incorrect :-(
+------------
+Question: ['copyright', 'book']
+Sorted distances:
+Words: ['patent' 'design'], score: 0.646033376455307
+Words: ['trademark' 'registration'], score: 0.7575577348470688
+Words: ['lease' 'owner'], score: 0.9780016131699085
+Words: ['brand' 'manufacturer'], score: 1.0261860881000757
+Words: ['franchise' 'license'], score: 1.0815593749284744
+Best answer found: patent,design
+Correct answer: ['patent', 'design']
+Correct!
+------------
+Question: ['feign', 'deceive']
+Sorted distances:
+Words: ['dangle' 'drop'], score: 0.9538381733000278
+Words: ['contract' 'lengthen'], score: 0.9993632943369448
+Words: ['flee' 'elude'], score: 1.001140084466897
+Words: ['send' 'receive'], score: 1.0617576129734516
+Words: ['publish' 'write'], score: 1.075544834136963
+Best answer found: dangle,drop
+Correct answer: ['flee', 'elude']
+Incorrect :-(
+------------
+Question: ['ethos', 'values']
+Sorted distances:
+Words: ['policy' 'officials'], score: 0.8492222875356674
+Words: ['debate' 'opinions'], score: 0.8951351419091225
+Words: ['accord' 'nations'], score: 0.9298134669661522
+Words: ['offense' 'criminals'], score: 0.9514767117798328
+Words: ['code' 'principles'], score: 0.9726155046373606
+Best answer found: policy,officials
+Correct answer: ['code', 'principles']
+Incorrect :-(
+------------
+Question: ['torpid', 'sluggish']
+Sorted distances:
+Words: ['refracted' 'direct'], score: 0.8608792722225189
+Words: ['comic' 'funny'], score: 0.8945465683937073
+Words: ['merry' 'morose'], score: 0.992284260224551
+Words: ['sad' 'empathetic'], score: 1.023580763489008
+Words: ['wrong' 'apologetic'], score: 1.0352075099945068
+Best answer found: refracted,direct
+Correct answer: ['comic', 'funny']
+Incorrect :-(
+------------
+Question: ['ruler', 'line']
+Sorted distances:
+Words: ['compass' 'circle'], score: 0.8428549021482468
+Words: ['period' 'dot'], score: 0.9438895806670189
+Words: ['thermometer' 'degree'], score: 0.9647311866283417
+Words: ['key' 'door'], score: 0.9840186107903719
+Words: ['stamp' 'letter'], score: 0.9923589373938739
+Best answer found: compass,circle
+Correct answer: ['compass', 'circle']
+Correct!
+------------
+Question: ['catnap', 'sleep']
+Sorted distances:
+Words: ['exhaustion' 'slumber'], score: 0.9781205765902996
+Words: ['snack' 'meal'], score: 0.9829553831368685
+Words: ['blink' 'eye'], score: 0.9854770814999938
+Words: ['feast' 'banquet'], score: 1.0190435107797384
+Words: ['swallow' 'bite'], score: 1.2040169537067413
+Best answer found: exhaustion,slumber
+Correct answer: ['snack', 'meal']
+Incorrect :-(
+------------
+Question: ['manager', 'store']
+Sorted distances:
+Words: ['administrator' 'hospital'], score: 0.5864740908145905
+Words: ['president' 'electorate'], score: 0.7454877197742462
+Words: ['technician' 'laboratory'], score: 0.7510253340005875
+Words: ['student' 'school'], score: 0.8417286425828934
+Words: ['spectator' 'arena'], score: 0.9079735428094864
+Best answer found: administrator,hospital
+Correct answer: ['administrator', 'hospital']
+Correct!
+------------
+Question: ['wallet', 'money']
+Sorted distances:
+Words: ['suitcase' 'clothing'], score: 0.747689813375473
+Words: ['camera' 'film'], score: 0.773993730545044
+Words: ['car' 'engine'], score: 0.8592835962772369
+Words: ['safe' 'lock'], score: 1.0684303268790245
+Words: ['setting' 'jewel'], score: 1.1805013865232468
+Best answer found: suitcase,clothing
+Correct answer: ['suitcase', 'clothing']
+Correct!
+------------
+Question: ['lubricate', 'smoothly']
+Sorted distances:
+Words: ['muffle' 'quietly'], score: 0.7622589468955994
+Words: ['absorb' 'quickly'], score: 0.7884277105331421
+Words: ['speak' 'softly'], score: 0.8722270876169205
+Words: ['weigh' 'heavily'], score: 0.9078322798013687
+Words: ['assist' 'grudgingly'], score: 0.9585325457155704
+Best answer found: muffle,quietly
+Correct answer: ['muffle', 'quietly']
+Correct!
+------------
+Question: ['bird', 'avian']
+Sorted distances:
+Words: ['dog' 'canine'], score: 0.519230306148529
+Words: ['meat' 'carnivorous'], score: 0.8382307589054108
+Words: ['snake' 'slippery'], score: 0.8669516891241074
+Words: ['plant' 'tropical'], score: 0.9276436939835548
+Words: ['lung' 'amphibian'], score: 0.9740438163280487
+Best answer found: dog,canine
+Correct answer: ['dog', 'canine']
+Correct!
+------------
+Question: ['irrational', 'logic']
+Sorted distances:
+Words: ['unethical' 'morality'], score: 0.7016974985599518
+Words: ['unrealistic' 'understanding'], score: 0.7728569656610489
+Words: ['factual' 'verification'], score: 0.9290666878223419
+Words: ['illegible' 'erasure'], score: 0.9451917223632336
+Words: ['infinite' 'expansion'], score: 0.9502364248037338
+Best answer found: unethical,morality
+Correct answer: ['unethical', 'morality']
+Correct!
+------------
+Question: ['constellation', 'stars']
+Sorted distances:
+Words: ['construction' 'houses'], score: 0.865991547703743
+Words: ['honey' 'bees'], score: 0.9044292792677879
+Words: ['map' 'boundaries'], score: 0.9237864464521408
+Words: ['train' 'passengers'], score: 0.9247462823987007
+Words: ['range' 'mountains'], score: 0.9336913228034973
+Best answer found: construction,houses
+Correct answer: ['range', 'mountains']
+Incorrect :-(
+------------
+Question: ['calculator', 'compute']
+Sorted distances:
+Words: ['incinerator' 'warm'], score: 0.8408189117908478
+Words: ['saddle' 'straddle'], score: 0.8759881481528282
+Words: ['plug' 'insert'], score: 0.9464421421289444
+Words: ['bridge' 'suspend'], score: 1.010636730119586
+Words: ['clamp' 'grip'], score: 1.0308218467980623
+Best answer found: incinerator,warm
+Correct answer: ['clamp', 'grip']
+Incorrect :-(
+------------
+Question: ['extravagant', 'spend']
+Sorted distances:
+Words: ['antagonistic' 'agree'], score: 0.8019846230745316
+Words: ['persuasive' 'believe'], score: 0.8168694972991943
+Words: ['belligerent' 'fight'], score: 0.8202038258314133
+Words: ['charitable' 'receive'], score: 0.8289473354816437
+Words: ['remarkable' 'surprise'], score: 0.95728924497962
+Best answer found: antagonistic,agree
+Correct answer: ['belligerent', 'fight']
+Incorrect :-(
+------------
+Question: ['architect', 'blueprint']
+Sorted distances:
+Words: ['painter' 'brush'], score: 0.6647002100944519
+Words: ['composer' 'score'], score: 0.7543893903493881
+Words: ['musician' 'note'], score: 0.7906601130962372
+Words: ['instructor' 'blackboard'], score: 0.820040225982666
+Words: ['graduate' 'diploma'], score: 0.8903271928429604
+Best answer found: painter,brush
+Correct answer: ['composer', 'score']
+Incorrect :-(
+------------
+Question: ['weave', 'fabric']
+Sorted distances:
+Words: ['hang' 'picture'], score: 0.7924524992704391
+Words: ['bake' 'oven'], score: 0.8026598244905472
+Words: ['illustrate' 'manual'], score: 0.8337252140045166
+Words: ['write' 'text'], score: 0.8823999464511871
+Words: ['sew' 'thread'], score: 1.027542844414711
+Best answer found: hang,picture
+Correct answer: ['write', 'text']
+Incorrect :-(
+------------
+Question: ['testimony', 'witness']
+Sorted distances:
+Words: ['leadership' 'follower'], score: 0.8035565763711929
+Words: ['confiscation' 'official'], score: 0.9239273369312286
+Words: ['proof' 'theorist'], score: 0.9606759063899517
+Words: ['expertise' 'authority'], score: 0.983893234282732
+Words: ['contradiction' 'investigator'], score: 1.0107319494709373
+Best answer found: leadership,follower
+Correct answer: ['expertise', 'authority']
+Incorrect :-(
+------------
+Question: ['criterion', 'judgment']
+Sorted distances:
+Words: ['standard' 'selection'], score: 0.8353904336690903
+Words: ['song' 'voice'], score: 0.9212593212723732
+Words: ['height' 'statue'], score: 0.9419934079051018
+Words: ['edge' 'sharpness'], score: 0.9486516192555428
+Words: ['depth' 'bottom'], score: 1.0588833205401897
+Best answer found: standard,selection
+Correct answer: ['standard', 'selection']
+Correct!
+------------
+Question: ['abbreviation', 'word']
+Sorted distances:
+Words: ['paragraph' 'book'], score: 0.8554771840572357
+Words: ['outline' 'story'], score: 0.9313505962491035
+Words: ['plot' 'fiction'], score: 0.9346803799271584
+Words: ['abstract' 'report'], score: 0.9488072693347931
+Words: ['page' 'paper'], score: 0.9682729244232178
+Best answer found: paragraph,book
+Correct answer: ['abstract', 'report']
+Incorrect :-(
+------------
+Question: ['avaricious', 'greed']
+Sorted distances:
+Words: ['choleric' 'anger'], score: 0.7106139659881592
+Words: ['prolific' 'author'], score: 0.8334235846996307
+Words: ['proud' 'winner'], score: 0.9292759224772453
+Words: ['artistic' 'work'], score: 0.963560126721859
+Words: ['ironic' 'wrath'], score: 1.090894639492035
+Best answer found: choleric,anger
+Correct answer: ['choleric', 'anger']
+Correct!
+------------
+Question: ['animosity', 'hatred']
+Sorted distances:
+Words: ['pacify' 'peace'], score: 0.9159146323800087
+Words: ['liveliness' 'careful'], score: 1.0302418991923332
+Words: ['genial' 'amiable'], score: 1.0781840533018112
+Words: ['insomnia' 'sleepy'], score: 1.0933073237538338
+Words: ['carnal' 'active'], score: 1.1773094683885574
+Best answer found: pacify,peace
+Correct answer: ['genial', 'amiable']
+Incorrect :-(
+------------
+Question: ['mason', 'stone']
+Sorted distances:
+Words: ['carpenter' 'wood'], score: 0.5368407368659973
+Words: ['teacher' 'chalk'], score: 0.7024866342544556
+Words: ['soldier' 'gun'], score: 0.9242291897535324
+Words: ['photograph' 'camera'], score: 0.9321089461445808
+Words: ['book' 'word'], score: 1.0249798595905304
+Best answer found: carpenter,wood
+Correct answer: ['carpenter', 'wood']
+Correct!
+------------
+Question: ['precarious', 'stability']
+Sorted distances:
+Words: ['anomalous' 'model'], score: 0.8593411147594452
+Words: ['exotic' 'accord'], score: 0.866163894534111
+Words: ['exact' 'measure'], score: 0.871331661939621
+Words: ['huge' 'weight'], score: 0.9071615040302277
+Words: ['mean' 'gauge'], score: 0.9577735476195812
+Best answer found: anomalous,model
+Correct answer: ['anomalous', 'model']
+Correct!
+------------
+Question: ['binomial', 'name']
+Sorted distances:
+Words: ['normal' 'mean'], score: 0.9156089425086975
+Words: ['centennial' 'year'], score: 0.947358276695013
+Words: ['octagon' 'eight'], score: 0.9863371662795544
+Words: ['entreat' 'gift'], score: 1.0071178246289492
+Words: ['benediction' 'church'], score: 1.0421325042843819
+Best answer found: normal,mean
+Correct answer: ['centennial', 'year']
+Incorrect :-(
+------------
+Question: ['amplifier', 'ear']
+Sorted distances:
+Words: ['telescope' 'eye'], score: 0.6560114324092865
+Words: ['keyboard' 'finger'], score: 0.7052289545536041
+Words: ['computer' 'brain'], score: 0.8269715309143066
+Words: ['clock' 'time'], score: 1.0150693682953715
+Words: ['book' 'library'], score: 1.0322669707238674
+Best answer found: telescope,eye
+Correct answer: ['telescope', 'eye']
+Correct!
+------------
+Question: ['opaque', 'transparent']
+Sorted distances:
+Words: ['gaunt' 'rotund'], score: 0.9660592004656792
+Words: ['libel' 'free'], score: 0.9817383605986834
+Words: ['thin' 'elongated'], score: 0.9877152815461159
+Words: ['wary' 'angry'], score: 1.0018835976952687
+Words: ['proud' 'arrogant'], score: 1.1943272352218628
+Best answer found: gaunt,rotund
+Correct answer: ['gaunt', 'rotund']
+Correct!
+------------
+Question: ['rife', 'singular']
+Sorted distances:
+Words: ['round' 'square'], score: 0.9217602461576462
+Words: ['sharp' 'pointed'], score: 1.0153133077546954
+Words: ['smell' 'good'], score: 1.022814154624939
+Words: ['one' 'unit'], score: 1.0343380607664585
+Words: ['strong' 'weak'], score: 1.1604709327220917
+Best answer found: round,square
+Correct answer: ['strong', 'weak']
+Incorrect :-(
+------------
+Question: ['swarm', 'bee']
+Sorted distances:
+Words: ['school' 'fish'], score: 0.9139707684516907
+Words: ['oxen' 'cow'], score: 0.9198748841881752
+Words: ['venison' 'deer'], score: 1.0122254230082035
+Words: ['skin' 'lion'], score: 1.0165611021220684
+Words: ['peak' 'mountain'], score: 1.0279428325593472
+Best answer found: school,fish
+Correct answer: ['school', 'fish']
+Correct!
+------------
+Question: ['obtain', 'steal']
+Sorted distances:
+Words: ['testify' 'perjure'], score: 0.9054567068815231
+Words: ['ask' 'donate'], score: 0.9209845885634422
+Words: ['buy' 'sell'], score: 0.9549826085567474
+Words: ['ask' 'interrogate'], score: 0.9803944304585457
+Words: ['quest' 'search'], score: 1.0353886857628822
+Best answer found: testify,perjure
+Correct answer: ['testify', 'perjure']
+Correct!
+------------
+Question: ['inadvertent', 'thought']
+Sorted distances:
+Words: ['ungainly' 'skill'], score: 0.8271180540323257
+Words: ['artistic' 'work'], score: 0.8508861660957336
+Words: ['prolific' 'design'], score: 0.972881343215704
+Words: ['proud' 'prize'], score: 1.0101031744852662
+Words: ['ironic' 'wrath'], score: 1.021839825436473
+Best answer found: ungainly,skill
+Correct answer: ['ungainly', 'skill']
+Correct!
+------------
+Question: ['parsimony', 'philanthropy']
+Sorted distances:
+Words: ['carnal' 'active'], score: 0.8492397218942642
+Words: ['generosity' 'kindness'], score: 1.0397190414369106
+Words: ['prejudice' 'tolerance'], score: 1.0562439784407616
+Words: ['rivalry' 'noise'], score: 1.0979997515678406
+Words: ['liveliness' 'patience'], score: 1.110116682946682
+Best answer found: carnal,active
+Correct answer: ['prejudice', 'tolerance']
+Incorrect :-(
+------------
+Question: ['devotion', 'obsession']
+Sorted distances:
+Words: ['confidence' 'conceit'], score: 0.7504594475030899
+Words: ['surprise' 'horror'], score: 0.910853810608387
+Words: ['intelligence' 'capability'], score: 1.025524752214551
+Words: ['ability' 'skill'], score: 1.0352722741663456
+Words: ['pleasure' 'blessing'], score: 1.140621304512024
+Best answer found: confidence,conceit
+Correct answer: ['confidence', 'conceit']
+Correct!
+------------
+Question: ['bequest', 'heir']
+Sorted distances:
+Words: ['huge' 'weight'], score: 0.9089342951774597
+Words: ['painting' 'artist'], score: 0.9101060628890991
+Words: ['measure' 'gauge'], score: 0.9259567335247993
+Words: ['gift' 'recipient'], score: 0.9292292594909668
+Words: ['payment' 'donor'], score: 1.060809038579464
+Best answer found: huge,weight
+Correct answer: ['gift', 'recipient']
+Incorrect :-(
+------------
+Question: ['prosaic', 'epic']
+Sorted distances:
+Words: ['ephemeral' 'eternal'], score: 0.8311294615268707
+Words: ['beneficent' 'strong'], score: 0.8923747539520264
+Words: ['normal' 'mean'], score: 0.898908719420433
+Words: ['octagon' 'eight'], score: 0.9999919995289019
+Words: ['powerful' 'omnipotent'], score: 1.0039131566882133
+Best answer found: ephemeral,eternal
+Correct answer: ['ephemeral', 'eternal']
+Correct!
+------------
+Question: ['corroded', 'alloy']
+Sorted distances:
+Words: ['outdated' 'book'], score: 0.7647260874509811
+Words: ['corrupted' 'morality'], score: 0.8111803233623505
+Words: ['broken' 'contract'], score: 0.8301278352737427
+Words: ['written' 'rule'], score: 0.9399720914661884
+Words: ['adjusted' 'clock'], score: 1.0558440834283829
+Best answer found: outdated,book
+Correct answer: ['corrupted', 'morality']
+Incorrect :-(
+------------
+Question: ['gauche', 'adroit']
+Sorted distances:
+Words: ['weak' 'strong'], score: 0.8733700811862946
+Words: ['round' 'square'], score: 1.0059606502763927
+Words: ['stately' 'grand'], score: 1.0311485324054956
+Words: ['sharp' 'pointed'], score: 1.0381726659834385
+Words: ['formidable' 'strong'], score: 1.0595359727740288
+Best answer found: weak,strong
+Correct answer: ['weak', 'strong']
+Correct!
+------------
+Question: ['archeology', 'science']
+Sorted distances:
+Words: ['oxen' 'cow'], score: 0.8494605869054794
+Words: ['mammal' 'horse'], score: 0.8620575219392776
+Words: ['pride' 'lion'], score: 0.9761838112026453
+Words: ['ridge' 'mountain'], score: 1.0280981678515673
+Words: ['chair' 'furniture'], score: 1.090503767132759
+Best answer found: oxen,cow
+Correct answer: ['chair', 'furniture']
+Incorrect :-(
+------------
+Question: ['apprehensive', 'petrified']
+Sorted distances:
+Words: ['elated' 'deaden'], score: 0.8192594796419144
+Words: ['cheerful' 'hilarious'], score: 0.8289737403392792
+Words: ['emotional' 'accord'], score: 1.0083196861669421
+Words: ['happy' 'hostile'], score: 1.0137651283293962
+Words: ['sincere' 'satisfied'], score: 1.0632417127490044
+Best answer found: elated,deaden
+Correct answer: ['cheerful', 'hilarious']
+Incorrect :-(
+------------
+Question: ['stay', 'depart']
+Sorted distances:
+Words: ['sleep' 'rest'], score: 0.9205947667360306
+Words: ['stagnate' 'flow'], score: 0.9455259777605534
+Words: ['create' 'design'], score: 0.9513067565858364
+Words: ['run' 'walk'], score: 0.9541907235980034
+Words: ['take' 'move'], score: 1.017747100442648
+Best answer found: sleep,rest
+Correct answer: ['stagnate', 'flow']
+Incorrect :-(
+------------
+Question: ['stammer', 'speech']
+Sorted distances:
+Words: ['hobble' 'movement'], score: 0.9228890910744667
+Words: ['brightness' 'sight'], score: 0.9733070451766253
+Words: ['generosity' 'kindness'], score: 1.052753932774067
+Words: ['fighting' 'noise'], score: 1.0757346525788307
+Words: ['ovation' 'adulation'], score: 1.1045062020421028
+Best answer found: hobble,movement
+Correct answer: ['hobble', 'movement']
+Correct!
+------------
+Question: ['corpulence', 'obesity']
+Sorted distances:
+Words: ['enigma' 'puzzle'], score: 0.9029688909649849
+Words: ['ability' 'question'], score: 0.9866234539076686
+Words: ['intelligence' 'capability'], score: 1.0059435227885842
+Words: ['pleasure' 'blessing'], score: 1.0115441670641303
+Words: ['strong' 'weak'], score: 1.027750300243497
+Best answer found: enigma,puzzle
+Correct answer: ['enigma', 'puzzle']
+Correct!
+------------
+Question: ['callow', 'experience']
+Sorted distances:
+Words: ['barren' 'fruit'], score: 0.8409472554922104
+Words: ['heavy' 'weight'], score: 0.8963747397065163
+Words: ['painting' 'artist'], score: 1.0363073199987411
+Words: ['measure' 'ounce'], score: 1.0766601786017418
+Words: ['gift' 'donor'], score: 1.0797008201479912
+Best answer found: barren,fruit
+Correct answer: ['barren', 'fruit']
+Correct!
+------------
+Question: ['indolent', 'assiduous']
+Sorted distances:
+Words: ['rife' 'vogue'], score: 0.9489142931997776
+Words: ['normal' 'mean'], score: 1.00662786886096
+Words: ['beneficial' 'strong'], score: 1.0511863939464092
+Words: ['powerful' 'omnipotent'], score: 1.079857736825943
+Words: ['abstemious' 'overindulgent'], score: 1.085739515721798
+Best answer found: rife,vogue
+Correct answer: ['abstemious', 'overindulgent']
+Incorrect :-(
+------------
+Question: ['strident', 'sound']
+Sorted distances:
+Words: ['acrid' 'taste'], score: 0.8041899055242538
+Words: ['broken' 'glass'], score: 0.9241068661212921
+Words: ['adjusted' 'clock'], score: 0.9248471856117249
+Words: ['fragrant' 'flower'], score: 0.966114018112421
+Words: ['outdated' 'book'], score: 1.0152667770162225
+Best answer found: acrid,taste
+Correct answer: ['acrid', 'taste']
+Correct!
+------------
+Question: ['rehearsal', 'impromptu']
+Sorted distances:
+Words: ['congregation' 'alone'], score: 0.893657311797142
+Words: ['selection' 'decisive'], score: 0.928380973637104
+Words: ['promotion' 'public'], score: 0.9669373258948326
+Words: ['comment' 'eulogize'], score: 1.0106320334598422
+Words: ['food' 'alive'], score: 1.0210574138909578
+Best answer found: congregation,alone
+Correct answer: ['congregation', 'alone']
+Correct!
+------------
+Question: ['lynch', 'execute']
+Sorted distances:
+Words: ['interrogate' 'prosecute'], score: 0.926981158554554
+Words: ['deface' 'kill'], score: 0.9394878409802914
+Words: ['steal' 'confiscate'], score: 1.0356313735246658
+Words: ['testify' 'subpoena'], score: 1.0562950447201729
+Words: ['good' 'bad'], score: 1.1242961958050728
+Best answer found: interrogate,prosecute
+Correct answer: ['steal', 'confiscate']
+Incorrect :-(
+------------
+Question: ['audible', 'blaring']
+Sorted distances:
+Words: ['legible' 'published'], score: 0.8392748832702637
+Words: ['clear' 'ostentatious'], score: 0.8979316502809525
+Words: ['edible' 'poisonous'], score: 0.9045955762267113
+Words: ['annoying' 'obnoxious'], score: 0.9066324904561043
+Words: ['silent' 'loud'], score: 0.9462389796972275
+Best answer found: legible,published
+Correct answer: ['annoying', 'obnoxious']
+Incorrect :-(
+------------
+Question: ['insubordination', 'punishment']
+Sorted distances:
+Words: ['fine' 'penalty'], score: 0.7361476123332977
+Words: ['heroism' 'praise'], score: 0.8785973191261292
+Words: ['evening' 'night'], score: 1.0005491644260474
+Words: ['candor' 'falsehood'], score: 1.0150051675736904
+Words: ['earthquake' 'tornado'], score: 1.0699990540742874
+Best answer found: fine,penalty
+Correct answer: ['heroism', 'praise']
+Incorrect :-(
+------------
+Question: ['enthusiast', 'fervor']
+Sorted distances:
+Words: ['parent' 'wisdom'], score: 0.8031956404447556
+Words: ['expert' 'skill'], score: 0.8145796656608582
+Words: ['soldier' 'strength'], score: 0.8378172367811203
+Words: ['prisoner' 'remorse'], score: 0.863210529088974
+Words: ['servant' 'obedience'], score: 0.9067742750048637
+Best answer found: parent,wisdom
+Correct answer: ['expert', 'skill']
+Incorrect :-(
+------------
+Question: ['novice', 'experience']
+Sorted distances:
+Words: ['pauper' 'wealth'], score: 0.7904641032218933
+Words: ['nurse' 'information'], score: 0.946269728243351
+Words: ['weather' 'mutability'], score: 0.9866551561281085
+Words: ['vehicle' 'wheels'], score: 1.008944354020059
+Words: ['drop' 'out'], score: 1.0106435315683484
+Best answer found: pauper,wealth
+Correct answer: ['pauper', 'wealth']
+Correct!
+------------
+Question: ['talisman', 'charm']
+Sorted distances:
+Words: ['hate' 'love'], score: 0.8673174232244492
+Words: ['omen' 'evil'], score: 0.8696139305830002
+Words: ['garb' 'rank'], score: 0.9301616922020912
+Words: ['signal' 'warning'], score: 1.0368266701698303
+Words: ['visage' 'countenance'], score: 1.0574109330773354
+Best answer found: hate,love
+Correct answer: ['visage', 'countenance']
+Incorrect :-(
+------------
+Question: ['progenitor', 'descendant']
+Sorted distances:
+Words: ['mother' 'aunt'], score: 0.8084867745637894
+Words: ['cloud' 'rain'], score: 0.9429618455469608
+Words: ['parent' 'offspring'], score: 1.014528983272612
+Words: ['stem' 'leaves'], score: 1.0187339521944523
+Words: ['teacher' 'student'], score: 1.1053440570831299
+Best answer found: mother,aunt
+Correct answer: ['parent', 'offspring']
+Incorrect :-(
+------------
+Question: ['dearth', 'abundance']
+Sorted distances:
+Words: ['poverty' 'wealth'], score: 0.8666684329509735
+Words: ['retribution' 'infamy'], score: 0.8900291100144386
+Words: ['ruse' 'plan'], score: 1.01215498149395
+Words: ['death' 'funeral'], score: 1.0122634219005704
+Words: ['contempt' 'anger'], score: 1.0161873325705528
+Best answer found: poverty,wealth
+Correct answer: ['poverty', 'wealth']
+Correct!
+------------
+Question: ['eminence', 'infamy']
+Sorted distances:
+Words: ['power' 'fame'], score: 0.835546538233757
+Words: ['pride' 'shame'], score: 0.839971274137497
+Words: ['east' 'west'], score: 0.9315226376056671
+Words: ['royalty' 'nobility'], score: 1.0162694565951824
+Words: ['indifference' 'nonchalance'], score: 1.0567836351692677
+Best answer found: power,fame
+Correct answer: ['pride', 'shame']
+Incorrect :-(
+------------
+Question: ['vivid', 'lurid']
+Sorted distances:
+Words: ['expensive' 'exorbitant'], score: 0.893073283135891
+Words: ['conspicuous' 'sullied'], score: 0.8945051655173302
+Words: ['effectual' 'able'], score: 0.9192247539758682
+Words: ['ghastly' 'gruesome'], score: 0.9452869147062302
+Words: ['bold' 'tremulous'], score: 1.0631769001483917
+Best answer found: expensive,exorbitant
+Correct answer: ['expensive', 'exorbitant']
+Correct!
+------------
+Question: ['caprice', 'predictable']
+Sorted distances:
+Words: ['friendliness' 'congenial'], score: 0.8258812874555588
+Words: ['indifference' 'callous'], score: 0.8424112349748611
+Words: ['spontaneity' 'whimsical'], score: 0.9017096310853958
+Words: ['concern' 'affectionate'], score: 0.981129851192236
+Words: ['caution' 'reckless'], score: 0.9935327507555485
+Best answer found: friendliness,congenial
+Correct answer: ['caution', 'reckless']
+Incorrect :-(
+------------
+Question: ['precarious', 'stability']
+Sorted distances:
+Words: ['susceptible' 'resistance'], score: 0.8237343579530716
+Words: ['conclusive' 'results'], score: 0.8723432719707489
+Words: ['cantankerous' 'testiness'], score: 0.944791667163372
+Words: ['flexible' 'strength'], score: 0.9534968920052052
+Words: ['ornamental' 'flourishes'], score: 0.994160654488951
+Best answer found: susceptible,resistance
+Correct answer: ['susceptible', 'resistance']
+Correct!
+------------
+Question: ['quack', 'doctor']
+Sorted distances:
+Words: ['defendant' 'prosecutor'], score: 0.8129099160432816
+Words: ['charlatan' 'impostor'], score: 0.8530099242925644
+Words: ['pretender' 'monarch'], score: 0.891657255589962
+Words: ['arbitrator' 'judge'], score: 0.9607999697327614
+Words: ['professional' 'amateur'], score: 0.9873533537611365
+Best answer found: defendant,prosecutor
+Correct answer: ['pretender', 'monarch']
+Incorrect :-(
+------------
+Question: ['hapless', 'lucky']
+Sorted distances:
+Words: ['rash' 'prudent'], score: 0.9368534758687019
+Words: ['focused' 'attentive'], score: 0.9523396417498589
+Words: ['controversial' 'argumentative'], score: 1.0325116068124771
+Words: ['considerate' 'angry'], score: 1.09699297696352
+Words: ['fortunate' 'complacent'], score: 1.340985894203186
+Best answer found: rash,prudent
+Correct answer: ['rash', 'prudent']
+Correct!
+------------
+Question: ['acquit', 'charge']
+Sorted distances:
+Words: ['punish' 'reward'], score: 0.768912747502327
+Words: ['extricate' 'freedom'], score: 0.8634553402662277
+Words: ['camouflage' 'identity'], score: 0.9160308614373207
+Words: ['rescue' 'danger'], score: 0.9462338835000992
+Words: ['accuse' 'offense'], score: 1.0114663876593113
+Best answer found: punish,reward
+Correct answer: ['rescue', 'danger']
+Incorrect :-(
+------------
+Question: ['judicious', 'prudence']
+Sorted distances:
+Words: ['deferential' 'scorn'], score: 0.8372593224048615
+Words: ['stoic' 'hardship'], score: 0.8807251155376434
+Words: ['frivolous' 'giddiness'], score: 0.9121239632368088
+Words: ['malevolent' 'influence'], score: 0.968576692044735
+Words: ['indomitable' 'defeat'], score: 1.0262818597257137
+Best answer found: deferential,scorn
+Correct answer: ['frivolous', 'giddiness']
+Incorrect :-(
+------------
+Question: ['lethargic', 'energy']
+Sorted distances:
+Words: ['desultory' 'direction'], score: 0.7586102336645126
+Words: ['dejected' 'sympathy'], score: 0.797437384724617
+Words: ['frenetic' 'activity'], score: 0.8323186933994293
+Words: ['contrived' 'plot'], score: 0.9463299885392189
+Words: ['durable' 'structure'], score: 0.9894400862976909
+Best answer found: desultory,direction
+Correct answer: ['desultory', 'direction']
+Correct!
+------------
+Question: ['elastic', 'flexible']
+Sorted distances:
+Words: ['sandpaper' 'smooth'], score: 0.7988187074661255
+Words: ['iron' 'rusty'], score: 0.9154662638902664
+Words: ['diamond' 'hard'], score: 0.9257511720061302
+Words: ['water' 'irrigated'], score: 0.9900846499949694
+Words: ['ocean' 'nautical'], score: 1.0086756059899926
+Best answer found: sandpaper,smooth
+Correct answer: ['diamond', 'hard']
+Incorrect :-(
+------------
+Question: ['unnerve', 'composure']
+Sorted distances:
+Words: ['deviate' 'individuality'], score: 0.770053043961525
+Words: ['threaten' 'attack'], score: 0.8023726493120193
+Words: ['corrupt' 'purity'], score: 0.8484903275966644
+Words: ['shock' 'amazement'], score: 0.8669676035642624
+Words: ['judge' 'verdict'], score: 1.0191590823233128
+Best answer found: deviate,individuality
+Correct answer: ['corrupt', 'purity']
+Incorrect :-(
+------------
+Question: ['overexertion', 'fatigue']
+Sorted distances:
+Words: ['injury' 'pain'], score: 0.9094420745968819
+Words: ['immunity' 'disease'], score: 0.9923125896602869
+Words: ['exemption' 'participation'], score: 1.0118417162448168
+Words: ['transformation' 'deterioration'], score: 1.080196037888527
+Words: ['labor' 'recreation'], score: 1.0831298902630806
+Best answer found: injury,pain
+Correct answer: ['injury', 'pain']
+Correct!
+------------
+Question: ['encourage', 'coerce']
+Sorted distances:
+Words: ['suggest' 'command'], score: 0.866926908493042
+Words: ['filter' 'separate'], score: 0.9296493828296661
+Words: ['implement' 'accomplish'], score: 0.9384421184659004
+Words: ['oppose' 'disagree'], score: 1.0018035395769402
+Words: ['hinder' 'facilitate'], score: 1.1059351935982704
+Best answer found: suggest,command
+Correct answer: ['suggest', 'command']
+Correct!
+------------
+Question: ['bungler', 'finesse']
+Sorted distances:
+Words: ['preacher' 'oratory'], score: 0.7782372087240219
+Words: ['athlete' 'prowess'], score: 0.7916274070739746
+Words: ['thief' 'felony'], score: 0.8441918045282364
+Words: ['gourmet' 'cuisine'], score: 0.9494366236031055
+Words: ['gossip' 'reserve'], score: 0.9600446224212646
+Best answer found: preacher,oratory
+Correct answer: ['gossip', 'reserve']
+Incorrect :-(
+------------
+Question: ['drapery', 'fabric']
+Sorted distances:
+Words: ['fireplace' 'wood'], score: 0.7281118631362915
+Words: ['curtain' 'stage'], score: 0.9000765606760979
+Words: ['window' 'glass'], score: 0.9336227849125862
+Words: ['shutter' 'light'], score: 0.9822449926286936
+Words: ['sieve' 'liquid'], score: 1.0703850239515305
+Best answer found: fireplace,wood
+Correct answer: ['window', 'glass']
+Incorrect :-(
+------------
+Question: ['best', 'seller']
+Sorted distances:
+Words: ['rave' 'critic'], score: 0.8720272481441498
+Words: ['hit' 'song'], score: 0.9173092618584633
+Words: ['anthology' 'poem'], score: 0.9600180126726627
+Words: ['performance' 'play'], score: 1.0078363977372646
+Words: ['collector' 'painting'], score: 1.1792665123939514
+Best answer found: rave,critic
+Correct answer: ['hit', 'song']
+Incorrect :-(
+------------
+Question: ['excitement', 'frenzy']
+Sorted distances:
+Words: ['strength' 'resistance'], score: 0.9036046117544174
+Words: ['communication' 'signal'], score: 0.9098989069461823
+Words: ['fondness' 'hatred'], score: 0.9316919818520546
+Words: ['reform' 'corruption'], score: 1.0343292728066444
+Words: ['surprise' 'astonishment'], score: 1.0710849612951279
+Best answer found: strength,resistance
+Correct answer: ['surprise', 'astonishment']
+Incorrect :-(
+------------
+Question: ['magnify', 'appearance']
+Sorted distances:
+Words: ['distort' 'image'], score: 0.6983396708965302
+Words: ['amplify' 'volume'], score: 0.7467574179172516
+Words: ['rectify' 'error'], score: 0.8548202961683273
+Words: ['augment' 'reduction'], score: 0.877913199365139
+Words: ['probe' 'feeling'], score: 0.9347839131951332
+Best answer found: distort,image
+Correct answer: ['amplify', 'volume']
+Incorrect :-(
+------------
+Question: ['pedestrian', 'walks']
+Sorted distances:
+Words: ['motorist' 'drives'], score: 0.6465649306774139
+Words: ['bicyclist' 'brakes'], score: 0.8563127815723419
+Words: ['soldier' 'obeys'], score: 0.897266112267971
+Words: ['dentist' 'drills'], score: 0.955400824546814
+Words: ['runner' 'stretches'], score: 0.9694749843329191
+Best answer found: motorist,drives
+Correct answer: ['motorist', 'drives']
+Correct!
+------------
+Question: ['song', 'repertoire']
+Sorted distances:
+Words: ['suit' 'wardrobe'], score: 0.8860562220215797
+Words: ['benediction' 'church'], score: 0.9222387969493866
+Words: ['solo' 'chorus'], score: 1.0457354374229908
+Words: ['instrument' 'artist'], score: 1.0529211349785328
+Words: ['score' 'melody'], score: 1.1901428550481796
+Best answer found: suit,wardrobe
+Correct answer: ['suit', 'wardrobe']
+Correct!
+------------
+Question: ['courier', 'message']
+Sorted distances:
+Words: ['soldier' 'battle'], score: 0.9187666922807693
+Words: ['athlete' 'prowess'], score: 0.9495286755263805
+Words: ['judge' 'law'], score: 0.9521912187337875
+Words: ['student' 'knowledge'], score: 0.9632486924529076
+Words: ['prophet' 'revelation'], score: 1.1067218035459518
+Best answer found: soldier,battle
+Correct answer: ['prophet', 'revelation']
+Incorrect :-(
+------------
+Question: ['crumb', 'bread']
+Sorted distances:
+Words: ['cream' 'butter'], score: 0.8120885044336319
+Words: ['splinter' 'wood'], score: 0.8998379781842232
+Words: ['ounce' 'unit'], score: 0.9111075773835182
+Words: ['twine' 'rope'], score: 0.949587669223547
+Words: ['water' 'bucket'], score: 1.1192384511232376
+Best answer found: cream,butter
+Correct answer: ['splinter', 'wood']
+Incorrect :-(
+------------
+Question: ['overcoat', 'warmth']
+Sorted distances:
+Words: ['helmet' 'protection'], score: 0.7862093448638916
+Words: ['slicker' 'moisture'], score: 0.7865116745233536
+Words: ['glove' 'hand'], score: 0.7931030988693237
+Words: ['jewelry' 'wealth'], score: 0.8767319470643997
+Words: ['disguise' 'identification'], score: 0.9481396861374378
+Best answer found: helmet,protection
+Correct answer: ['helmet', 'protection']
+Correct!
+------------
+Question: ['immaculate', 'clean']
+Sorted distances:
+Words: ['enormous' 'large'], score: 0.852641373872757
+Words: ['tiresome' 'bored'], score: 0.9032993987202644
+Words: ['precious' 'greedy'], score: 0.9146724194288254
+Words: ['superficial' 'careful'], score: 0.9506087079644203
+Words: ['obvious' 'deceptive'], score: 1.0241843983530998
+Best answer found: enormous,large
+Correct answer: ['enormous', 'large']
+Correct!
+------------
+Question: ['scene', 'act']
+Sorted distances:
+Words: ['accent' 'stress'], score: 0.8561231642961502
+Words: ['palette' 'painting'], score: 0.9692152962088585
+Words: ['outline' 'book'], score: 1.0251275543123484
+Words: ['rhyme' 'sound'], score: 1.0545521788299084
+Words: ['line' 'stanza'], score: 1.1059706211090088
+Best answer found: accent,stress
+Correct answer: ['line', 'stanza']
+Incorrect :-(
+------------
+Question: ['traffic', 'street']
+Sorted distances:
+Words: ['ship' 'gangplank'], score: 0.8705823719501495
+Words: ['car' 'garage'], score: 0.8724448978900909
+Words: ['water' 'riverbed'], score: 0.8752995654940605
+Words: ['pedestrians' 'feet'], score: 0.8825937733054161
+Words: ['crop' 'harvest'], score: 1.1138904392719269
+Best answer found: ship,gangplank
+Correct answer: ['water', 'riverbed']
+Incorrect :-(
+------------
+Question: ['mortar', 'brick']
+Sorted distances:
+Words: ['core' 'apple'], score: 0.9094489216804504
+Words: ['sap' 'tree'], score: 0.9300312623381615
+Words: ['oil' 'engine'], score: 0.9343425631523132
+Words: ['glue' 'paper'], score: 0.9416250213980675
+Words: ['siding' 'house'], score: 1.0158585496246815
+Best answer found: core,apple
+Correct answer: ['glue', 'paper']
+Incorrect :-(
+------------
+Question: ['avenge', 'wrong']
+Sorted distances:
+Words: ['reciprocate' 'favor'], score: 0.8390727043151855
+Words: ['compete' 'contest'], score: 0.8914161249995232
+Words: ['relegate' 'position'], score: 0.9083440229296684
+Words: ['decree' 'religion'], score: 0.9594189487397671
+Words: ['ponder' 'decision'], score: 0.9614692628383636
+Best answer found: reciprocate,favor
+Correct answer: ['reciprocate', 'favor']
+Correct!
+------------
+Question: ['arboretum', 'botanical']
+Sorted distances:
+Words: ['university' 'academic'], score: 0.6885372400283813
+Words: ['aquarium' 'marine'], score: 0.7394231855869293
+Words: ['planetarium' 'artificial'], score: 0.7545427083969116
+Words: ['farm' 'domesticated'], score: 0.8489571958780289
+Words: ['gymnasium' 'athletic'], score: 0.9857349069789052
+Best answer found: university,academic
+Correct answer: ['aquarium', 'marine']
+Incorrect :-(
+------------
+Question: ['fame', 'celebrity']
+Sorted distances:
+Words: ['diploma' 'graduation'], score: 0.8861168622970581
+Words: ['laughter' 'joke'], score: 0.9800451919436455
+Words: ['actor' 'theater'], score: 1.029885370284319
+Words: ['vacation' 'employee'], score: 1.0345232486724854
+Words: ['value' 'treasure'], score: 1.1174163445830345
+Best answer found: diploma,graduation
+Correct answer: ['value', 'treasure']
+Incorrect :-(
+------------
+Question: ['squall', 'wind']
+Sorted distances:
+Words: ['blizzard' 'winter'], score: 0.8545742779970169
+Words: ['cloudburst' 'rain'], score: 0.8825741931796074
+Words: ['spark' 'flame'], score: 1.0162017233669758
+Words: ['snow' 'drift'], score: 1.0164681989699602
+Words: ['desert' 'sand'], score: 1.08841210603714
+Best answer found: blizzard,winter
+Correct answer: ['cloudburst', 'rain']
+Incorrect :-(
+------------
+Question: ['frighten', 'skittish']
+Sorted distances:
+Words: ['shock' 'abrupt'], score: 0.8487700819969177
+Words: ['swindle' 'gullible'], score: 0.9159031435847282
+Words: ['despise' 'pleasant'], score: 0.9344026073813438
+Words: ['caution' 'watchful'], score: 0.9562746211886406
+Words: ['parole' 'guilty'], score: 0.9686525613069534
+Best answer found: shock,abrupt
+Correct answer: ['swindle', 'gullible']
+Incorrect :-(
+------------
+Question: ['puppeteer', 'marionette']
+Sorted distances:
+Words: ['teacher' 'textbook'], score: 0.8304885476827621
+Words: ['manager' 'baseball'], score: 0.8698626607656479
+Words: ['lawyer' 'criminal'], score: 0.9202289432287216
+Words: ['ballerina' 'leotard'], score: 0.9281901568174362
+Words: ['hypnotist' 'subject'], score: 0.9805791955441236
+Best answer found: teacher,textbook
+Correct answer: ['hypnotist', 'subject']
+Incorrect :-(
+------------
+Question: ['scapegoat', 'blame']
+Sorted distances:
+Words: ['trickster' 'honesty'], score: 0.8184448480606079
+Words: ['effigy' 'hatred'], score: 0.8375479131937027
+Words: ['apprentice' 'skill'], score: 0.8394368439912796
+Words: ['ingrate' 'gratitude'], score: 0.8817892298102379
+Words: ['truant' 'education'], score: 0.9179108366370201
+Best answer found: trickster,honesty
+Correct answer: ['effigy', 'hatred']
+Incorrect :-(
+------------
+Question: ['atrophy', 'withered']
+Sorted distances:
+Words: ['destruction' 'violent'], score: 0.8859261348843575
+Words: ['putrefaction' 'preserved'], score: 0.8943636491894722
+Words: ['replication' 'completed'], score: 0.9019826874136925
+Words: ['inflation' 'reduced'], score: 0.9234441667795181
+Words: ['contamination' 'impure'], score: 0.9383722618222237
+Best answer found: destruction,violent
+Correct answer: ['contamination', 'impure']
+Incorrect :-(
+------------
+Question: ['adult', 'child']
+Sorted distances:
+Words: ['cat' 'kitten'], score: 0.9102682024240494
+Words: ['swine' 'sow'], score: 0.9163684919476509
+Words: ['horse' 'mare'], score: 0.9217439219355583
+Words: ['human' 'animal'], score: 1.0398791134357452
+Words: ['cow' 'herd'], score: 1.0942945927381516
+Best answer found: cat,kitten
+Correct answer: ['cat', 'kitten']
+Correct!
+------------
+Question: ['mansion', 'residence']
+Sorted distances:
+Words: ['chandelier' 'candle'], score: 0.7439375519752502
+Words: ['limousine' 'automobile'], score: 0.806149035692215
+Words: ['yacht' 'harbor'], score: 0.8308549970388412
+Words: ['diamond' 'rhinestone'], score: 1.0514827594161034
+Words: ['tuxedo' 'wardrobe'], score: 1.0772263407707214
+Best answer found: chandelier,candle
+Correct answer: ['limousine', 'automobile']
+Incorrect :-(
+------------
+Question: ['envelope', 'letter']
+Sorted distances:
+Words: ['crate' 'produce'], score: 0.8382369130849838
+Words: ['neck' 'head'], score: 0.9016750454902649
+Words: ['scarf' 'hat'], score: 0.9697859305888414
+Words: ['box' 'bag'], score: 0.9926244015805423
+Words: ['blood' 'heart'], score: 1.0615324787795544
+Best answer found: crate,produce
+Correct answer: ['crate', 'produce']
+Correct!
+------------
+Question: ['choreography', 'dance']
+Sorted distances:
+Words: ['plot' 'story'], score: 0.8880427181720734
+Words: ['agenda' 'advertisement'], score: 0.9463480822741985
+Words: ['instrumentation' 'conductor'], score: 1.0280449204146862
+Words: ['ceremony' 'sermon'], score: 1.0558432787656784
+Words: ['poetry' 'recitation'], score: 1.103384219110012
+Best answer found: plot,story
+Correct answer: ['plot', 'story']
+Correct!
+------------
+Question: ['overdose', 'prescription']
+Sorted distances:
+Words: ['drug' 'medicine'], score: 0.8863852769136429
+Words: ['indiscretion' 'convention'], score: 0.8889898285269737
+Words: ['deprivation' 'materialism'], score: 0.9243166819214821
+Words: ['affliction' 'sympathy'], score: 0.9639931581914425
+Words: ['adventure' 'expedition'], score: 1.0377107448875904
+Best answer found: drug,medicine
+Correct answer: ['indiscretion', 'convention']
+Incorrect :-(
+------------
+Question: ['evaporate', 'vapor']
+Sorted distances:
+Words: ['saturate' 'fluid'], score: 0.7105906009674072
+Words: ['corrode' 'acid'], score: 0.758541002869606
+Words: ['petrify' 'stone'], score: 0.8920152485370636
+Words: ['incinerate' 'fire'], score: 1.0200348924845457
+Words: ['centrifuge' 'liquid'], score: 1.029515128582716
+Best answer found: saturate,fluid
+Correct answer: ['petrify', 'stone']
+Incorrect :-(
+------------
+Question: ['shard', 'pottery']
+Sorted distances:
+Words: ['cinder' 'coal'], score: 0.8583032339811325
+Words: ['fragment' 'bone'], score: 0.8804723918437958
+Words: ['flange' 'wheel'], score: 0.933495469391346
+Words: ['tare' 'grain'], score: 0.9989409607369453
+Words: ['flint' 'stone'], score: 1.0702310800552368
+Best answer found: cinder,coal
+Correct answer: ['fragment', 'bone']
+Incorrect :-(
+------------
+Question: ['mercenary', 'money']
+Sorted distances:
+Words: ['thirsty' 'water'], score: 0.810675635933876
+Words: ['scholarly' 'library'], score: 0.8193498700857162
+Words: ['immaculate' 'cleanliness'], score: 0.9289799481630325
+Words: ['vindictive' 'revenge'], score: 0.9755981937050819
+Words: ['belligerent' 'invasion'], score: 1.006629966199398
+Best answer found: thirsty,water
+Correct answer: ['vindictive', 'revenge']
+Incorrect :-(
+------------
+Question: ['hammer', 'anvil']
+Sorted distances:
+Words: ['gavel' 'lectern'], score: 0.9143421351909637
+Words: ['hand' 'drum'], score: 0.9430835731327534
+Words: ['stick' 'gong'], score: 0.9854374704882503
+Words: ['knocker' 'door'], score: 1.010283482261002
+Words: ['pestle' 'mortar'], score: 1.0197673663496971
+Best answer found: gavel,lectern
+Correct answer: ['pestle', 'mortar']
+Incorrect :-(
+------------
+Question: ['numb', 'insensible']
+Sorted distances:
+Words: ['braid' 'sinuous'], score: 0.8550777584314346
+Words: ['burnish' 'lustrous'], score: 0.9590443484485149
+Words: ['reflect' 'luminous'], score: 0.9799032229930162
+Words: ['repulse' 'odious'], score: 0.986236666329205
+Words: ['heckle' 'raucous'], score: 0.9926265357062221
+Best answer found: braid,sinuous
+Correct answer: ['burnish', 'lustrous']
+Incorrect :-(
+------------
+Question: ['exorbitant', 'moderation']
+Sorted distances:
+Words: ['macabre' 'interest'], score: 0.9450920782983303
+Words: ['dispassionate' 'equanimity'], score: 0.9496533870697021
+Words: ['lavish' 'extravagance'], score: 0.953601460903883
+Words: ['perfidious' 'loyalty'], score: 0.9648171626031399
+Words: ['brilliant' 'gullibility'], score: 1.0417250841856003
+Best answer found: macabre,interest
+Correct answer: ['perfidious', 'loyalty']
+Incorrect :-(
+------------
+Question: ['troubled', 'distraught']
+Sorted distances:
+Words: ['outmoded' 'ostentatious'], score: 0.8790894150733948
+Words: ['tranquil' 'placid'], score: 0.9753048997372389
+Words: ['covetous' 'rapacious'], score: 1.0171431414783
+Words: ['annoyed' 'disillusioned'], score: 1.1000057235360146
+Words: ['disturbed' 'interrupted'], score: 1.1025597602128983
+Best answer found: outmoded,ostentatious
+Correct answer: ['covetous', 'rapacious']
+Incorrect :-(
+------------
+Question: ['vertigo', 'dizzy']
+Sorted distances:
+Words: ['influenza' 'feverish'], score: 0.7446281909942627
+Words: ['no' 'choice'], score: 0.9132819920778275
+Words: ['illness' 'germs'], score: 0.9217026457190514
+Words: ['fear' 'heights'], score: 0.9660592749714851
+Words: ['temperature' 'virus'], score: 1.1187974512577057
+Best answer found: influenza,feverish
+Correct answer: ['influenza', 'feverish']
+Correct!
+------------
+Question: ['indigenous', 'native']
+Sorted distances:
+Words: ['aged' 'wrinkled'], score: 0.9116641730070114
+Words: ['new' 'used'], score: 0.9905723091214895
+Words: ['no' 'choice'], score: 1.0067839212715626
+Words: ['alien' 'foreign'], score: 1.0127490870654583
+Words: ['immigrate' 'exodus'], score: 1.0730410739779472
+Best answer found: aged,wrinkled
+Correct answer: ['alien', 'foreign']
+Incorrect :-(
+------------
+Question: ['palatable', 'toothsome']
+Sorted distances:
+Words: ['rancid' 'fragrant'], score: 0.8038913160562515
+Words: ['solitude' 'company'], score: 1.0400069653987885
+Words: ['coarse' 'rough'], score: 1.0725152492523193
+Words: ['chewy' 'textured'], score: 1.0959002375602722
+Words: ['no' 'choice'], score: 1.1217836886644363
+Best answer found: rancid,fragrant
+Correct answer: ['coarse', 'rough']
+Incorrect :-(
+------------
+Question: ['paint', 'canvas']
+Sorted distances:
+Words: ['no' 'choice'], score: 0.8867688030004501
+Words: ['peanut' 'butter'], score: 0.9011370986700058
+Words: ['clock' 'time'], score: 0.9615389704704285
+Words: ['brush' 'bucket'], score: 0.9869466572999954
+Words: ['art' 'life'], score: 1.0958427637815475
+Best answer found: no,choice
+Correct answer: ['peanut', 'butter']
+Incorrect :-(
+------------
+Question: ['seedy', 'elegant']
+Sorted distances:
+Words: ['posh' 'sumptuous'], score: 0.6523396670818329
+Words: ['moneyed' 'frugal'], score: 0.8589707612991333
+Words: ['no' 'choice'], score: 0.9312002137303352
+Words: ['luxurious' 'spare'], score: 1.1264251321554184
+Words: ['rich' 'poor'], score: 1.130915641784668
+Best answer found: posh,sumptuous
+Correct answer: ['luxurious', 'spare']
+Incorrect :-(
+------------
+Question: ['bungalow', 'domicile']
+Sorted distances:
+Words: ['apartment' 'rent'], score: 0.749436616897583
+Words: ['castle' 'turret'], score: 0.8647029399871826
+Words: ['bathroom' 'sink'], score: 0.8784102573990822
+Words: ['chair' 'furniture'], score: 1.0286781694740057
+Words: ['no' 'choice'], score: 1.0397674515843391
+Best answer found: apartment,rent
+Correct answer: ['chair', 'furniture']
+Incorrect :-(
+------------
+Question: ['devour', 'consume']
+Sorted distances:
+Words: ['praise' 'lavish'], score: 0.9174590930342674
+Words: ['abhor' 'dislike'], score: 0.9356796368956566
+Words: ['no' 'choice'], score: 0.9674413949251175
+Words: ['reject' 'despise'], score: 1.0689329653978348
+Words: ['ingest' 'reject'], score: 1.1709627211093903
+Best answer found: praise,lavish
+Correct answer: ['abhor', 'dislike']
+Incorrect :-(
+------------
+Question: ['tentacle', 'octopus']
+Sorted distances:
+Words: ['tendril' 'vine'], score: 0.8113324195146561
+Words: ['meow' 'cat'], score: 0.9383694566786289
+Words: ['no' 'choice'], score: 0.9636607021093369
+Words: ['rat' 'vermin'], score: 1.010862979106605
+Words: ['oak' 'tree'], score: 1.0446753799915314
+Best answer found: tendril,vine
+Correct answer: ['tendril', 'vine']
+Correct!
+------------
+Question: ['submit', 'subordinate']
+Sorted distances:
+Words: ['secede' 'autonomous'], score: 0.9319442808628082
+Words: ['no' 'choice'], score: 0.9694351106882095
+Words: ['rebel' 'solitude'], score: 0.9829080644994974
+Words: ['inferior' 'dominant'], score: 1.0375129841268063
+Words: ['loud' 'cacophony'], score: 1.0480736307799816
+Best answer found: secede,autonomous
+Correct answer: ['secede', 'autonomous']
+Correct!
+------------
+Question: ['beagle', 'dog']
+Sorted distances:
+Words: ['barnyard' 'farm'], score: 0.8674448579549789
+Words: ['meow' 'cat'], score: 0.9679492153227329
+Words: ['no' 'choice'], score: 1.0098436353728175
+Words: ['africa' 'continent'], score: 1.0181895773857832
+Words: ['picnic' 'basket'], score: 1.050837580114603
+Best answer found: barnyard,farm
+Correct answer: ['africa', 'continent']
+Incorrect :-(
+------------
+Question: ['indigence', 'opulence']
+Sorted distances:
+Words: ['infirmity' 'strength'], score: 0.8481691777706146
+Words: ['isolation' 'solitude'], score: 0.8745119422674179
+Words: ['willful' 'oblivious'], score: 0.9383222348988056
+Words: ['no' 'choice'], score: 0.94322195276618
+Words: ['inflated' 'exaggerated'], score: 0.9472725689411163
+Best answer found: infirmity,strength
+Correct answer: ['infirmity', 'strength']
+Correct!
+------------
+Question: ['mentor', 'guide']
+Sorted distances:
+Words: ['prophet' 'predict'], score: 0.8742978125810623
+Words: ['tyrant' 'relentless'], score: 0.9162713512778282
+Words: ['citizen' 'unique'], score: 0.9275705218315125
+Words: ['instructor' 'discipline'], score: 1.0084548741579056
+Words: ['no' 'choice'], score: 1.0497252009809017
+Best answer found: prophet,predict
+Correct answer: ['prophet', 'predict']
+Correct!
+------------
+Question: ['haiku', 'poem']
+Sorted distances:
+Words: ['artist' 'painting'], score: 0.852615550160408
+Words: ['no' 'choice'], score: 0.963457178324461
+Words: ['page' 'typeface'], score: 0.9947200315073133
+Words: ['novel' 'book'], score: 1.0560869239270687
+Words: ['song' 'musician'], score: 1.2157833576202393
+Best answer found: artist,painting
+Correct answer: ['novel', 'book']
+Incorrect :-(
+------------
+Question: ['dynamic', 'static']
+Sorted distances:
+Words: ['inherent' 'extrinsic'], score: 0.8872935622930527
+Words: ['movement' 'fluidity'], score: 0.9323377907276154
+Words: ['permission' 'allowance'], score: 0.9581554755568504
+Words: ['border' 'threshold'], score: 0.9818601552397013
+Words: ['no' 'choice'], score: 1.1874155849218369
+Best answer found: inherent,extrinsic
+Correct answer: ['inherent', 'extrinsic']
+Correct!
+------------
+Question: ['sword', 'sheath']
+Sorted distances:
+Words: ['pistol' 'holster'], score: 0.709385484457016
+Words: ['gun' 'bullet'], score: 0.901093490421772
+Words: ['knife' 'stone'], score: 0.9311931058764458
+Words: ['no' 'choice'], score: 0.9491421654820442
+Words: ['tool' 'garage'], score: 1.0370104908943176
+Best answer found: pistol,holster
+Correct answer: ['gun', 'bullet']
+Incorrect :-(
+------------
+Question: ['paleontologist', 'tyrannosaurus']
+Sorted distances:
+Words: ['botanist' 'capsicum'], score: 0.5956951677799225
+Words: ['professor' 'student'], score: 0.6911729872226715
+Words: ['agriculturist' 'dairy'], score: 0.8483079522848129
+Words: ['no' 'choice'], score: 0.9423933364450932
+Words: ['priest' 'religion'], score: 0.9530672580003738
+Best answer found: botanist,capsicum
+Correct answer: ['botanist', 'capsicum']
+Correct!
+------------
+Question: ['food', 'hunger']
+Sorted distances:
+Words: ['love' 'loneliness'], score: 0.7801115661859512
+Words: ['anodyne' 'pain'], score: 0.8280721008777618
+Words: ['ginseng' 'energy'], score: 0.9464534409344196
+Words: ['antiseptic' 'wound'], score: 1.0096332281827927
+Words: ['no' 'choice'], score: 1.0413338281214237
+Best answer found: love,loneliness
+Correct answer: ['love', 'loneliness']
+Correct!
+------------
+Question: ['crowbar', 'pry']
+Sorted distances:
+Words: ['pencil' 'draw'], score: 0.802431508898735
+Words: ['rod' 'trout'], score: 0.9047205671668053
+Words: ['telescope' 'star'], score: 0.9200727641582489
+Words: ['no' 'choice'], score: 0.9465317949652672
+Words: ['nail' 'hammer'], score: 1.2666043043136597
+Best answer found: pencil,draw
+Correct answer: ['pencil', 'draw']
+Correct!
+------------
+Question: ['ream', 'paper']
+Sorted distances:
+Words: ['stack' 'brick'], score: 0.8393620550632477
+Words: ['cord' 'wood'], score: 0.903853289783001
+Words: ['bushel' 'apple'], score: 0.9288981035351753
+Words: ['barrel' 'oil'], score: 0.9356556013226509
+Words: ['no' 'choice'], score: 0.9410916268825531
+Best answer found: stack,brick
+Correct answer: ['cord', 'wood']
+Incorrect :-(
+------------
+Question: ['fond', 'doting']
+Sorted distances:
+Words: ['abstinent' 'indulgent'], score: 0.9218675345182419
+Words: ['polite' 'servile'], score: 0.9410636946558952
+Words: ['grasping' 'needy'], score: 0.9678873792290688
+Words: ['no' 'choice'], score: 0.981285884976387
+Words: ['whisper' 'scream'], score: 1.0045488243922591
+Best answer found: abstinent,indulgent
+Correct answer: ['grasping', 'needy']
+Incorrect :-(
+------------
+Question: ['eagle', 'bird']
+Sorted distances:
+Words: ['halibut' 'salmon'], score: 0.892963707447052
+Words: ['beagle' 'dog'], score: 0.9224468395113945
+Words: ['egg' 'chick'], score: 0.9809458069503307
+Words: ['beak' 'feather'], score: 1.0715646892786026
+Words: ['deer' 'fawn'], score: 1.1118005067110062
+Best answer found: halibut,salmon
+Correct answer: ['beagle', 'dog']
+Incorrect :-(
+------------
+Question: ['worry', 'panic']
+Sorted distances:
+Words: ['smile' 'anger'], score: 0.8890980556607246
+Words: ['happiness' 'bliss'], score: 0.9400464072823524
+Words: ['agenda' 'list'], score: 0.9875052878633142
+Words: ['brain' 'intelligence'], score: 1.0367322713136673
+Words: ['clock' 'time'], score: 1.0681958943605423
+Best answer found: smile,anger
+Correct answer: ['happiness', 'bliss']
+Incorrect :-(
+------------
+Question: ['birds', 'wings']
+Sorted distances:
+Words: ['alligator' 'tail'], score: 0.6121383607387543
+Words: ['cat' 'whiskers'], score: 0.6944177448749542
+Words: ['moose' 'antlers'], score: 0.7635082006454468
+Words: ['spider' 'legs'], score: 0.7799548655748367
+Words: ['camel' 'hump'], score: 0.8156442642211914
+Best answer found: alligator,tail
+Correct answer: ['spider', 'legs']
+Incorrect :-(
+------------
+Question: ['pebble', 'rock']
+Sorted distances:
+Words: ['mountain' 'peak'], score: 0.9250191524624825
+Words: ['sand' 'desert'], score: 0.9258448854088783
+Words: ['melon' 'fruit'], score: 1.0322633497416973
+Words: ['gravel' 'driveway'], score: 1.0344756990671158
+Words: ['minnow' 'fish'], score: 1.0582336522638798
+Best answer found: mountain,peak
+Correct answer: ['minnow', 'fish']
+Incorrect :-(
+------------
+Question: ['livid', 'angry']
+Sorted distances:
+Words: ['effusive' 'emotional'], score: 0.8140938878059387
+Words: ['vital' 'wary'], score: 0.9580652117729187
+Words: ['resolute' 'weak'], score: 0.9676524773240089
+Words: ['old' 'modern'], score: 0.9841195400804281
+Words: ['vain' 'beautiful'], score: 0.9870979944244027
+Best answer found: effusive,emotional
+Correct answer: ['effusive', 'emotional']
+Correct!
+------------
+Question: ['saunter', 'walk']
+Sorted distances:
+Words: ['snore' 'sleep'], score: 0.7625711560249329
+Words: ['drawl' 'speak'], score: 0.8015238791704178
+Words: ['finish' 'end'], score: 0.9797442965209484
+Words: ['ladle' 'brush'], score: 0.9858974134549499
+Words: ['throw' 'toss'], score: 1.1108463108539581
+Best answer found: snore,sleep
+Correct answer: ['drawl', 'speak']
+Incorrect :-(
+------------
+Question: ['alligator', 'reptile']
+Sorted distances:
+Words: ['wolf' 'sheep'], score: 0.8498802930116653
+Words: ['fish' 'school'], score: 0.9613960236310959
+Words: ['dog' 'bone'], score: 0.9712330475449562
+Words: ['lion' 'cat'], score: 0.9908456932753325
+Words: ['cub' 'bear'], score: 1.0892612487077713
+Best answer found: wolf,sheep
+Correct answer: ['lion', 'cat']
+Incorrect :-(
+------------
+Question: ['cherry', 'fruit']
+Sorted distances:
+Words: ['knife' 'utensil'], score: 0.9004165083169937
+Words: ['grass' 'water'], score: 0.9218281954526901
+Words: ['leaf' 'tree'], score: 0.9337558075785637
+Words: ['sail' 'ship'], score: 0.9739471189677715
+Words: ['flour' 'bread'], score: 1.0002818413486239
+Best answer found: knife,utensil
+Correct answer: ['knife', 'utensil']
+Correct!
+------------
+Question: ['oxygen', 'gas']
+Sorted distances:
+Words: ['gymnasium' 'track'], score: 0.9322230741381645
+Words: ['airplane' 'cloud'], score: 0.9654931388795376
+Words: ['aluminum' 'metal'], score: 0.9847701163962483
+Words: ['doctor' 'hospital'], score: 1.014022988267243
+Words: ['cobra' 'venom'], score: 1.1177278086543083
+Best answer found: gymnasium,track
+Correct answer: ['aluminum', 'metal']
+Incorrect :-(
+------------
+Question: ['shallow', 'depth']
+Sorted distances:
+Words: ['pious' 'faith'], score: 0.7242215275764465
+Words: ['cloudy' 'height'], score: 0.783728763461113
+Words: ['apathetic' 'caring'], score: 0.924982450902462
+Words: ['lurid' 'shock'], score: 0.93010663241148
+Words: ['salty' 'ocean'], score: 0.9415832124650478
+Best answer found: pious,faith
+Correct answer: ['apathetic', 'caring']
+Incorrect :-(
+------------
+Question: ['brazen', 'shame']
+Sorted distances:
+Words: ['inquisitive' 'curiosity'], score: 0.7324442565441132
+Words: ['witty' 'levity'], score: 0.8891502842307091
+Words: ['oblivious' 'awareness'], score: 0.914281852543354
+Words: ['comprehensive' 'total'], score: 0.9704549685120583
+Words: ['moral' 'integrity'], score: 1.0520901419222355
+Best answer found: inquisitive,curiosity
+Correct answer: ['oblivious', 'awareness']
+Incorrect :-(
+------------
+Question: ['amorphous', 'shape']
+Sorted distances:
+Words: ['fundamental' 'basics'], score: 0.7934036552906036
+Words: ['morbid' 'death'], score: 0.8426564335823059
+Words: ['prominent' 'sight'], score: 0.9536397382616997
+Words: ['intrepid' 'fear'], score: 0.9740251284092665
+Words: ['hopeless' 'pessimism'], score: 1.0311658140271902
+Best answer found: fundamental,basics
+Correct answer: ['intrepid', 'fear']
+Incorrect :-(
+------------
+Question: ['scissors', 'cut']
+Sorted distances:
+Words: ['window' 'close'], score: 0.8190982043743134
+Words: ['cloth' 'weave'], score: 0.8606107085943222
+Words: ['spice' 'season'], score: 0.9151544272899628
+Words: ['mask' 'frighten'], score: 0.9268844649195671
+Words: ['country' 'vote'], score: 1.019704869017005
+Best answer found: window,close
+Correct answer: ['spice', 'season']
+Incorrect :-(
+------------
+Question: ['glue', 'fasten']
+Sorted distances:
+Words: ['laundry' 'fold'], score: 0.8388495445251465
+Words: ['bleach' 'color'], score: 0.8708965182304382
+Words: ['computer' 'repair'], score: 0.961182739585638
+Words: ['elevator' 'lift'], score: 0.9620374590158463
+Words: ['steel' 'forge'], score: 1.0375932827591896
+Best answer found: laundry,fold
+Correct answer: ['elevator', 'lift']
+Incorrect :-(
+------------
+Question: ['ornament', 'embellish']
+Sorted distances:
+Words: ['carpenter' 'build'], score: 0.8122269809246063
+Words: ['rocket' 'launch'], score: 0.885807029902935
+Words: ['detergent' 'clean'], score: 0.8976573348045349
+Words: ['antidote' 'poison'], score: 0.9843196701258421
+Words: ['radio' 'repair'], score: 0.9987896470120177
+Best answer found: carpenter,build
+Correct answer: ['detergent', 'clean']
+Incorrect :-(
+------------
+Question: ['reprehensible', 'condemn']
+Sorted distances:
+Words: ['depraved' 'admire'], score: 0.7348944544792175
+Words: ['estimable' 'praise'], score: 0.7689249813556671
+Words: ['innocent' 'judge'], score: 0.9066077992320061
+Words: ['torpid' 'rule'], score: 0.9080657511949539
+Words: ['worthy' 'parody'], score: 0.9877723250538111
+Best answer found: depraved,admire
+Correct answer: ['estimable', 'praise']
+Incorrect :-(
+------------
+Question: ['smile', 'happiness']
+Sorted distances:
+Words: ['frown' 'anger'], score: 0.7113349139690399
+Words: ['cook' 'food'], score: 0.8447353541851044
+Words: ['resentment' 'mutiny'], score: 1.0180585701018572
+Words: ['boredom' 'apathy'], score: 1.1044610440731049
+Words: ['comedy' 'laughter'], score: 1.1118464097380638
+Best answer found: frown,anger
+Correct answer: ['frown', 'anger']
+Correct!
+------------
+Question: ['flowers', 'florist']
+Sorted distances:
+Words: ['rings' 'jeweler'], score: 0.6560995578765869
+Words: ['roses' 'arrangement'], score: 0.761489748954773
+Words: ['wedding' 'caterer'], score: 0.8088997304439545
+Words: ['stethoscope' 'doctor'], score: 0.8286511152982712
+Words: ['pharmacy' 'pharmacist'], score: 0.8678518086671829
+Best answer found: rings,jeweler
+Correct answer: ['rings', 'jeweler']
+Correct!
+------------
+Question: ['hoard', 'save']
+Sorted distances:
+Words: ['revere' 'admire'], score: 0.9177295789122581
+Words: ['ignore' 'notice'], score: 0.9348361119627953
+Words: ['sulk' 'roar'], score: 0.9667439088225365
+Words: ['flirt' 'giggle'], score: 1.0417167022824287
+Words: ['economize' 'spend'], score: 1.073721133172512
+Best answer found: revere,admire
+Correct answer: ['revere', 'admire']
+Correct!
+------------
+Question: ['playwright', 'actor']
+Sorted distances:
+Words: ['biographer' 'celebrity'], score: 0.6345317363739014
+Words: ['composer' 'musician'], score: 0.6829973459243774
+Words: ['architect' 'custodian'], score: 0.8628431558609009
+Words: ['lawyer' 'judge'], score: 0.9518089853227139
+Words: ['soldier' 'colonel'], score: 1.0203133281320333
+Best answer found: biographer,celebrity
+Correct answer: ['composer', 'musician']
+Incorrect :-(
+------------
+Question: ['building', 'blueprint']
+Sorted distances:
+Words: ['report' 'outline'], score: 0.7926799952983856
+Words: ['brick' 'wall'], score: 0.8469940423965454
+Words: ['chicken' 'egg'], score: 0.9113492220640182
+Words: ['soup' 'ladle'], score: 1.0302090030163527
+Words: ['conduit' 'cement'], score: 1.0971730798482895
+Best answer found: report,outline
+Correct answer: ['report', 'outline']
+Correct!
+------------
+Question: ['antiseptic', 'germs']
+Sorted distances:
+Words: ['executive' 'agenda'], score: 0.8867421001195908
+Words: ['sneezing' 'allergies'], score: 1.0150460069999099
+Words: ['water' 'thirst'], score: 1.0548541359603405
+Words: ['earthquake' 'destruction'], score: 1.0585764423012733
+Words: ['illness' 'fever'], score: 1.1712454855442047
+Best answer found: executive,agenda
+Correct answer: ['water', 'thirst']
+Incorrect :-(
+------------
+Question: ['sluggish', 'energy']
+Sorted distances:
+Words: ['reticent' 'tack'], score: 0.8539093136787415
+Words: ['satiated' 'hunger'], score: 0.9064465165138245
+Words: ['trite' 'speech'], score: 0.9391490742564201
+Words: ['inebriated' 'memory'], score: 1.0040721539407969
+Words: ['sheer' 'cliff'], score: 1.047201942652464
+Best answer found: reticent,tack
+Correct answer: ['satiated', 'hunger']
+Incorrect :-(
+------------
+Question: ['library', 'book']
+Sorted distances:
+Words: ['factory' 'outlet'], score: 0.8782541528344154
+Words: ['laboratory' 'radiation'], score: 0.8828096389770508
+Words: ['stable' 'horse'], score: 0.9695756677538157
+Words: ['scholar' 'knowledge'], score: 1.0377777814865112
+Words: ['laser' 'energy'], score: 1.0802389904856682
+Best answer found: factory,outlet
+Correct answer: ['stable', 'horse']
+Incorrect :-(
+------------
+Question: ['move', 'scurry']
+Sorted distances:
+Words: ['breathe' 'pant'], score: 0.9004770442843437
+Words: ['labor' 'rest'], score: 0.9583391882479191
+Words: ['arrest' 'indict'], score: 0.9644096195697784
+Words: ['jeer' 'mock'], score: 1.0130497375503182
+Words: ['scream' 'shout'], score: 1.103180579841137
+Best answer found: breathe,pant
+Correct answer: ['breathe', 'pant']
+Correct!
+------------
+Question: ['iron', 'metal']
+Sorted distances:
+Words: ['wheel' 'bicycle'], score: 0.9483329616487026
+Words: ['emerald' 'gem'], score: 1.0026034996844828
+Words: ['hydrogen' 'water'], score: 1.0607192181050777
+Words: ['coral' 'ocean'], score: 1.0666128993034363
+Words: ['rock' 'quarry'], score: 1.1684288680553436
+Best answer found: wheel,bicycle
+Correct answer: ['emerald', 'gem']
+Incorrect :-(
+------------
+Question: ['emigrate', 'country']
+Sorted distances:
+Words: ['retire' 'pension'], score: 0.8581695854663849
+Words: ['voyage' 'suitcase'], score: 0.90645482391119
+Words: ['retreat' 'position'], score: 0.9222724884748459
+Words: ['novel' 'old'], score: 0.9291653260588646
+Words: ['swindle' 'property'], score: 0.9977034910116345
+Best answer found: retire,pension
+Correct answer: ['retreat', 'position']
+Incorrect :-(
+------------
+Question: ['injurious', 'harm']
+Sorted distances:
+Words: ['soporific' 'sleep'], score: 0.7501992285251617
+Words: ['criminal' 'restitution'], score: 0.8774865195155144
+Words: ['unethical' 'principles'], score: 0.9081068560481071
+Words: ['insincere' 'dismay'], score: 0.94192223995924
+Words: ['sacred' 'relic'], score: 0.9730422291904688
+Best answer found: soporific,sleep
+Correct answer: ['soporific', 'sleep']
+Correct!
+------------
+Question: ['omnipotent', 'power']
+Sorted distances:
+Words: ['impudent' 'control'], score: 0.8600921034812927
+Words: ['beguiling' 'disgust'], score: 0.887201115489006
+Words: ['objective' 'rage'], score: 0.94494803622365
+Words: ['parochial' 'scope'], score: 0.9585703164339066
+Words: ['daring' 'audacity'], score: 1.0677877217531204
+Best answer found: impudent,control
+Correct answer: ['daring', 'audacity']
+Incorrect :-(
+------------
+Question: ['temper', 'extreme']
+Sorted distances:
+Words: ['assuage' 'commodious'], score: 0.8130783289670944
+Words: ['mitigate' 'severe'], score: 0.8238403052091599
+Words: ['slander' 'dishonest'], score: 1.0065910085104406
+Words: ['provoke' 'angry'], score: 1.0179486367851496
+Words: ['deliver' 'speedy'], score: 1.023660458624363
+Best answer found: assuage,commodious
+Correct answer: ['mitigate', 'severe']
+Incorrect :-(
+------------
+Question: ['caricature', 'drawing']
+Sorted distances:
+Words: ['ballad' 'song'], score: 0.9172279611229897
+Words: ['eagle' 'bird'], score: 0.9244357347488403
+Words: ['impersonation' 'flattery'], score: 0.9382619485259056
+Words: ['limerick' 'poem'], score: 1.0429628267884254
+Words: ['license' 'hunter'], score: 1.0583196319639683
+Best answer found: ballad,song
+Correct answer: ['limerick', 'poem']
+Incorrect :-(
+------------
+Question: ['incorrigible', 'reformed']
+Sorted distances:
+Words: ['indelible' 'erased'], score: 0.7999014109373093
+Words: ['innocuous' 'harmed'], score: 0.8420051038265228
+Words: ['insolvent' 'dissolved'], score: 0.8453432023525238
+Words: ['irrelevant' 'verified'], score: 0.9149784594774246
+Words: ['unnerving' 'irritated'], score: 0.9910347908735275
+Best answer found: indelible,erased
+Correct answer: ['indelible', 'erased']
+Correct!
+------------
+Question: ['propagandize', 'principles']
+Sorted distances:
+Words: ['indoctrinate' 'institutions'], score: 0.736884355545044
+Words: ['proselytize' 'religion'], score: 0.783041849732399
+Words: ['plagiarize' 'writing'], score: 0.8004935830831528
+Words: ['pacify' 'aggression'], score: 0.8895797207951546
+Words: ['indemnify' 'damages'], score: 0.9873379552736878
+Best answer found: indoctrinate,institutions
+Correct answer: ['proselytize', 'religion']
+Incorrect :-(
+------------
+Question: ['loathsome', 'contempt']
+Sorted distances:
+Words: ['unwitting' 'awareness'], score: 0.7732345014810562
+Words: ['omniscient' 'understanding'], score: 0.7959413081407547
+Words: ['impudent' 'regret'], score: 0.8905482515692711
+Words: ['meritorious' 'esteem'], score: 0.9026698619127274
+Words: ['strident' 'loneliness'], score: 0.9670702144503593
+Best answer found: unwitting,awareness
+Correct answer: ['meritorious', 'esteem']
+Incorrect :-(
+------------
+Question: ['neophyte', 'experienced']
+Sorted distances:
+Words: ['pugilist' 'stubborn'], score: 0.8252219408750534
+Words: ['invalid' 'healthy'], score: 0.9251998588442802
+Words: ['scholar' 'erudite'], score: 0.955343134701252
+Words: ['defendant' 'guilty'], score: 0.9731963314116001
+Words: ['sentinel' 'guarded'], score: 0.9760872852057219
+Best answer found: pugilist,stubborn
+Correct answer: ['invalid', 'healthy']
+Incorrect :-(
+------------
+Question: ['hostile', 'bellicose']
+Sorted distances:
+Words: ['morose' 'slothful'], score: 0.9240522682666779
+Words: ['stubborn' 'obdurate'], score: 0.9449584446847439
+Words: ['indifferent' 'averse'], score: 0.9580438435077667
+Words: ['angry' 'passive'], score: 1.0269365925341845
+Words: ['unequivocal' 'skeptical'], score: 1.0763449519872665
+Best answer found: morose,slothful
+Correct answer: ['stubborn', 'obdurate']
+Incorrect :-(
+------------
+Question: ['bus', 'passengers']
+Sorted distances:
+Words: ['car' 'tires'], score: 0.8343290686607361
+Words: ['freighter' 'cargo'], score: 0.9254135563969612
+Words: ['plane' 'pilot'], score: 0.9407444037497044
+Words: ['yacht' 'owner'], score: 1.0205570962280035
+Words: ['train' 'caboose'], score: 1.0262034200131893
+Best answer found: car,tires
+Correct answer: ['freighter', 'cargo']
+Incorrect :-(
+------------
+Question: ['glaze', 'pottery']
+Sorted distances:
+Words: ['scuff' 'furniture'], score: 0.6828155815601349
+Words: ['chortle' 'laugh'], score: 0.8301907628774643
+Words: ['ice' 'cake'], score: 0.9551999866962433
+Words: ['injure' 'gun'], score: 0.9576853550970554
+Words: ['donate' 'tree'], score: 1.0288517698645592
+Best answer found: scuff,furniture
+Correct answer: ['ice', 'cake']
+Incorrect :-(
+------------
+Question: ['burnish', 'metal']
+Sorted distances:
+Words: ['tarnish' 'silver'], score: 0.5063114762306213
+Words: ['polish' 'wax'], score: 0.6829375624656677
+Words: ['deliver' 'box'], score: 0.81498883664608
+Words: ['cut' 'scissors'], score: 0.8186652064323425
+Words: ['sand' 'wood'], score: 0.8817491605877876
+Best answer found: tarnish,silver
+Correct answer: ['sand', 'wood']
+Incorrect :-(
+------------
+Question: ['promontory', 'view']
+Sorted distances:
+Words: ['waterfall' 'revelation'], score: 0.7100182175636292
+Words: ['memorial' 'architecture'], score: 0.9349316135048866
+Words: ['haven' 'refuge'], score: 0.9516459852457047
+Words: ['church' 'diversity'], score: 0.9632134176790714
+Words: ['prison' 'interrogation'], score: 0.977910365909338
+Best answer found: waterfall,revelation
+Correct answer: ['haven', 'refuge']
+Incorrect :-(
+------------
+Question: ['amalgam', 'metals']
+Sorted distances:
+Words: ['fracture' 'bones'], score: 0.9109026491641998
+Words: ['convention' 'speeches'], score: 0.9872181015089154
+Words: ['car' 'payments'], score: 0.9998820693072048
+Words: ['coalition' 'factions'], score: 1.0191350542008877
+Words: ['divorce' 'marriages'], score: 1.089916631579399
+Best answer found: fracture,bones
+Correct answer: ['coalition', 'factions']
+Incorrect :-(
+------------
+Question: ['verification', 'confirm']
+Sorted distances:
+Words: ['conciliation' 'appease'], score: 0.8455357551574707
+Words: ['reiteration' 'say'], score: 0.861752450466156
+Words: ['application' 'file'], score: 0.8924150094389915
+Words: ['obscenity' 'censor'], score: 0.9838892668485641
+Words: ['synopsis' 'avoid'], score: 0.9947667280212045
+Best answer found: conciliation,appease
+Correct answer: ['obscenity', 'censor']
+Incorrect :-(
+------------
+Question: ['mechanical', 'garage']
+Sorted distances:
+Words: ['teller' 'window'], score: 0.8916259482502937
+Words: ['nurse' 'hospital'], score: 0.921997644007206
+Words: ['artist' 'canvas'], score: 1.0189888160675764
+Words: ['teacher' 'information'], score: 1.039804432541132
+Words: ['administrator' 'personnel'], score: 1.0714421421289444
+Best answer found: teller,window
+Correct answer: ['nurse', 'hospital']
+Incorrect :-(
+------------
+Question: ['sap', 'tree']
+Sorted distances:
+Words: ['blood' 'mammal'], score: 0.7421410083770752
+Words: ['lint' 'clothes'], score: 0.8107554912567139
+Words: ['syrup' 'candy'], score: 0.8903894424438477
+Words: ['fertilizer' 'plant'], score: 0.9843505956232548
+Words: ['mold' 'bread'], score: 1.0028620183002204
+Best answer found: blood,mammal
+Correct answer: ['blood', 'mammal']
+Correct!
+------------
+Question: ['repeal', 'law']
+Sorted distances:
+Words: ['amend' 'agreement'], score: 0.7045364677906036
+Words: ['withdraw' 'offer'], score: 0.8059925734996796
+Words: ['renovate' 'house'], score: 0.8173619359731674
+Words: ['demote' 'employee'], score: 0.8676676154136658
+Words: ['reconcile' 'amends'], score: 0.9916333304718137
+Best answer found: amend,agreement
+Correct answer: ['withdraw', 'offer']
+Incorrect :-(
+------------
+Question: ['epilogue', 'play']
+Sorted distances:
+Words: ['afterword' 'book'], score: 0.6435319185256958
+Words: ['aria' 'opera'], score: 0.8506644070148468
+Words: ['trailer' 'movie'], score: 1.0349228233098984
+Words: ['comedy' 'drama'], score: 1.1368902027606964
+Words: ['act' 'scene'], score: 1.1434644907712936
+Best answer found: afterword,book
+Correct answer: ['afterword', 'book']
+Correct!
+------------
+Question: ['treason', 'country']
+Sorted distances:
+Words: ['embezzlement' 'employer'], score: 0.7706740647554398
+Words: ['justice' 'honor'], score: 0.8458003401756287
+Words: ['hospitality' 'generosity'], score: 0.9912879336625338
+Words: ['chagrin' 'mistake'], score: 1.0216023344546556
+Words: ['settlement' 'lawyer'], score: 1.1106198951601982
+Best answer found: embezzlement,employer
+Correct answer: ['embezzlement', 'employer']
+Correct!
+------------
+Question: ['territory', 'delegate']
+Sorted distances:
+Words: ['agent' 'manager'], score: 0.8629436492919922
+Words: ['pitch' 'salesman'], score: 0.9547672159969807
+Words: ['minority' 'majority'], score: 0.990372003056109
+Words: ['lobbyist' 'senator'], score: 0.9942493494600058
+Words: ['whole' 'sample'], score: 1.0144641641527414
+Best answer found: agent,manager
+Correct answer: ['whole', 'sample']
+Incorrect :-(
+------------
+Question: ['inquisitorial', 'curiosity']
+Sorted distances:
+Words: ['pernicious' 'damage'], score: 0.8613077402114868
+Words: ['morose' 'behavior'], score: 0.9500986896455288
+Words: ['ingenuous' 'innocence'], score: 0.9706902075558901
+Words: ['injurious' 'prying'], score: 0.9757807496935129
+Words: ['laconic' 'speech'], score: 1.0476671680808067
+Best answer found: pernicious,damage
+Correct answer: ['ingenuous', 'innocence']
+Incorrect :-(
+------------
+Question: ['vulnerable', 'hurt']
+Sorted distances:
+Words: ['fluid' 'changed'], score: 0.8060034066438675
+Words: ['virtuous' 'bribed'], score: 0.9210116118192673
+Words: ['witty' 'amused'], score: 0.939338743686676
+Words: ['vague' 'truncated'], score: 0.945358082652092
+Words: ['divergent' 'exploited'], score: 1.0560832731425762
+Best answer found: fluid,changed
+Correct answer: ['fluid', 'changed']
+Correct!
+------------
+Question: ['prevarication', 'statement']
+Sorted distances:
+Words: ['conflagration' 'fire'], score: 0.8343178480863571
+Words: ['indifferent' 'interest'], score: 0.8769611045718193
+Words: ['pseudonym' 'name'], score: 0.888453871011734
+Words: ['preamble' 'introduction'], score: 1.0323083400726318
+Words: ['colt' 'horse'], score: 1.0502565056085587
+Best answer found: conflagration,fire
+Correct answer: ['pseudonym', 'name']
+Incorrect :-(
+------------
+Question: ['abbreviation', 'word']
+Sorted distances:
+Words: ['abridge' 'book'], score: 0.8975675478577614
+Words: ['inhibit' 'idea'], score: 0.9284614622592926
+Words: ['invoke' 'deity'], score: 0.95951247215271
+Words: ['laminate' 'layer'], score: 0.9880310455337167
+Words: ['expedite' 'mail'], score: 1.006770761217922
+Best answer found: abridge,book
+Correct answer: ['abridge', 'book']
+Correct!
+------------
+Question: ['patent', 'obvious']
+Sorted distances:
+Words: ['dissonant' 'emotive'], score: 0.9617951884865761
+Words: ['voracious' 'hungry'], score: 1.0144126517698169
+Words: ['ephemeral' 'exorbitant'], score: 1.0402742214500904
+Words: ['curt' 'expansive'], score: 1.0509331040084362
+Words: ['contrite' 'happy'], score: 1.062964104115963
+Best answer found: dissonant,emotive
+Correct answer: ['voracious', 'hungry']
+Incorrect :-(
+------------
+Question: ['mundane', 'novel']
+Sorted distances:
+Words: ['essential' 'imperative'], score: 0.9202411621809006
+Words: ['spontaneous' 'combustive'], score: 0.9230579361319542
+Words: ['sealed' 'hermetic'], score: 1.0243127886205912
+Words: ['rate' 'prevalent'], score: 1.0578494779765606
+Words: ['judicious' 'minimal'], score: 1.0761852115392685
+Best answer found: essential,imperative
+Correct answer: ['rate', 'prevalent']
+Incorrect :-(
+------------
+Question: ['criticize', 'censorious']
+Sorted distances:
+Words: ['explain' 'enigmatic'], score: 0.7249601781368256
+Words: ['concur' 'sycophantic'], score: 0.7673895061016083
+Words: ['discard' 'useless'], score: 0.8990845009684563
+Words: ['tremble' 'jocular'], score: 0.9090952798724174
+Words: ['exude' 'flamboyant'], score: 0.9528947584331036
+Best answer found: explain,enigmatic
+Correct answer: ['concur', 'sycophantic']
+Incorrect :-(
+------------
+Question: ['lame', 'mobility']
+Sorted distances:
+Words: ['lively' 'energy'], score: 0.8135235011577606
+Words: ['hoarse' 'speech'], score: 0.8249609470367432
+Words: ['walk' 'transportation'], score: 0.8709302246570587
+Words: ['hostile' 'enemy'], score: 0.9431079216301441
+Words: ['fractured' 'cast'], score: 1.0815917626023293
+Best answer found: lively,energy
+Correct answer: ['hoarse', 'speech']
+Incorrect :-(
+------------
+Question: ['bankruptcy', 'money']
+Sorted distances:
+Words: ['discrepancy' 'account'], score: 0.9472085572779179
+Words: ['plan' 'organization'], score: 0.952393501996994
+Words: ['empathy' 'feeling'], score: 0.9588991031050682
+Words: ['apathy' 'caring'], score: 0.966929417103529
+Words: ['homely' 'household'], score: 0.988524317741394
+Best answer found: discrepancy,account
+Correct answer: ['apathy', 'caring']
+Incorrect :-(
+------------
+Question: ['asteroid', 'planet']
+Sorted distances:
+Words: ['gravel' 'sand'], score: 0.9413266256451607
+Words: ['mountain' 'hill'], score: 0.9856073278933764
+Words: ['radio' 'television'], score: 0.9957986455410719
+Words: ['quibble' 'objection'], score: 1.0037839426659048
+Words: ['wood' 'splinter'], score: 1.096418023109436
+Best answer found: gravel,sand
+Correct answer: ['quibble', 'objection']
+Incorrect :-(
+------------
+Question: ['embargo', 'trade']
+Sorted distances:
+Words: ['umbrella' 'clouds'], score: 0.8879250809550285
+Words: ['engine' 'automobile'], score: 0.9032156020402908
+Words: ['license' 'fishing'], score: 0.908152163028717
+Words: ['helmet' 'injury'], score: 0.9229847863316536
+Words: ['alarm' 'valuable'], score: 0.9522035494446754
+Best answer found: umbrella,clouds
+Correct answer: ['helmet', 'injury']
+Incorrect :-(
+------------
+Question: ['alteration', 'suit']
+Sorted distances:
+Words: ['revision' 'story'], score: 0.752186119556427
+Words: ['irrigation' 'crop'], score: 0.8825468868017197
+Words: ['detection' 'gun'], score: 0.9034968093037605
+Words: ['cooking' 'apron'], score: 0.9100656509399414
+Words: ['digestion' 'snack'], score: 0.9235832244157791
+Best answer found: revision,story
+Correct answer: ['revision', 'story']
+Correct!
+------------
+Question: ['resolute', 'determination']
+Sorted distances:
+Words: ['skeptical' 'doubt'], score: 0.7551821321249008
+Words: ['wary' 'risks'], score: 0.7819894999265671
+Words: ['pristine' 'grace'], score: 0.8485016822814941
+Words: ['stringent' 'suggestions'], score: 0.9326673895120621
+Words: ['tainted' 'honor'], score: 0.9837386943399906
+Best answer found: skeptical,doubt
+Correct answer: ['skeptical', 'doubt']
+Correct!
+------------
+Question: ['inaudible', 'amplifier']
+Sorted distances:
+Words: ['inadvertent' 'telescope'], score: 0.8063026964664459
+Words: ['heat' 'radiator'], score: 0.8173668086528778
+Words: ['incomprehensible' 'story'], score: 0.9251007661223412
+Words: ['imperceptible' 'microscope'], score: 0.9555216953158379
+Words: ['unknown' 'mystery'], score: 1.064130775630474
+Best answer found: inadvertent,telescope
+Correct answer: ['imperceptible', 'microscope']
+Incorrect :-(
+------------
+Question: ['vacillate', 'indecision']
+Sorted distances:
+Words: ['digress' 'angst'], score: 0.7596247047185898
+Words: ['lament' 'woe'], score: 0.8038341999053955
+Words: ['emulate' 'egotism'], score: 0.8445425629615784
+Words: ['hibernate' 'winter'], score: 0.8733431398868561
+Words: ['extricate' 'entanglements'], score: 0.9800359737128019
+Best answer found: digress,angst
+Correct answer: ['lament', 'woe']
+Incorrect :-(
+------------
+Question: ['pastiche', 'writing']
+Sorted distances:
+Words: ['melody' 'music'], score: 0.7708402574062347
+Words: ['collage' 'art'], score: 0.8239633589982986
+Words: ['bandage' 'medicine'], score: 0.8593029230833054
+Words: ['sequel' 'film'], score: 0.9529326409101486
+Words: ['school' 'philosophy'], score: 1.0988191217184067
+Best answer found: melody,music
+Correct answer: ['collage', 'art']
+Incorrect :-(
+------------
+Question: ['simian', 'ape']
+Sorted distances:
+Words: ['wizened' 'wisdom'], score: 0.8112193793058395
+Words: ['bovine' 'pasture'], score: 0.8653855472803116
+Words: ['feathered' 'vulture'], score: 0.9046018198132515
+Words: ['infantile' 'child'], score: 0.9357798844575882
+Words: ['carnivorous' 'plant'], score: 0.972795233130455
+Best answer found: wizened,wisdom
+Correct answer: ['infantile', 'child']
+Incorrect :-(
+------------
+Question: ['levee', 'flood']
+Sorted distances:
+Words: ['rain' 'deluge'], score: 0.7878898531198502
+Words: ['snow' 'avalanche'], score: 0.8055351972579956
+Words: ['immunization' 'disease'], score: 0.9222923293709755
+Words: ['buttress' 'building'], score: 0.9836348369717598
+Words: ['zenith' 'view'], score: 1.0237903241068125
+Best answer found: rain,deluge
+Correct answer: ['immunization', 'disease']
+Incorrect :-(
+------------
+Question: ['purgation', 'impurities']
+Sorted distances:
+Words: ['disinfection' 'bacteria'], score: 0.8133443892002106
+Words: ['inattention' 'details'], score: 0.8794836029410362
+Words: ['salvation' 'prayers'], score: 0.9600391015410423
+Words: ['sterilization' 'ailments'], score: 0.9614011347293854
+Words: ['catharsis' 'epiphanies'], score: 0.9751535449177027
+Best answer found: disinfection,bacteria
+Correct answer: ['disinfection', 'bacteria']
+Correct!
+------------
+Question: ['philanthropist', 'largesse']
+Sorted distances:
+Words: ['professor' 'knowledge'], score: 0.8331273347139359
+Words: ['opportunist' 'advantage'], score: 0.8577965646982193
+Words: ['acrobat' 'net'], score: 0.9295812696218491
+Words: ['mercenary' 'money'], score: 0.9376142732799053
+Words: ['doctor' 'nurse'], score: 1.0481535866856575
+Best answer found: professor,knowledge
+Correct answer: ['professor', 'knowledge']
+Correct!
+------------
+Question: ['flake', 'snow']
+Sorted distances:
+Words: ['drop' 'rain'], score: 0.6116359233856201
+Words: ['stack' 'hay'], score: 0.8614309728145599
+Words: ['field' 'wheat'], score: 1.0197646655142307
+Words: ['cloud' 'sky'], score: 1.0251229628920555
+Words: ['storm' 'hail'], score: 1.1408568918704987
+Best answer found: drop,rain
+Correct answer: ['drop', 'rain']
+Correct!
+------------
+Question: ['banana', 'peel']
+Sorted distances:
+Words: ['apple' 'core'], score: 0.7229335606098175
+Words: ['corn' 'husk'], score: 0.7693737894296646
+Words: ['egg' 'crack'], score: 0.8516715168952942
+Words: ['carrot' 'uproot'], score: 0.8562494814395905
+Words: ['bread' 'slice'], score: 0.8763743862509727
+Best answer found: apple,core
+Correct answer: ['corn', 'husk']
+Incorrect :-(
+------------
+Question: ['tree', 'forest']
+Sorted distances:
+Words: ['fish' 'sea'], score: 0.8975120335817337
+Words: ['mammal' 'land'], score: 0.9024035036563873
+Words: ['star' 'galaxy'], score: 0.9511056616902351
+Words: ['lake' 'river'], score: 0.9955271081998944
+Words: ['bird' 'sky'], score: 1.0100529361516237
+Best answer found: fish,sea
+Correct answer: ['star', 'galaxy']
+Incorrect :-(
+------------
+Question: ['mare', 'horse']
+Sorted distances:
+Words: ['ewe' 'sheep'], score: 0.6672806441783905
+Words: ['cat' 'dog'], score: 0.8925649076700211
+Words: ['worm' 'snake'], score: 0.9252045154571533
+Words: ['lion' 'tiger'], score: 1.0386888422071934
+Words: ['shark' 'fish'], score: 1.061268676072359
+Best answer found: ewe,sheep
+Correct answer: ['ewe', 'sheep']
+Correct!
+------------
+Question: ['armistice', 'hostilities']
+Sorted distances:
+Words: ['truce' 'belligerents'], score: 0.8664144277572632
+Words: ['artillery' 'tanks'], score: 0.8778640106320381
+Words: ['adjournment' 'proceedings'], score: 0.9340912699699402
+Words: ['reckoning' 'probabilities'], score: 0.9899539742618799
+Words: ['campaign' 'strategies'], score: 1.0276641137897968
+Best answer found: truce,belligerents
+Correct answer: ['adjournment', 'proceedings']
+Incorrect :-(
+------------
+Question: ['floral', 'flowers']
+Sorted distances:
+Words: ['perennial' 'plants'], score: 0.849459633231163
+Words: ['morbid' 'cemeteries'], score: 0.893406592309475
+Words: ['moral' 'stories'], score: 0.9577311128377914
+Words: ['maniacal' 'men'], score: 0.9742663465440273
+Words: ['emotional' 'feelings'], score: 0.9894302608445287
+Best answer found: perennial,plants
+Correct answer: ['emotional', 'feelings']
+Incorrect :-(
+------------
+Question: ['sequester', 'juror']
+Sorted distances:
+Words: ['elect' 'mayor'], score: 0.7703446298837662
+Words: ['quarantine' 'patient'], score: 0.8050851225852966
+Words: ['graduate' 'pupil'], score: 0.8242775797843933
+Words: ['cloister' 'convent'], score: 0.8396897166967392
+Words: ['parole' 'prisoner'], score: 1.0213350411504507
+Best answer found: elect,mayor
+Correct answer: ['quarantine', 'patient']
+Incorrect :-(
+------------
+Question: ['void', 'empty']
+Sorted distances:
+Words: ['intent' 'clear'], score: 0.8718286603689194
+Words: ['glut' 'prosperous'], score: 0.9388327822089195
+Words: ['ration' 'scarce'], score: 0.9567373394966125
+Words: ['system' 'organized'], score: 1.002619738690555
+Words: ['answer' 'questioning'], score: 1.0608155466616154
+Best answer found: intent,clear
+Correct answer: ['system', 'organized']
+Incorrect :-(
+------------
+Question: ['evade', 'straightforward']
+Sorted distances:
+Words: ['assist' 'helpful'], score: 0.673289030790329
+Words: ['flatten' 'smooth'], score: 0.7809781581163406
+Words: ['boast' 'modest'], score: 0.8415174782276154
+Words: ['enliven' 'animated'], score: 0.8524810820817947
+Words: ['leave' 'inviting'], score: 0.8611016571521759
+Best answer found: assist,helpful
+Correct answer: ['boast', 'modest']
+Incorrect :-(
+------------
+Question: ['fickle', 'inconsistency']
+Sorted distances:
+Words: ['placid' 'calmness'], score: 0.721154510974884
+Words: ['innate' 'capability'], score: 0.9186234846711159
+Words: ['worthy' 'heroism'], score: 0.9727627132087946
+Words: ['cloudy' 'warmth'], score: 1.0164357535541058
+Words: ['solid' 'order'], score: 1.0226039197295904
+Best answer found: placid,calmness
+Correct answer: ['placid', 'calmness']
+Correct!
+------------
+Question: ['immature', 'develop']
+Sorted distances:
+Words: ['unready' 'prepare'], score: 0.6368316411972046
+Words: ['superstitious' 'believe'], score: 0.7835647612810135
+Words: ['fortuitous' 'plan'], score: 0.8527868092060089
+Words: ['unfeasible' 'originate'], score: 0.8567863553762436
+Words: ['tempestuous' 'explode'], score: 0.8870933577418327
+Best answer found: unready,prepare
+Correct answer: ['unready', 'prepare']
+Correct!
+------------
+Question: ['indolent', 'sloth']
+Sorted distances:
+Words: ['presumptuous' 'deviation'], score: 0.8683507591485977
+Words: ['miserable' 'tragedy'], score: 0.8744615614414215
+Words: ['fertile' 'fecundity'], score: 0.9896592032164335
+Words: ['destructive' 'progress'], score: 1.0315856002271175
+Words: ['appealing' 'delineation'], score: 1.0339785777032375
+Best answer found: presumptuous,deviation
+Correct answer: ['fertile', 'fecundity']
+Incorrect :-(
+------------
+Question: ['recuperate', 'surgery']
+Sorted distances:
+Words: ['hospitalize' 'patient'], score: 0.8079684227705002
+Words: ['revive' 'faint'], score: 0.8354939967393875
+Words: ['cleanse' 'alcohol'], score: 0.8476466089487076
+Words: ['restore' 'furniture'], score: 0.9107048064470291
+Words: ['cure' 'illness'], score: 0.9880908308550715
+Best answer found: hospitalize,patient
+Correct answer: ['revive', 'faint']
+Incorrect :-(
+------------
+Question: ['sketch', 'artist']
+Sorted distances:
+Words: ['chisel' 'sculptor'], score: 0.6158879697322845
+Words: ['draft' 'writer'], score: 0.7533665895462036
+Words: ['palette' 'painter'], score: 0.7585238665342331
+Words: ['cell' 'prisoner'], score: 0.9570085890591145
+Words: ['secret' 'confidant'], score: 0.9820693749934435
+Best answer found: chisel,sculptor
+Correct answer: ['draft', 'writer']
+Incorrect :-(
+------------
+Question: ['yearn', 'longing']
+Sorted distances:
+Words: ['enjoy' 'pleasure'], score: 0.6582430899143219
+Words: ['beware' 'danger'], score: 0.8075451701879501
+Words: ['suppress' 'rage'], score: 0.8642456978559494
+Words: ['sleep' 'insomnia'], score: 0.9098267927765846
+Words: ['rush' 'patience'], score: 1.0504381097853184
+Best answer found: enjoy,pleasure
+Correct answer: ['enjoy', 'pleasure']
+Correct!
+------------
+Question: ['freight', 'truck']
+Sorted distances:
+Words: ['passengers' 'bus'], score: 0.6588307321071625
+Words: ['goods' 'warehouse'], score: 0.7947136163711548
+Words: ['stevedores' 'ship'], score: 0.8335170447826385
+Words: ['customers' 'store'], score: 0.8663246482610703
+Words: ['engine' 'train'], score: 1.1149868071079254
+Best answer found: passengers,bus
+Correct answer: ['passengers', 'bus']
+Correct!
+------------
+Question: ['chat', 'converse']
+Sorted distances:
+Words: ['study' 'learn'], score: 0.8759577050805092
+Words: ['browse' 'read'], score: 0.9160387292504311
+Words: ['halt' 'traverse'], score: 0.9272775053977966
+Words: ['allege' 'deny'], score: 0.9510668441653252
+Words: ['purchase' 'rent'], score: 1.0847048237919807
+Best answer found: study,learn
+Correct answer: ['browse', 'read']
+Incorrect :-(
+------------
+Question: ['collage', 'images']
+Sorted distances:
+Words: ['medley' 'songs'], score: 0.823371410369873
+Words: ['book' 'volumes'], score: 0.8457148671150208
+Words: ['collection' 'lists'], score: 0.8463736921548843
+Words: ['assembly' 'bills'], score: 0.9347750246524811
+Words: ['survey' 'lands'], score: 0.9840350355952978
+Best answer found: medley,songs
+Correct answer: ['medley', 'songs']
+Correct!
+------------
+Question: ['terrestrial', 'land']
+Sorted distances:
+Words: ['nocturnal' 'day'], score: 0.8095913231372833
+Words: ['aquatic' 'water'], score: 0.8163671344518661
+Words: ['vegetarian' 'plants'], score: 0.9303494691848755
+Words: ['predatory' 'animal'], score: 1.0157364960759878
+Words: ['arid' 'desert'], score: 1.0481412410736084
+Best answer found: nocturnal,day
+Correct answer: ['aquatic', 'water']
+Incorrect :-(
+------------
+Question: ['trial', 'jury']
+Sorted distances:
+Words: ['dispute' 'arbiter'], score: 0.9090213403105736
+Words: ['poll' 'contestant'], score: 0.9192603975534439
+Words: ['conference' 'speaker'], score: 0.9474235363304615
+Words: ['championship' 'spectator'], score: 0.9982965401140973
+Words: ['match' 'competitor'], score: 1.0113760866224766
+Best answer found: dispute,arbiter
+Correct answer: ['dispute', 'arbiter']
+Correct!
+------------
+Question: ['wedding', 'marriage']
+Sorted distances:
+Words: ['coronation' 'reign'], score: 0.7424122095108032
+Words: ['graduation' 'diploma'], score: 0.8130910098552704
+Words: ['decoration' 'bravery'], score: 0.8202652484178543
+Words: ['birthday' 'cake'], score: 0.93590147793293
+Words: ['promotion' 'job'], score: 0.9503476694226265
+Best answer found: coronation,reign
+Correct answer: ['coronation', 'reign']
+Correct!
+------------
+Question: ['salve', 'wound']
+Sorted distances:
+Words: ['mollify' 'anger'], score: 0.8534886837005615
+Words: ['exploit' 'weakness'], score: 0.9449225552380085
+Words: ['emulate' 'achievement'], score: 0.9453075043857098
+Words: ['squander' 'opportunity'], score: 0.9703424498438835
+Words: ['utter' 'apology'], score: 1.0273556746542454
+Best answer found: mollify,anger
+Correct answer: ['mollify', 'anger']
+Correct!
+------------
+Question: ['refugee', 'asylum']
+Sorted distances:
+Words: ['consumer' 'impulse'], score: 0.8866546079516411
+Words: ['director' 'stage'], score: 0.9448328204452991
+Words: ['opportunist' 'advantage'], score: 0.9869163036346436
+Words: ['astronaut' 'capsule'], score: 1.0120155587792397
+Words: ['perfectionist' 'frustration'], score: 1.118003398180008
+Best answer found: consumer,impulse
+Correct answer: ['opportunist', 'advantage']
+Incorrect :-(
+------------
+Question: ['mystify', 'understanding']
+Sorted distances:
+Words: ['nip' 'maturation'], score: 0.78854800760746
+Words: ['rearrange' 'order'], score: 0.8351335376501083
+Words: ['intensify' 'endurance'], score: 0.8859563022851944
+Words: ['insure' 'disaster'], score: 0.9766688458621502
+Words: ['reciprocate' 'interchange'], score: 1.057443156838417
+Best answer found: nip,maturation
+Correct answer: ['nip', 'maturation']
+Correct!
+------------
+Question: ['actor', 'cast']
+Sorted distances:
+Words: ['musician' 'orchestra'], score: 0.6133825778961182
+Words: ['singer' 'song'], score: 0.7222638428211212
+Words: ['lecturer' 'class'], score: 0.7750925272703171
+Words: ['proofreader' 'text'], score: 0.8715692758560181
+Words: ['congregation' 'church'], score: 1.1069412976503372
+Best answer found: musician,orchestra
+Correct answer: ['musician', 'orchestra']
+Correct!
+------------
+Question: ['border', 'country']
+Sorted distances:
+Words: ['shore' 'ocean'], score: 0.918740414083004
+Words: ['horizon' 'sunset'], score: 1.003296128474176
+Words: ['waves' 'sea'], score: 1.108962707221508
+Words: ['water' 'lake'], score: 1.1235755607485771
+Words: ['current' 'river'], score: 1.219822958111763
+Best answer found: shore,ocean
+Correct answer: ['shore', 'ocean']
+Correct!
+------------
+Question: ['catalog', 'shopper']
+Sorted distances:
+Words: ['schedule' 'worker'], score: 0.6681238412857056
+Words: ['menu' 'diner'], score: 0.7351559102535248
+Words: ['bank' 'teller'], score: 0.8169210255146027
+Words: ['contract' 'lawyer'], score: 0.8206563889980316
+Words: ['article' 'author'], score: 0.9305187612771988
+Best answer found: schedule,worker
+Correct answer: ['menu', 'diner']
+Incorrect :-(
+------------
+Question: ['volatile', 'vaporize']
+Sorted distances:
+Words: ['soluble' 'dissolve'], score: 0.8854637965559959
+Words: ['frigid' 'chill'], score: 0.8950871601700783
+Words: ['ponderous' 'lift'], score: 0.9025010764598846
+Words: ['brittle' 'bend'], score: 0.9183542281389236
+Words: ['translucent' 'illuminate'], score: 0.932635672390461
+Best answer found: soluble,dissolve
+Correct answer: ['soluble', 'dissolve']
+Correct!
+------------
+Question: ['buttress', 'support']
+Sorted distances:
+Words: ['encore' 'applause'], score: 0.8252979815006256
+Words: ['thesis' 'evidence'], score: 0.9357249066233635
+Words: ['choreography' 'dance'], score: 0.972458228468895
+Words: ['ornament' 'decoration'], score: 0.9735593348741531
+Words: ['prayer' 'religion'], score: 1.1071929931640625
+Best answer found: encore,applause
+Correct answer: ['ornament', 'decoration']
+Incorrect :-(
+------------
+Question: ['iconoclast', 'orthodoxy']
+Sorted distances:
+Words: ['scientist' 'theory'], score: 0.6930430233478546
+Words: ['soldier' 'combat'], score: 0.7940896600484848
+Words: ['impostor' 'identity'], score: 0.8305085748434067
+Words: ['libertarian' 'tyranny'], score: 0.9104299396276474
+Words: ['conformist' 'expectation'], score: 0.9339142814278603
+Best answer found: scientist,theory
+Correct answer: ['libertarian', 'tyranny']
+Incorrect :-(
+------------
+Question: ['eraser', 'page']
+Sorted distances:
+Words: ['mop' 'floor'], score: 0.8004223108291626
+Words: ['sponge' 'soap'], score: 0.9022641405463219
+Words: ['nail' 'wall'], score: 0.937959723174572
+Words: ['bleach' 'stain'], score: 0.998397474992089
+Words: ['pen' 'ink'], score: 1.0270181261003017
+Best answer found: mop,floor
+Correct answer: ['mop', 'floor']
+Correct!
+------------
+Question: ['goggles', 'eyes']
+Sorted distances:
+Words: ['helmet' 'head'], score: 0.5869216918945312
+Words: ['gloves' 'cold'], score: 0.7618869096040726
+Words: ['earrings' 'ears'], score: 0.7874468117952347
+Words: ['razor' 'hair'], score: 0.9263904243707657
+Words: ['belt' 'waist'], score: 1.0415596924722195
+Best answer found: helmet,head
+Correct answer: ['helmet', 'head']
+Correct!
+------------
+Question: ['portfolio', 'documents']
+Sorted distances:
+Words: ['album' 'photographs'], score: 0.8365257084369659
+Words: ['excavation' 'artifacts'], score: 0.9103123992681503
+Words: ['rhythm' 'drums'], score: 0.9755444061011076
+Words: ['drama' 'acts'], score: 0.9871707614511251
+Words: ['government' 'policies'], score: 0.9949861424975097
+Best answer found: album,photographs
+Correct answer: ['album', 'photographs']
+Correct!
+------------
+Question: ['tentacles', 'octopus']
+Sorted distances:
+Words: ['claws' 'crab'], score: 0.744272768497467
+Words: ['quills' 'porcupine'], score: 0.8212622553110123
+Words: ['petals' 'flower'], score: 0.8533851355314255
+Words: ['tadpoles' 'frog'], score: 0.9432969689369202
+Words: ['algae' 'seaweed'], score: 0.9731196649372578
+Best answer found: claws,crab
+Correct answer: ['claws', 'crab']
+Correct!
+------------
+Question: ['ticket', 'admission']
+Sorted distances:
+Words: ['coupon' 'discount'], score: 0.8441240042448044
+Words: ['receipt' 'payment'], score: 0.9503586739301682
+Words: ['letter' 'salutation'], score: 1.0307636000216007
+Words: ['application' 'interview'], score: 1.0348504483699799
+Words: ['license' 'travel'], score: 1.1537963896989822
+Best answer found: coupon,discount
+Correct answer: ['coupon', 'discount']
+Correct!
+------------
+Question: ['proficiency', 'expert']
+Sorted distances:
+Words: ['passion' 'enthusiast'], score: 0.8284069895744324
+Words: ['recognition' 'winner'], score: 0.870334580540657
+Words: ['appointment' 'official'], score: 0.9240084365010262
+Words: ['medicine' 'doctor'], score: 0.9768319632858038
+Words: ['victory' 'athlete'], score: 0.9939276119694114
+Best answer found: passion,enthusiast
+Correct answer: ['passion', 'enthusiast']
+Correct!
+------------
+Question: ['cosmetics', 'embellish']
+Sorted distances:
+Words: ['painting' 'hang'], score: 0.8382387310266495
+Words: ['dish' 'garnish'], score: 0.8529435694217682
+Words: ['calculation' 'assess'], score: 0.9108878448605537
+Words: ['posture' 'improve'], score: 0.9608616158366203
+Words: ['ornament' 'adorn'], score: 0.9614812508225441
+Best answer found: painting,hang
+Correct answer: ['ornament', 'adorn']
+Incorrect :-(
+------------
+Question: ['carping', 'criticize']
+Sorted distances:
+Words: ['jealous' 'possess'], score: 0.8685928583145142
+Words: ['obliging' 'help'], score: 0.8942545875906944
+Words: ['vain' 'admire'], score: 0.9066295847296715
+Words: ['retiring' 'boast'], score: 0.9574088603258133
+Words: ['wary' 'surprise'], score: 1.0890703275799751
+Best answer found: jealous,possess
+Correct answer: ['obliging', 'help']
+Incorrect :-(
+------------
+Question: ['reclusive', 'companionship']
+Sorted distances:
+Words: ['pitiful' 'compassion'], score: 0.8000612407922745
+Words: ['provocative' 'anger'], score: 0.8871935307979584
+Words: ['frugal' 'extravagance'], score: 0.9278079494833946
+Words: ['organized' 'structure'], score: 0.9723718073219061
+Words: ['moody' 'unhappiness'], score: 0.9809432569891214
+Best answer found: pitiful,compassion
+Correct answer: ['frugal', 'extravagance']
+Incorrect :-(
+------------
+Question: ['tactile', 'touch']
+Sorted distances:
+Words: ['visible' 'sight'], score: 0.8315567076206207
+Words: ['audible' 'volume'], score: 0.8597068786621094
+Words: ['musical' 'hearing'], score: 0.8845399916172028
+Words: ['sensitive' 'feeling'], score: 0.9855099637061357
+Words: ['nasal' 'smell'], score: 0.9926468408666551
+Best answer found: visible,sight
+Correct answer: ['visible', 'sight']
+Correct!
+------------
+Question: ['sort', 'criterion']
+Sorted distances:
+Words: ['train' 'competence'], score: 0.8040440529584885
+Words: ['shuffle' 'order'], score: 0.8156682550907135
+Words: ['divide' 'quantity'], score: 0.9409595094621181
+Words: ['rank' 'value'], score: 1.0031708439346403
+Words: ['poll' 'opinion'], score: 1.0417066253721714
+Best answer found: train,competence
+Correct answer: ['rank', 'value']
+Incorrect :-(
+------------
+Question: ['intransigent', 'compromise']
+Sorted distances:
+Words: ['disorganized' 'chaos'], score: 0.7690249532461166
+Words: ['dogged' 'surrender'], score: 0.9099052995443344
+Words: ['lonesome' 'friendship'], score: 0.9117495864629745
+Words: ['permanent' 'stability'], score: 0.9779842551797628
+Words: ['strenuous' 'exercise'], score: 0.9789403285831213
+Best answer found: disorganized,chaos
+Correct answer: ['dogged', 'surrender']
+Incorrect :-(
+------------
+Question: ['current', 'electricity']
+Sorted distances:
+Words: ['forge' 'metal'], score: 0.9003294259309769
+Words: ['curve' 'circle'], score: 0.9988785139285028
+Words: ['ripple' 'lake'], score: 1.0235861111432314
+Words: ['beam' 'light'], score: 1.0254544988274574
+Words: ['gauge' 'measurement'], score: 1.02672328799963
+Best answer found: forge,metal
+Correct answer: ['beam', 'light']
+Incorrect :-(
+------------
+Question: ['embroidery', 'cloth']
+Sorted distances:
+Words: ['mural' 'wall'], score: 0.7931200265884399
+Words: ['flower' 'vase'], score: 0.8709753602743149
+Words: ['tattoo' 'design'], score: 0.9589743092656136
+Words: ['paint' 'color'], score: 1.129553198814392
+Words: ['bracelet' 'jewelry'], score: 1.1506059914827347
+Best answer found: mural,wall
+Correct answer: ['mural', 'wall']
+Correct!
+------------
+Question: ['waiter', 'diner']
+Sorted distances:
+Words: ['nurse' 'orderly'], score: 0.8748109042644501
+Words: ['captain' 'teammate'], score: 0.9344537854194641
+Words: ['clerk' 'customer'], score: 0.9578686356544495
+Words: ['ballerina' 'dancer'], score: 1.0375834554433823
+Words: ['juror' 'judge'], score: 1.103164792060852
+Best answer found: nurse,orderly
+Correct answer: ['clerk', 'customer']
+Incorrect :-(
+------------
+Question: ['kernel', 'nut']
+Sorted distances:
+Words: ['yolk' 'egg'], score: 0.8640753030776978
+Words: ['grape' 'raisin'], score: 0.9211805611848831
+Words: ['flour' 'bread'], score: 0.9261408224701881
+Words: ['soil' 'seed'], score: 0.9928531534969807
+Words: ['thorn' 'stem'], score: 1.0101570254191756
+Best answer found: yolk,egg
+Correct answer: ['yolk', 'egg']
+Correct!
+------------
+Question: ['nightmare', 'dream']
+Sorted distances:
+Words: ['dread' 'expectation'], score: 0.781827449798584
+Words: ['fear' 'victim'], score: 1.0244318079203367
+Words: ['semaphore' 'signal'], score: 1.026236517354846
+Words: ['frustration' 'confusion'], score: 1.1938414722681046
+Words: ['lure' 'trap'], score: 1.2147486358880997
+Best answer found: dread,expectation
+Correct answer: ['dread', 'expectation']
+Correct!
+------------
+Question: ['cogent', 'persuasiveness']
+Sorted distances:
+Words: ['lucid' 'clarity'], score: 0.7331317663192749
+Words: ['tactful' 'awkwardness'], score: 0.8651888370513916
+Words: ['conceited' 'reputation'], score: 0.8832525163888931
+Words: ['staid' 'manner'], score: 1.02187111787498
+Words: ['pardoned' 'blame'], score: 1.0335588864982128
+Best answer found: lucid,clarity
+Correct answer: ['lucid', 'clarity']
+Correct!
+------------
+Question: ['drought', 'rain']
+Sorted distances:
+Words: ['famine' 'nourishment'], score: 0.7260161638259888
+Words: ['desert' 'sun'], score: 0.795556366443634
+Words: ['hurricane' 'wind'], score: 0.8837568461894989
+Words: ['epidemic' 'disease'], score: 0.9184126853942871
+Words: ['volcano' 'lava'], score: 0.950135562568903
+Best answer found: famine,nourishment
+Correct answer: ['famine', 'nourishment']
+Correct!
+------------
+Question: ['antibiotic', 'infection']
+Sorted distances:
+Words: ['vaccine' 'inoculation'], score: 0.7285889685153961
+Words: ['antidote' 'poisoning'], score: 0.7498077154159546
+Words: ['anesthesia' 'surgery'], score: 0.7718824148178101
+Words: ['thermometer' 'fever'], score: 0.8358384519815445
+Words: ['antiseptic' 'alcohol'], score: 0.9663066081702709
+Best answer found: vaccine,inoculation
+Correct answer: ['antidote', 'poisoning']
+Incorrect :-(
+------------
+Question: ['humidifier', 'moisture']
+Sorted distances:
+Words: ['furnace' 'heat'], score: 0.7405188381671906
+Words: ['tub' 'liquid'], score: 0.7999631613492966
+Words: ['chimney' 'smoke'], score: 0.9214285686612129
+Words: ['candle' 'wax'], score: 0.9450940974056721
+Words: ['iron' 'wrinkle'], score: 1.0704460516571999
+Best answer found: furnace,heat
+Correct answer: ['furnace', 'heat']
+Correct!
+------------
+Question: ['condolence', 'mourner']
+Sorted distances:
+Words: ['congratulation' 'victor'], score: 0.6823232173919678
+Words: ['loan' 'borrower'], score: 0.7987761199474335
+Words: ['rescue' 'knight'], score: 0.8805175572633743
+Words: ['record' 'athlete'], score: 0.8833926990628242
+Words: ['secret' 'stranger'], score: 0.9184230118989944
+Best answer found: congratulation,victor
+Correct answer: ['congratulation', 'victor']
+Correct!
+------------
+Question: ['petal', 'flower']
+Sorted distances:
+Words: ['tooth' 'comb'], score: 0.8723243325948715
+Words: ['tide' 'beach'], score: 0.9008758142590523
+Words: ['oak' 'tree'], score: 0.9523882865905762
+Words: ['sprout' 'seed'], score: 1.0063325269147754
+Words: ['staple' 'paper'], score: 1.086583599448204
+Best answer found: tooth,comb
+Correct answer: ['tooth', 'comb']
+Correct!
+------------
+Question: ['emollient', 'soften']
+Sorted distances:
+Words: ['disinfectant' 'contaminate'], score: 0.741169273853302
+Words: ['concrete' 'harden'], score: 0.7910891175270081
+Words: ['steam' 'evaporate'], score: 0.9316158145666122
+Words: ['oil' 'lubricate'], score: 0.9815666303038597
+Words: ['storm' 'thunder'], score: 0.9999560375654255
+Best answer found: disinfectant,contaminate
+Correct answer: ['oil', 'lubricate']
+Incorrect :-(
+------------
+Question: ['caption', 'cartoon']
+Sorted distances:
+Words: ['subtitle' 'film'], score: 0.7247532606124878
+Words: ['byline' 'newspaper'], score: 0.8269647061824799
+Words: ['laughter' 'comedy'], score: 0.8269744664430618
+Words: ['billboard' 'road'], score: 0.9560108780860901
+Words: ['translation' 'paraphrase'], score: 0.961923860013485
+Best answer found: subtitle,film
+Correct answer: ['subtitle', 'film']
+Correct!
+------------
+Question: ['berate', 'criticize']
+Sorted distances:
+Words: ['goad' 'urge'], score: 0.8552010357379913
+Words: ['betray' 'follow'], score: 0.9103833436965942
+Words: ['evaluate' 'praise'], score: 0.9417183771729469
+Words: ['regret' 'remember'], score: 1.0449387021362782
+Words: ['accuse' 'apologize'], score: 1.103592298924923
+Best answer found: goad,urge
+Correct answer: ['goad', 'urge']
+Correct!
+------------
+Question: ['perceptive', 'discern']
+Sorted distances:
+Words: ['persistent' 'persevere'], score: 0.8746579438447952
+Words: ['authoritarian' 'heed'], score: 0.9029660671949387
+Words: ['restrained' 'rebel'], score: 0.9458273127675056
+Words: ['abandoned' 'neglect'], score: 1.0043833805248141
+Words: ['determined' 'hesitate'], score: 1.1030443534255028
+Best answer found: persistent,persevere
+Correct answer: ['persistent', 'persevere']
+Correct!
+------------
+Question: ['emulate', 'person']
+Sorted distances:
+Words: ['mimic' 'gesture'], score: 0.6797105669975281
+Words: ['cooperate' 'partner'], score: 0.8049834817647934
+Words: ['admire' 'reputation'], score: 0.8212356567382812
+Words: ['obey' 'leader'], score: 0.872764065861702
+Words: ['mock' 'sarcasm'], score: 0.9178104400634766
+Best answer found: mimic,gesture
+Correct answer: ['mimic', 'gesture']
+Correct!
+------------
+Question: ['incumbent', 'office']
+Sorted distances:
+Words: ['secretary' 'desk'], score: 0.7830183804035187
+Words: ['retiree' 'service'], score: 0.8266105651855469
+Words: ['jailer' 'cell'], score: 0.9390905201435089
+Words: ['politician' 'campaign'], score: 0.9441588260233402
+Words: ['tenant' 'dwelling'], score: 1.0447719283401966
+Best answer found: secretary,desk
+Correct answer: ['tenant', 'dwelling']
+Incorrect :-(
+------------
+Question: ['conundrum', 'perplex']
+Sorted distances:
+Words: ['theory' 'refute'], score: 0.7242122888565063
+Words: ['explanation' 'suffice'], score: 0.8510745018720627
+Words: ['blueprint' 'construct'], score: 0.8553217947483063
+Words: ['expedition' 'discover'], score: 0.9033982381224632
+Words: ['entertainment' 'divert'], score: 0.9444584660232067
+Best answer found: theory,refute
+Correct answer: ['entertainment', 'divert']
+Incorrect :-(
+------------
+Question: ['museum', 'exhibit']
+Sorted distances:
+Words: ['library' 'research'], score: 0.7454870343208313
+Words: ['theater' 'performance'], score: 0.7787757813930511
+Words: ['studio' 'painter'], score: 0.9037129133939743
+Words: ['orchestra' 'conductor'], score: 0.9131313413381577
+Words: ['picture' 'frame'], score: 1.0288789626210928
+Best answer found: library,research
+Correct answer: ['theater', 'performance']
+Incorrect :-(
+------------
+Question: ['lens', 'glass']
+Sorted distances:
+Words: ['saw' 'wood'], score: 0.8397875428199768
+Words: ['ink' 'paper'], score: 0.9338638260960579
+Words: ['well' 'water'], score: 0.9447530508041382
+Words: ['fuel' 'fire'], score: 0.9808311723172665
+Words: ['sweater' 'wool'], score: 0.9902119748294353
+Best answer found: saw,wood
+Correct answer: ['sweater', 'wool']
+Incorrect :-(
+------------
+Question: ['arena', 'conflict']
+Sorted distances:
+Words: ['forum' 'discussion'], score: 0.7880812436342239
+Words: ['amphitheater' 'stage'], score: 0.8624099940061569
+Words: ['mirage' 'reality'], score: 0.980163399130106
+Words: ['utopia' 'place'], score: 1.0113714030012488
+Words: ['asylum' 'pursuit'], score: 1.019064636901021
+Best answer found: forum,discussion
+Correct answer: ['forum', 'discussion']
+Correct!
+------------
+Question: ['arable', 'cultivation']
+Sorted distances:
+Words: ['insular' 'discovery'], score: 0.846618041396141
+Words: ['navigable' 'sailing'], score: 0.8917088806629181
+Words: ['healthy' 'medication'], score: 0.944050207734108
+Words: ['exploited' 'protection'], score: 0.9894818160682917
+Words: ['productive' 'surplus'], score: 1.043914645910263
+Best answer found: insular,discovery
+Correct answer: ['navigable', 'sailing']
+Incorrect :-(
+------------
+Question: ['refurbish', 'worn']
+Sorted distances:
+Words: ['repaint' 'glossy'], score: 0.6832690238952637
+Words: ['revive' 'exhausted'], score: 0.737601101398468
+Words: ['replace' 'stolen'], score: 0.8302434980869293
+Words: ['resume' 'interrupted'], score: 0.8689943701028824
+Words: ['reward' 'outstanding'], score: 0.9403225742280483
+Best answer found: repaint,glossy
+Correct answer: ['revive', 'exhausted']
+Incorrect :-(
+------------
+Question: ['defend', 'untenable']
+Sorted distances:
+Words: ['protect' 'dangerous'], score: 0.5973851680755615
+Words: ['modify' 'invariable'], score: 0.8468959033489227
+Words: ['judge' 'punitive'], score: 0.8505766838788986
+Words: ['escape' 'unfettered'], score: 0.9204537570476532
+Words: ['flourish' 'vigorous'], score: 1.0267371404916048
+Best answer found: protect,dangerous
+Correct answer: ['modify', 'invariable']
+Incorrect :-(
+------------
+Question: ['flap', 'wing']
+Sorted distances:
+Words: ['stub' 'toe'], score: 0.8516240268945694
+Words: ['whisper' 'word'], score: 0.9226249903440475
+Words: ['wave' 'hand'], score: 0.9363824874162674
+Words: ['speak' 'sound'], score: 1.0023824204690754
+Words: ['sing' 'bird'], score: 1.0472097843885422
+Best answer found: stub,toe
+Correct answer: ['wave', 'hand']
+Incorrect :-(
+------------
+Question: ['poison', 'toxic']
+Sorted distances:
+Words: ['mixture' 'soluble'], score: 0.7746945917606354
+Words: ['medicine' 'prescribed'], score: 0.8725797086954117
+Words: ['solid' 'liquid'], score: 0.901170402765274
+Words: ['sugar' 'sweet'], score: 1.0163791254162788
+Words: ['milk' 'bottled'], score: 1.0226399581879377
+Best answer found: mixture,soluble
+Correct answer: ['sugar', 'sweet']
+Incorrect :-(
+------------
+Question: ['deduction', 'rational']
+Sorted distances:
+Words: ['maxim' 'hackneyed'], score: 0.8680900037288666
+Words: ['ploy' 'spontaneous'], score: 0.8841031864285469
+Words: ['daydream' 'bored'], score: 0.9901520069688559
+Words: ['hunch' 'intuitive'], score: 0.9974343932699412
+Words: ['hypothesis' 'tested'], score: 1.1141579374670982
+Best answer found: maxim,hackneyed
+Correct answer: ['hunch', 'intuitive']
+Incorrect :-(
+------------
+Question: ['flippancy', 'jollity']
+Sorted distances:
+Words: ['insolence' 'pride'], score: 0.884664811193943
+Words: ['politeness' 'behavior'], score: 0.9593757353723049
+Words: ['recognition' 'achievement'], score: 1.0457996986806393
+Words: ['practice' 'expertise'], score: 1.0752224996685982
+Words: ['camaraderie' 'combativeness'], score: 1.1820174604654312
+Best answer found: insolence,pride
+Correct answer: ['insolence', 'pride']
+Correct!
+------------
+Question: ['incantation', 'words']
+Sorted distances:
+Words: ['divination' 'future'], score: 0.6360355913639069
+Words: ['enchantment' 'happiness'], score: 0.7375915050506592
+Words: ['malediction' 'harm'], score: 0.8157576024532318
+Words: ['talisman' 'object'], score: 0.8527916520833969
+Words: ['oration' 'formality'], score: 1.005777929443866
+Best answer found: divination,future
+Correct answer: ['talisman', 'object']
+Incorrect :-(
+------------
+Question: ['camera', 'photographer']
+Sorted distances:
+Words: ['studio' 'painter'], score: 0.6153851449489594
+Words: ['house' 'architect'], score: 0.7013624310493469
+Words: ['meat' 'butcher'], score: 0.7179359197616577
+Words: ['sink' 'plumber'], score: 0.8002624362707138
+Words: ['drill' 'dentist'], score: 0.8732109814882278
+Best answer found: studio,painter
+Correct answer: ['drill', 'dentist']
+Incorrect :-(
+------------
+Question: ['decibel', 'sound']
+Sorted distances:
+Words: ['calories' 'menu'], score: 0.835512101650238
+Words: ['headphones' 'music'], score: 0.8839746788144112
+Words: ['ingredient' 'food'], score: 1.068608209490776
+Words: ['degree' 'temperature'], score: 1.1154511198401451
+Words: ['ruler' 'length'], score: 1.1308060884475708
+Best answer found: calories,menu
+Correct answer: ['degree', 'temperature']
+Incorrect :-(
+------------
+Question: ['arid', 'dry']
+Sorted distances:
+Words: ['glacial' 'cold'], score: 0.7586087137460709
+Words: ['coastal' 'tidal'], score: 0.9514590874314308
+Words: ['shallow' 'deep'], score: 0.9621019400656223
+Words: ['snowbound' 'polar'], score: 1.065096452832222
+Words: ['damp' 'muddy'], score: 1.1542139798402786
+Best answer found: glacial,cold
+Correct answer: ['glacial', 'cold']
+Correct!
+------------
+Question: ['fission', 'energy']
+Sorted distances:
+Words: ['combustion' 'heat'], score: 0.7460964322090149
+Words: ['reaction' 'response'], score: 0.8456572443246841
+Words: ['nutrient' 'growth'], score: 0.945288211107254
+Words: ['evaporation' 'liquid'], score: 0.9629936330020428
+Words: ['distortion' 'image'], score: 0.9904307732358575
+Best answer found: combustion,heat
+Correct answer: ['combustion', 'heat']
+Correct!
+------------
+Question: ['lobbyist', 'cause']
+Sorted distances:
+Words: ['legislator' 'voter'], score: 0.8115822225809097
+Words: ['advertiser' 'product'], score: 0.843473881483078
+Words: ['defendant' 'verdict'], score: 0.8865379020571709
+Words: ['clergy' 'congregation'], score: 0.900382325053215
+Words: ['consumer' 'goods'], score: 0.9225259572267532
+Best answer found: legislator,voter
+Correct answer: ['advertiser', 'product']
+Incorrect :-(
+------------
+Question: ['journal', 'article']
+Sorted distances:
+Words: ['magazine' 'cover'], score: 0.787547156214714
+Words: ['anthology' 'poem'], score: 0.8775076493620872
+Words: ['dance' 'ballet'], score: 0.9416811279952526
+Words: ['set' 'scenery'], score: 0.9659005999565125
+Words: ['concert' 'orchestra'], score: 1.1148013100028038
+Best answer found: magazine,cover
+Correct answer: ['anthology', 'poem']
+Incorrect :-(
+------------
+Question: ['emissary', 'represent']
+Sorted distances:
+Words: ['guard' 'protect'], score: 0.8226424604654312
+Words: ['president' 'elect'], score: 0.8412092477083206
+Words: ['draftee' 'enroll'], score: 0.8540969789028168
+Words: ['comedian' 'laugh'], score: 0.9106126427650452
+Words: ['novice' 'train'], score: 1.054566539824009
+Best answer found: guard,protect
+Correct answer: ['guard', 'protect']
+Correct!
+------------
+Question: ['potentate', 'power']
+Sorted distances:
+Words: ['virtuoso' 'skill'], score: 0.7744138985872269
+Words: ['colleague' 'camaraderie'], score: 0.8741023689508438
+Words: ['protege' 'sponsorship'], score: 0.934132382273674
+Words: ['maverick' 'group'], score: 0.9384007751941681
+Words: ['broadcaster' 'news'], score: 0.9749376438558102
+Best answer found: virtuoso,skill
+Correct answer: ['virtuoso', 'skill']
+Correct!
+------------
+Question: ['postscript', 'letter']
+Sorted distances:
+Words: ['epilogue' 'play'], score: 0.7220802903175354
+Words: ['preamble' 'document'], score: 0.739765077829361
+Words: ['footnote' 'reference'], score: 0.7742804288864136
+Words: ['signature' 'name'], score: 1.0324717946350574
+Words: ['index' 'page'], score: 1.058397389948368
+Best answer found: epilogue,play
+Correct answer: ['epilogue', 'play']
+Correct!
+------------
+Question: ['impious', 'reverence']
+Sorted distances:
+Words: ['contemptuous' 'scorn'], score: 0.799460843205452
+Words: ['superficial' 'depth'], score: 0.8332474678754807
+Words: ['paranoid' 'persecution'], score: 0.8834217190742493
+Words: ['contrite' 'offense'], score: 0.9689289107918739
+Words: ['profane' 'behavior'], score: 1.0246956590563059
+Best answer found: contemptuous,scorn
+Correct answer: ['superficial', 'depth']
+Incorrect :-(
+------------
+Question: ['disingenuous', 'craftiness']
+Sorted distances:
+Words: ['ecstatic' 'contentment'], score: 0.820719763636589
+Words: ['narcissistic' 'appearance'], score: 0.8893595114350319
+Words: ['surreptitious' 'stealth'], score: 0.9043466374278069
+Words: ['idolatrous' 'doubt'], score: 0.9567298740148544
+Words: ['penitent' 'wrongdoing'], score: 1.0411849357187748
+Best answer found: ecstatic,contentment
+Correct answer: ['surreptitious', 'stealth']
+Incorrect :-(
+------------
+Question: ['exculpate', 'blame']
+Sorted distances:
+Words: ['extricate' 'difficulty'], score: 0.7935457527637482
+Words: ['expedite' 'process'], score: 0.8156452178955078
+Words: ['bewilder' 'confusion'], score: 0.9243319481611252
+Words: ['exemplify' 'illustration'], score: 0.979765010997653
+Words: ['divulge' 'secret'], score: 1.0186610482633114
+Best answer found: extricate,difficulty
+Correct answer: ['extricate', 'difficulty']
+Correct!
+------------
+Question: ['bruise', 'skin']
+Sorted distances:
+Words: ['stain' 'fabric'], score: 0.8211912363767624
+Words: ['rash' 'allergy'], score: 0.8927199393510818
+Words: ['layer' 'veneer'], score: 0.8996152952313423
+Words: ['smudge' 'blemish'], score: 1.0332191102206707
+Words: ['muscle' 'bone'], score: 1.0621923431754112
+Best answer found: stain,fabric
+Correct answer: ['stain', 'fabric']
+Correct!
+------------
+Question: ['carpenter', 'woodwork']
+Sorted distances:
+Words: ['weaver' 'cloth'], score: 0.7829990833997726
+Words: ['cook' 'heat'], score: 0.7903926968574524
+Words: ['sculptor' 'studio'], score: 0.8052306920289993
+Words: ['potter' 'shape'], score: 0.8388574719429016
+Words: ['guitarist' 'pick'], score: 0.8715957552194595
+Best answer found: weaver,cloth
+Correct answer: ['weaver', 'cloth']
+Correct!
+------------
+Question: ['walk', 'scurry']
+Sorted distances:
+Words: ['jog' 'sprint'], score: 0.888382077217102
+Words: ['march' 'follow'], score: 0.9198282957077026
+Words: ['carouse' 'revel'], score: 1.048693921416998
+Words: ['impress' 'notice'], score: 1.092821642756462
+Words: ['nap' 'sleep'], score: 1.0988544672727585
+Best answer found: jog,sprint
+Correct answer: ['jog', 'sprint']
+Correct!
+------------
+Question: ['regale', 'entertain']
+Sorted distances:
+Words: ['extol' 'praise'], score: 0.8923873230814934
+Words: ['tempt' 'repel'], score: 0.8930233865976334
+Words: ['hide' 'secrete'], score: 1.074085384607315
+Words: ['beautify' 'refresh'], score: 1.0918951854109764
+Words: ['educate' 'learn'], score: 1.169376164674759
+Best answer found: extol,praise
+Correct answer: ['extol', 'praise']
+Correct!
+------------
+Question: ['recycle', 'waste']
+Sorted distances:
+Words: ['reclaim' 'land'], score: 0.8135407269001007
+Words: ['recall' 'product'], score: 0.8266833871603012
+Words: ['restate' 'emphasis'], score: 0.8299426585435867
+Words: ['irrigate' 'earth'], score: 0.8988682106137276
+Words: ['salvage' 'rescuer'], score: 0.9384205974638462
+Best answer found: reclaim,land
+Correct answer: ['reclaim', 'land']
+Correct!
+------------
+Question: ['florid', 'prose']
+Sorted distances:
+Words: ['ornate' 'building'], score: 0.7246526479721069
+Words: ['colorful' 'cliche'], score: 0.8407290130853653
+Words: ['melodious' 'music'], score: 0.8932500332593918
+Words: ['tragic' 'play'], score: 0.9162522256374359
+Words: ['detailed' 'sketch'], score: 0.9465036503970623
+Best answer found: ornate,building
+Correct answer: ['ornate', 'building']
+Correct!
+------------
+Question: ['story', 'building']
+Sorted distances:
+Words: ['root' 'plant'], score: 0.9151663705706596
+Words: ['crust' 'sandwich'], score: 0.9316167160868645
+Words: ['data' 'file'], score: 0.995409675873816
+Words: ['shingle' 'roof'], score: 1.0142109403386712
+Words: ['layer' 'cake'], score: 1.0421218387782574
+Best answer found: root,plant
+Correct answer: ['layer', 'cake']
+Incorrect :-(
+------------
+Question: ['sprout', 'seed']
+Sorted distances:
+Words: ['pollinate' 'bee'], score: 0.9362364411354065
+Words: ['hatch' 'egg'], score: 0.9477056264877319
+Words: ['cure' 'disease'], score: 0.9665809348225594
+Words: ['stimulate' 'growth'], score: 0.9874889114871621
+Words: ['filter' 'impurity'], score: 0.9990066323662177
+Best answer found: pollinate,bee
+Correct answer: ['hatch', 'egg']
+Incorrect :-(
+------------
+Question: ['doormat', 'shoes']
+Sorted distances:
+Words: ['napkin' 'mouth'], score: 0.8997704014182091
+Words: ['fork' 'plate'], score: 0.9225667044520378
+Words: ['curtain' 'window'], score: 0.9550051391124725
+Words: ['lace' 'boot'], score: 1.0108940191566944
+Words: ['placemat' 'table'], score: 1.0468633137643337
+Best answer found: napkin,mouth
+Correct answer: ['napkin', 'mouth']
+Correct!
+------------
+Question: ['atlas', 'maps']
+Sorted distances:
+Words: ['tome' 'books'], score: 0.7559339553117752
+Words: ['manual' 'instructions'], score: 0.860480472445488
+Words: ['dictionary' 'writers'], score: 0.8807936534285545
+Words: ['directory' 'pages'], score: 0.9161514490842819
+Words: ['almanac' 'years'], score: 0.9189816862344742
+Best answer found: tome,books
+Correct answer: ['manual', 'instructions']
+Incorrect :-(
+------------
+Question: ['dodo', 'bird']
+Sorted distances:
+Words: ['dinosaur' 'reptile'], score: 0.6966445744037628
+Words: ['venom' 'snake'], score: 0.9136747419834137
+Words: ['dog' 'puppy'], score: 1.0345280282199383
+Words: ['rooster' 'hen'], score: 1.0368912257254124
+Words: ['horse' 'mule'], score: 1.1024097949266434
+Best answer found: dinosaur,reptile
+Correct answer: ['dinosaur', 'reptile']
+Correct!
+------------
+Question: ['procrastinate', 'action']
+Sorted distances:
+Words: ['postpone' 'event'], score: 0.6885709166526794
+Words: ['embezzle' 'fraud'], score: 0.8444656282663345
+Words: ['reverse' 'direction'], score: 0.9214324429631233
+Words: ['assign' 'choice'], score: 0.9282520189881325
+Words: ['endure' 'patience'], score: 1.0296608489006758
+Best answer found: postpone,event
+Correct answer: ['postpone', 'event']
+Correct!
+------------
+Question: ['lummox', 'clumsy']
+Sorted distances:
+Words: ['maxim' 'hackneyed'], score: 0.6974823474884033
+Words: ['egotist' 'conceited'], score: 0.781206026673317
+Words: ['rascal' 'predictable'], score: 0.7976829707622528
+Words: ['toady' 'important'], score: 0.8558876216411591
+Words: ['boon' 'beneficial'], score: 0.9211107194423676
+Best answer found: maxim,hackneyed
+Correct answer: ['egotist', 'conceited']
+Incorrect :-(
+------------
+Question: ['siren', 'warning']
+Sorted distances:
+Words: ['barrier' 'intrusion'], score: 0.9392648972570896
+Words: ['shovel' 'dirt'], score: 0.9517807327210903
+Words: ['signal' 'reception'], score: 1.0358969494700432
+Words: ['light' 'illumination'], score: 1.0737194865942001
+Words: ['alarm' 'clock'], score: 1.0856682732701302
+Best answer found: barrier,intrusion
+Correct answer: ['light', 'illumination']
+Incorrect :-(
+------------
+Question: ['preamble', 'statute']
+Sorted distances:
+Words: ['foreword' 'novel'], score: 0.8113986700773239
+Words: ['interlude' 'musical'], score: 0.876772940158844
+Words: ['conclusion' 'argument'], score: 0.9139550924301147
+Words: ['epilogue' 'address'], score: 0.9240539744496346
+Words: ['premiere' 'performance'], score: 0.9549984484910965
+Best answer found: foreword,novel
+Correct answer: ['foreword', 'novel']
+Correct!
+------------
+Question: ['hedonistic', 'pleasure']
+Sorted distances:
+Words: ['promising' 'achievement'], score: 0.772079586982727
+Words: ['precocious' 'youth'], score: 0.8752597868442535
+Words: ['concerned' 'empathy'], score: 0.9099860340356827
+Words: ['cruel' 'mercy'], score: 0.9215946942567825
+Words: ['vindictive' 'vengeance'], score: 0.9829062260687351
+Best answer found: promising,achievement
+Correct answer: ['vindictive', 'vengeance']
+Incorrect :-(
+------------
+Question: ['topic', 'discourse']
+Sorted distances:
+Words: ['subject' 'digression'], score: 0.7851476222276688
+Words: ['theme' 'essay'], score: 0.7902792394161224
+Words: ['guideline' 'policy'], score: 0.8672192990779877
+Words: ['title' 'play'], score: 0.9346757382154465
+Words: ['footnote' 'text'], score: 0.9558137618005276
+Best answer found: subject,digression
+Correct answer: ['theme', 'essay']
+Incorrect :-(
+------------
+Question: ['contemporaries', 'age']
+Sorted distances:
+Words: ['idols' 'worship'], score: 0.7942497134208679
+Words: ['faculty' 'scholarship'], score: 0.8997242078185081
+Words: ['housemates' 'residence'], score: 0.9164703860878944
+Words: ['kin' 'reunion'], score: 0.9686421230435371
+Words: ['authors' 'anthology'], score: 1.0076864827424288
+Best answer found: idols,worship
+Correct answer: ['housemates', 'residence']
+Incorrect :-(
+------------
+Question: ['querulous', 'complain']
+Sorted distances:
+Words: ['silent' 'talk'], score: 0.7515168637037277
+Words: ['deceitful' 'cheat'], score: 0.8009365648031235
+Words: ['humorous' 'laugh'], score: 0.8032098412513733
+Words: ['gracious' 'accept'], score: 0.8606915920972824
+Words: ['dangerous' 'risk'], score: 0.965366568416357
+Best answer found: silent,talk
+Correct answer: ['deceitful', 'cheat']
+Incorrect :-(
+------------
+Question: ['seed', 'plant']
+Sorted distances:
+Words: ['egg' 'bird'], score: 0.8571983277797699
+Words: ['root' 'soil'], score: 0.9295839816331863
+Words: ['drop' 'water'], score: 0.9433704614639282
+Words: ['bark' 'tree'], score: 0.9436537101864815
+Words: ['pouch' 'kangaroo'], score: 0.9938013507053256
+Best answer found: egg,bird
+Correct answer: ['egg', 'bird']
+Correct!
+------------
+Question: ['sandal', 'footwear']
+Sorted distances:
+Words: ['child' 'parent'], score: 0.963061548769474
+Words: ['monarch' 'castle'], score: 0.9895254373550415
+Words: ['wax' 'candle'], score: 1.037549801170826
+Words: ['watch' 'timepiece'], score: 1.0538310818374157
+Words: ['volume' 'bookcase'], score: 1.1312146037817001
+Best answer found: child,parent
+Correct answer: ['watch', 'timepiece']
+Incorrect :-(
+------------
+Question: ['rent', 'property']
+Sorted distances:
+Words: ['pay' 'debtor'], score: 0.8106928616762161
+Words: ['hire' 'employee'], score: 0.8271958976984024
+Words: ['purchase' 'buyer'], score: 0.8377981781959534
+Words: ['sue' 'lawyer'], score: 0.9191391691565514
+Words: ['pose' 'painter'], score: 0.9704076591879129
+Best answer found: pay,debtor
+Correct answer: ['hire', 'employee']
+Incorrect :-(
+------------
+Question: ['virtuoso', 'music']
+Sorted distances:
+Words: ['portrait' 'photography'], score: 0.7851791381835938
+Words: ['bard' 'poetry'], score: 0.879044882953167
+Words: ['crescendo' 'scale'], score: 0.9518990628421307
+Words: ['lyricist' 'melody'], score: 0.9598035775125027
+Words: ['critic' 'performance'], score: 1.0391257777810097
+Best answer found: portrait,photography
+Correct answer: ['bard', 'poetry']
+Incorrect :-(
+Total accuracy: 158/365 == 0.4328767123287671

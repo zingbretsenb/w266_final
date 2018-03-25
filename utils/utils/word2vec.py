@@ -10,7 +10,12 @@ import numpy as np
 def get_euclidean_dist(a, b):
     return math.sqrt(np.square(a - b).sum())
 
-
+def get_cos_dist(a, b):
+    top = np.inner(a,b)
+    bottom = np.dot(np.linalg.norm(a), np.linalg.norm(b))
+    result = np.divide(top, bottom)
+    return (1.0 - result)
+    
 class Model:
     def __init__(self, model, dist_metric, d=50):
         """Logic for storing vectors and scoring analogies"""
@@ -25,6 +30,7 @@ class Model:
             except:
                 print('word2vec vectors available here:')
                 print('https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit')
+        
         elif model == 'glove':
             self.d = str(d)
             data_file = data.GLOVE_WORD2VEC_FILE.format(self.d)
@@ -38,7 +44,8 @@ class Model:
 
         if self.dist_metric == 'euclidean':
             self.get_dist = get_euclidean_dist
-
+        elif self.dist_metric == 'cosine':
+            self.get_dist = get_cos_dist
 
     def get_word2vec_embedding(self, word):
         return self.vectors.word_vec(word)
