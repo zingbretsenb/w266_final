@@ -4,6 +4,7 @@ import gensim
 from . import data
 import math
 import numpy as np
+from collections import defaultdict
 
 
 
@@ -15,25 +16,33 @@ def get_cos_dist(a, b):
     bottom = np.dot(np.linalg.norm(a), np.linalg.norm(b))
     result = np.divide(top, bottom)
     return (1.0 - result)
-    
+
 class Model:
-    def __init__(self, model, dist_metric, d=50):
+    def __init__(self, model, dist_metric, data_dir=None, d=50, fname=None, binary=None):
         """Logic for storing vectors and scoring analogies"""
         self.model = model.lower()
         self.dist_metric = dist_metric.lower()
+        self.source_correct = defaultdict(lambda: 0)
+        self.pos_correct = defaultdict(lambda: 0)
+        self.source_total = defaultdict(lambda: 0)
+        self.pos_total = defaultdict(lambda: 0)
+        if data_dir is not None:
+            self.finder = data.FileFinder(data_dir)
+        else:
+            self.finder = data.FileFinder()
 
         if model == "word2vec":
             try:
-                data_file = data.WORD2VEC_FILE
+                data_file = self.finder.get_file('WORD2VEC_FILE')
                 self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
                                                                              binary=True)
             except:
                 print('word2vec vectors available here:')
                 print('https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit')
-        
+
         elif model == 'glove':
             self.d = str(d)
-            data_file = data.GLOVE_WORD2VEC_FILE.format(self.d)
+            data_file = self.finder.get_file('GLOVE_WORD2VEC_FILE').format(self.d)
             print("Loading {}".format(data_file))
             try:
                 self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
@@ -41,6 +50,16 @@ class Model:
             except:
                 print('Could not load {}'.format(data_file))
                 print('Maybe try a different embedding dimension?')
+
+        elif fname is not None and binary is not None:
+            try:
+                data_file = os.path.join(data_dir, fname)
+                self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
+                                                                               binary=binary)
+            except:
+                print('Was not able to load: {}',format(fname))
+                print('Binary was set to: {}',format(binary))
+
 
         if self.dist_metric == 'euclidean':
             self.get_dist = get_euclidean_dist
