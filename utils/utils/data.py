@@ -30,7 +30,7 @@ class FileFinder:
 
 
     def show_filenames(self):
-        for k, v in self.files:
+        for k, v in self.files.items():
             print(k, v)
 
 
