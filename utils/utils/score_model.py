@@ -15,7 +15,8 @@ def score_correct(letter, index):
 
 
 def score_model(m):
-    sat = data.read_sat_data()
+    #sat = data.read_sat_data()
+    sat = data.FileFinder().get_sat_data()
     n_correct = n_total = 0
 
     for question in sat:
