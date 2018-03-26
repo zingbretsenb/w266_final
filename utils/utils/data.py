@@ -20,9 +20,18 @@ class FileFinder:
             'WORD2VEC_FILE': os.path.join(data_dir, "GoogleNews-vectors-negative300.bin"),
             'GLOVE_TXT_FILE': os.path.join(data_dir, "glove.6B.{}d.txt"),
             'GLOVE_WORD2VEC_FILE': os.path.join(data_dir, "glove.6B.{}d.word2vec"),
+            'GLOVE42B_WORD2VEC_FILE': os.path.join(data_dir, "glove.42B.300d.word2vec"),
+            'GLOVE42B_TXT_FILE': os.path.join(data_dir, "glove.42B.300d.txt"),
+            'GLOVE840B_WORD2VEC_FILE': os.path.join(data_dir, "glove.840B.300d.word2vec"),
+            'GLOVE840B_TXT_FILE': os.path.join(data_dir, "glove.840B.300d.txt"),
             'RAW_SAT_DATA_FILE': os.path.join(data_dir, "SAT-package-V3.txt"),
             'JSON_SAT_DATA_FILE': os.path.join(data_dir, "SAT.json")
         }
+
+
+    def show_filenames(self):
+        for k, v in self.files:
+            print(k, v)
 
 
     def get_file(self, fname):
