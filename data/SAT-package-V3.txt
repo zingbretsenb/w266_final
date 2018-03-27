@@ -1904,7 +1904,7 @@ country vote n:v
 b
 
 KS type: 14
-glue fasten  n:v
+glue fasten n:v
 laundry fold n:v
 bleach color n:v
 computer repair n:v
