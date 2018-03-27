@@ -5,6 +5,7 @@ from . import data
 import math
 import numpy as np
 from collections import defaultdict
+import os
 
 
 
@@ -21,11 +22,14 @@ class Model:
     def __init__(self, model, dist_metric, data_dir=None, d=50, fname=None, binary=None):
         """Logic for storing vectors and scoring analogies"""
         self.model = model.lower()
-        self.dist_metric = dist_metric.lower()
+        self.dist_metric = self.set_dist_metric(dist_metric.lower())
         self.source_correct = defaultdict(lambda: 0)
         self.pos_correct = defaultdict(lambda: 0)
         self.source_total = defaultdict(lambda: 0)
         self.pos_total = defaultdict(lambda: 0)
+
+        self.set_dist_metric(dist_metric)
+
         if data_dir is not None:
             self.finder = data.FileFinder(data_dir)
         else:
@@ -53,18 +57,24 @@ class Model:
 
         elif fname is not None and binary is not None:
             try:
-                data_file = os.path.join(data_dir, fname)
+                data_file = os.path.join(self.finder.data_dir, fname)
                 self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
                                                                                binary=binary)
             except:
                 print('Was not able to load: {}',format(fname))
                 print('Binary was set to: {}',format(binary))
 
+        self.data_file = data_file
 
-        if self.dist_metric == 'euclidean':
-            self.get_dist = get_euclidean_dist
-        elif self.dist_metric == 'cosine':
-            self.get_dist = get_cos_dist
+
+    def __str__(self):
+        return self.__repr__()
+
+
+    def __repr__(self):
+        return """Model: {}\nFile: {}\nDistance: {}""".format(
+            self.model, self.data_file, self.dist_metric)
+
 
     def get_word2vec_embedding(self, word):
         return self.vectors.word_vec(word)
@@ -87,6 +97,14 @@ class Model:
 
         dists = [self.get_dist(ques_embed, a) for a in ans_embed]
         return dists
+
+
+    def set_dist_metric(self, metric):
+        self.dist_metric = metric
+        if metric == 'euclidean':
+            self.get_dist = get_euclidean_dist
+        elif metric == 'cosine':
+            self.get_dist = get_cos_dist
 
 
 if __name__ == '__main__':
