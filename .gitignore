@@ -105,6 +105,11 @@ ENV/
 glove*txt
 glove*word2vec
 *zip
+*gz
+*pt
+*vec
+charNgram.txt
+word.txt
 
 # Ignore the virtual environment
 env/
