@@ -15,7 +15,6 @@ def score_correct(letter, index):
 
 
 def score_model(m):
-    #sat = data.read_sat_data()
     sat = data.FileFinder().get_sat_data()
     n_correct = n_total = 0
 
@@ -53,13 +52,13 @@ def score_model(m):
             n_total += 1
         except:
             q = question['question']
-            
+
             print("------------")
             print("Question: {}".format(q))
             for ans in question['answers']:
                 print("Words: {}".format(ans))
             print("Unknown words!")
             n_total += 1
-            
+
     print("Total accuracy: {}/{} == {}".format(n_correct, n_total,
                                                n_correct/n_total))
