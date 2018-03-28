@@ -116,3 +116,6 @@ env/
 
 # Ignore backup files
 *.bak
+
+# Intermediary txt files
+*.txt

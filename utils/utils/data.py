@@ -7,7 +7,6 @@ from os.path import expanduser, join
 from configparser import ConfigParser
 
 home = expanduser("~")
-
 config = ConfigParser()
 config.read_file(open(join(home, ".w266_config"), 'r'))
 data_dir = config.get('w266', 'data_dir')
@@ -41,6 +40,7 @@ class FileFinder:
 
     def get_last_filename(self):
         return self.last_file
+
 
     def get_sat_data(self):
         """Loads sat file as a generator"""
