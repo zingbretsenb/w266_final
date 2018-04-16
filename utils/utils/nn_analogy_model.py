@@ -143,7 +143,7 @@ class nn_analogy_model(object):
             self.logits_ = tf.add(tf.matmul(h_,self.W_out_),self.b_out_) 
 
         with tf.name_scope("Loss"):
-            self.loss_ = tf.reduce_mean(tf.norm(labels_ - self.logits_))
+            self.loss_ = tf.reduce_mean(tf.norm(tf.subtract(labels_, self.logits_),axis=1))
             self.optimizer_ = tf.train.AdamOptimizer(learning_rate = self.learning_rate_)
             gradients_, variables_ = zip(*self.optimizer_.compute_gradients(self.loss_))
             clipped_grads_, _ = tf.clip_by_global_norm(gradients_, self.max_grad_norm_)
@@ -180,6 +180,9 @@ class nn_analogy_model(object):
         
         # Build output layer
         self.output_layer(self.Deep_Layer_, self.labels_)
+
+        # Build decoding layer
+        self.output_ids_ = self.decoder(self.logits_, self.W_embed_)
         
         print("OK", flush=True)
 
@@ -242,6 +245,20 @@ class nn_analogy_model(object):
             print("OK", flush=True)
     
     @with_self_graph
+    def decoder(self, x_, W_embed_, distance_metric="cosine"):
+        with tf.name_scope("Decoder"):
+            if distance_metric == "cosine":
+                W_embed_norm_ = tf.norm(W_embed_, axis=1)
+                x_norm_ = tf.norm(x_, axis=1)
+                mult_norm_ = tf.einsum('i,j->ij', x_norm_,W_embed_norm_)
+                dotprod_ = tf.matmul(x_,tf.transpose(W_embed_))
+                cos_dist_ = tf.divide(dotprod_,mult_norm_)
+                ids_ = tf.argmax(cos_dist_,axis=1)
+            else:
+                ids_ = None
+        return ids_
+
+    @with_self_graph
     def predict(self, input_file, savedir):
         trained_filename = os.path.join(savedir, "trained_model")
         infile = open(input_file, 'r')
@@ -267,5 +284,6 @@ class nn_analogy_model(object):
                          self.a_id_: a,
                          self.b_id_: b,
                          self.c_id_: c}
-            logits = session.run([self.logits_], feed_dict)
-        return logits 
+            logits, ids = session.run([self.logits_, self.output_ids_], feed_dict)
+        results = [self.id_to_word[word_id] for word_id in ids ]
+        return results
