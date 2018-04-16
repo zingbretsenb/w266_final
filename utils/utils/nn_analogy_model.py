@@ -52,9 +52,10 @@ class nn_analogy_model(object):
         """
         # Set TensorFlow graph. All TF code will work on this graph.
         self.graph = graph or tf.Graph()
-        print("Reading embedding file...", end='')
+        self.max_grad_norm_ = 1.0
+        print("Reading embedding file...", end='', flush=True)
         self.readEmbedFile(embed_file)
-        print("OK")
+        print("OK", flush=True)
 
     def readEmbedFile(self, filename):
         embed_file = open(filename, 'r')
@@ -142,13 +143,15 @@ class nn_analogy_model(object):
             self.logits_ = tf.add(tf.matmul(h_,self.W_out_),self.b_out_) 
 
         with tf.name_scope("Loss"):
-            self.loss_ = tf.reduce_mean(tf.square(tf.norm(labels_ - self.logits_)))
-            self.optimizer_ = tf.train.GradientDescentOptimizer(learning_rate = self.learning_rate_)
-            self.train_step_ = self.optimizer_.minimize(self.loss_)
+            self.loss_ = tf.reduce_mean(tf.norm(labels_ - self.logits_))
+            self.optimizer_ = tf.train.AdamOptimizer(learning_rate = self.learning_rate_)
+            gradients_, variables_ = zip(*self.optimizer_.compute_gradients(self.loss_))
+            clipped_grads_, _ = tf.clip_by_global_norm(gradients_, self.max_grad_norm_)
+            self.train_step_ = self.optimizer_.apply_gradients(zip(clipped_grads_,variables_))
     
     @with_self_graph
     def buildModel(self, learning_rate, hidden_dims, use_dropout=True):
-        print("Building model graph...", end='')
+        print("Building model graph...", end='', flush=True)
         with tf.name_scope("Training_Parameters"):
             self.learning_rate_ = tf.constant(learning_rate, name="learning_rate")
             self.is_training_ = tf.placeholder(tf.bool, name="is_training")
@@ -178,11 +181,11 @@ class nn_analogy_model(object):
         # Build output layer
         self.output_layer(self.Deep_Layer_, self.labels_)
         
-        print("OK")
+        print("OK", flush=True)
 
     @with_self_graph    
     def trainModel(self, num_epochs, batch_size, training_file, savedir):
-        print("Training model! Please wait...\n")
+        print("Training model! Please wait...\n", flush=True)
         checkpoint_filename = os.path.join(savedir, "checkpoint")
         trained_filename = os.path.join(savedir, "trained_model")
         train_file = open(training_file, 'r')
@@ -213,7 +216,7 @@ class nn_analogy_model(object):
 
             for epoch in range(1,num_epochs+1):
                 batches = multi_batch_generator(batch_size, train_a, train_b, train_c, train_d)
-                print("[epoch {:d}] Starting epoch {:d}".format(epoch, epoch))
+                print("[epoch {:d}] Starting epoch {:d}".format(epoch, epoch), flush=True)
                 # Run a training epoch.
                 start_time = time.time()
                 total_cost = 0.0
@@ -229,14 +232,14 @@ class nn_analogy_model(object):
                     total_batches = i+1
                 total_time = time.time() - start_time
                 avg_cost = total_cost/total_batches
-                print("[epoch {:d}] Completed in {:.3f}, loss: {:f}".format(epoch, total_time,avg_cost))
+                print("[epoch {:d}] Completed in {:.3f}, loss: {:f}".format(epoch, total_time,avg_cost), flush=True)
     
                 # Save a checkpoint
                 saver.save(session, checkpoint_filename, global_step=epoch)
-            print("\nTraining finished. Persisting model... ", end='')
+            print("\nTraining finished. Persisting model... ", end='', flush=True)
             # Save final model
             saver.save(session, trained_filename)
-            print("OK")
+            print("OK", flush=True)
     
     @with_self_graph
     def predict(self, input_file, savedir):
@@ -253,9 +256,9 @@ class nn_analogy_model(object):
                     b.append(self.word_to_id[words[1]])
                     c.append(self.word_to_id[words[2]])
                 else:
-                    print("Line %d has Out-Of-Vocabulary words, skipping...")
+                    print("Line %d has Out-Of-Vocabulary words, skipping..." % i)
             else:
-                print("Line %d has fewer words than expected, skipping...")
+                print("Line %d has fewer words than expected, skipping..." % i)
         infile.close()
         saver=tf.train.Saver()
         with tf.Session(graph=self.graph) as session:
