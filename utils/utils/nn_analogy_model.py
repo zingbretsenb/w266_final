@@ -2,6 +2,7 @@
 from __future__ import print_function
 from __future__ import division
 
+import time, os, shutil
 import tensorflow as tf
 import numpy as np
 
@@ -51,15 +52,16 @@ class nn_analogy_model(object):
         """
         # Set TensorFlow graph. All TF code will work on this graph.
         self.graph = graph or tf.Graph()
-        print("Reading embedding file...")
+        print("Reading embedding file...", end='')
         self.readEmbedFile(embed_file)
+        print("OK")
 
     def readEmbedFile(self, filename):
         embed_file = open(filename, 'r')
-        for line in embed_file.readlines()
+        for line in embed_file.readlines():
             row = line.strip().split()
-            self.id_to_word[len(vocab)] = row[0]
-            self.word_to_id[row[0]] = len(vocab)
+            self.id_to_word[len(self.vocab)] = row[0]
+            self.word_to_id[row[0]] = len(self.vocab)
             self.vocab.append(row[0])
             self.embed.append(row[1:])
         embed_file.close()
@@ -83,11 +85,11 @@ class nn_analogy_model(object):
             V_size = len(self.vocab)
             embed_dim = len(self.embed[0]) 
             W_embed_ = tf.get_variable("W_embed",shape=[V_size, embed_dim],trainable=False).assign(np.asarray(self.embed))
-         return W_embed_
+        return W_embed_
 
     @with_self_graph
     def fully_connected_layers(self, h0_, hidden_dims, activation=tf.tanh,
-                               dropout_rate=0,is_training):
+                               dropout_rate=0,is_training=False):
         """Construct a stack of fully-connected layers.
         This is almost identical to the implementation from A1, except that we use
         tf.layers.dense for convenience.
@@ -137,22 +139,23 @@ class nn_analogy_model(object):
         with tf.name_scope("Output_Layer"):
             self.W_out_ = tf.get_variable("W_out", shape=[h_.get_shape()[1].value,len(self.embed[0])], initializer=tf.random_normal_initializer())
             self.b_out_ = tf.get_variable("b_out", shape=[len(self.embed[0])], initializer=tf.zeros_initializer())
-            self.logits_ = tf.add(tf.matmul(h_,W_out_),b_out_) 
+            self.logits_ = tf.add(tf.matmul(h_,self.W_out_),self.b_out_) 
 
         with tf.name_scope("Loss"):
-            self.loss_ = tf.reduce_mean(tf.square(tf.norm(labels_ - logits_)))
+            self.loss_ = tf.reduce_mean(tf.square(tf.norm(labels_ - self.logits_)))
             self.optimizer_ = tf.train.GradientDescentOptimizer(learning_rate = self.learning_rate_)
-            self.train_step_ = self.optimizer.minimize(self.loss_)
+            self.train_step_ = self.optimizer_.minimize(self.loss_)
     
     @with_self_graph
     def buildModel(self, learning_rate, hidden_dims, use_dropout=True):
+        print("Building model graph...", end='')
         with tf.name_scope("Training_Parameters"):
             self.learning_rate_ = tf.constant(learning_rate, name="learning_rate")
             self.is_training_ = tf.placeholder(tf.bool, name="is_training")
         if use_dropout:
-            dropout_rate = 0.5
+            self.dropout_rate_ = 0.5
         else:
-            dropout_rate = 0.0   
+            self.dropout_rate_ = 0.0   
 
         self.a_id_ = tf.placeholder(tf.int32, [None], name="A_id")
         self.b_id_ = tf.placeholder(tf.int32, [None], name="B_id")
@@ -175,19 +178,91 @@ class nn_analogy_model(object):
         # Build output layer
         self.output_layer(self.Deep_Layer_, self.labels_)
         
-    def trainModel(session, num_epochs, batch_size, training_file):
+        print("OK")
+
+    @with_self_graph    
+    def trainModel(self, num_epochs, batch_size, training_file, savedir):
+        print("Training model! Please wait...\n")
+        checkpoint_filename = os.path.join(savedir, "checkpoint")
+        trained_filename = os.path.join(savedir, "trained_model")
         train_file = open(training_file, 'r')
         train_a = []
         train_b = []
         train_c = []
         train_d = []
-        for line in train_file.readlines()
-            a, b, c, d = line.strip().split()
-            train_a.append(self.word_to_id[a])
-            train_b.append(self.word_to_id[b])
-            train_c.append(self.word_to_id[c])
-            train_d.append(self.word_to_id[d])
+        for line in train_file.readlines():
+            if line[0] != ":" and len(line.strip().split()) == 4:
+                a, b, c, d = line.strip().split()
+                if a in self.vocab and b in self.vocab and c in self.vocab and d in self.vocab:
+                    train_a.append(self.word_to_id[a])
+                    train_b.append(self.word_to_id[b])
+                    train_c.append(self.word_to_id[c])
+                    train_d.append(self.word_to_id[d])
         train_file.close() 
-        batches = multi_batch_generator(data, train_a, train_b, train_c, train_d)
-        for (a, b, c, d) in batches:
-            print(a, b, c, d)
+        batches = multi_batch_generator(batch_size, train_a, train_b, train_c, train_d)
+        initializer = tf.global_variables_initializer()
+        saver = tf.train.Saver()
+        # Clear old log directory
+        shutil.rmtree(savedir, ignore_errors=True)
+        if not os.path.isdir(savedir):
+            os.makedirs(savedir)
+        with tf.Session(graph=self.graph) as session:
+            tf.set_random_seed(42)
+
+            session.run(initializer)
+
+            for epoch in range(1,num_epochs+1):
+                batches = multi_batch_generator(batch_size, train_a, train_b, train_c, train_d)
+                print("[epoch {:d}] Starting epoch {:d}".format(epoch, epoch))
+                # Run a training epoch.
+                start_time = time.time()
+                total_cost = 0.0
+                total_batches = 0.0
+                for i, (a_id, b_id, c_id, d_id) in enumerate(batches):
+                    feed_dict = {self.is_training_: True,
+                                 self.a_id_: a_id,
+                                 self.b_id_: b_id,
+                                 self.c_id_: c_id,
+                                 self.d_id_: d_id}
+                    cost, train_step = session.run([self.loss_, self.train_step_], feed_dict)
+                    total_cost += cost
+                    total_batches = i+1
+                total_time = time.time() - start_time
+                avg_cost = total_cost/total_batches
+                print("[epoch {:d}] Completed in {:.3f}, loss: {:f}".format(epoch, total_time,avg_cost))
+    
+                # Save a checkpoint
+                saver.save(session, checkpoint_filename, global_step=epoch)
+            print("\nTraining finished. Persisting model... ", end='')
+            # Save final model
+            saver.save(session, trained_filename)
+            print("OK")
+    
+    @with_self_graph
+    def predict(self, input_file, savedir):
+        trained_filename = os.path.join(savedir, "trained_model")
+        infile = open(input_file, 'r')
+        a = []
+        b = []
+        c = []
+        for i, line in enumerate(infile.readlines()):
+            words = line.strip().split()
+            if len(words) >= 3:
+                if words[0] in self.vocab and words[1] in self.vocab and words[2] in self.vocab:
+                    a.append(self.word_to_id[words[0]])
+                    b.append(self.word_to_id[words[1]])
+                    c.append(self.word_to_id[words[2]])
+                else:
+                    print("Line %d has Out-Of-Vocabulary words, skipping...")
+            else:
+                print("Line %d has fewer words than expected, skipping...")
+        infile.close()
+        saver=tf.train.Saver()
+        with tf.Session(graph=self.graph) as session:
+            saver.restore(session, trained_filename)
+            feed_dict = {self.is_training_: False,
+                         self.a_id_: a,
+                         self.b_id_: b,
+                         self.c_id_: c}
+            logits = session.run([self.logits_], feed_dict)
+        return logits 
