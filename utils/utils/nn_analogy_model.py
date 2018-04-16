@@ -5,12 +5,54 @@ from __future__ import division
 import tensorflow as tf
 import numpy as np
 
+def multi_batch_generator(batch_size, *data_arrays):
+    """Generate minibatches from multiple columns of data.
+    Example:
+        for (bx, by) in multi_batch_generator(5, x, y):
+            # bx is minibatch for x
+            # by is minibatch for y
+    Args:
+      batch_size: int, batch size
+      data_arrays: one or more array-like, supporting slicing along the first
+        dimension, and with matching first dimension.
+    Yields:
+      minibatches of maximum size batch_size
+    """
+    assert(data_arrays)
+    num_examples = len(data_arrays[0])
+    for i in range(1, len(data_arrays)):
+        assert(len(data_arrays[i]) == num_examples)
+
+    for i in range(0, num_examples, batch_size):
+        # Yield matching slices from each data array.
+        yield tuple(data[i:i+batch_size] for data in data_arrays)
+
+def with_self_graph(function):
+    def wrapper(self, *args, **kwargs):
+        with self.graph.as_default():
+            return function(self, *args, **kwargs)
+    return wrapper
+
 class nn_analogy_model(object):
     
     id_to_word = {}
     word_to_id = {}
     vocab = []
     embed = []
+
+    def __init__(self, embed_file, graph=None, *args, **kwargs):
+        """Init function.
+        This function just stores hyperparameters. You'll do all the real graph
+        construction in the Build*Graph() functions below.
+        Args:
+          V: vocabulary size
+          H: hidden state dimension
+          num_layers: number of RNN layers (see tf.nn.rnn_cell.MultiRNNCell)
+        """
+        # Set TensorFlow graph. All TF code will work on this graph.
+        self.graph = graph or tf.Graph()
+        print("Reading embedding file...")
+        self.readEmbedFile(embed_file)
 
     def readEmbedFile(self, filename):
         embed_file = open(filename, 'r')
@@ -22,7 +64,8 @@ class nn_analogy_model(object):
             self.embed.append(row[1:])
         embed_file.close()
 
-    def embedding_layer(self, ids_):
+    @with_self_graph
+    def embedding_layer(self):
         """Construct an embedding layer.
         You should define a variable for the embedding matrix, and initialize it
         using tf.random_uniform_initializer to values in [-init_scale, init_scale].
@@ -40,11 +83,11 @@ class nn_analogy_model(object):
             V_size = len(self.vocab)
             embed_dim = len(self.embed[0]) 
             W_embed_ = tf.get_variable("W_embed",shape=[V_size, embed_dim],trainable=False).assign(np.asarray(self.embed))
-            xs_ = tf.nn.embedding_lookup(W_embed_,ids_)
-        return xs_
+         return W_embed_
 
+    @with_self_graph
     def fully_connected_layers(self, h0_, hidden_dims, activation=tf.tanh,
-                               dropout_rate=0, is_training=False):
+                               dropout_rate=0,is_training):
         """Construct a stack of fully-connected layers.
         This is almost identical to the implementation from A1, except that we use
         tf.layers.dense for convenience.
@@ -64,11 +107,12 @@ class nn_analogy_model(object):
             for i, hdim in enumerate(hidden_dims):
                 h_ = tf.layers.dense(h_, hdim, activation=activation, name=("Hidden_%d"%i))
                 if dropout_rate > 0:
-                    h_ = tf.layers.dropout(h_,rate=dropout_rate,training=is_training) # replace with dropout applied to h_
+                    h_ = tf.layers.dropout(h_,rate=dropout_rate,training=is_training)
 
         return h_
 
-    def softmax_output_layer(h_, labels_):
+    @with_self_graph
+    def output_layer(self, h_, labels_):
         """Construct a softmax output layer.
         Implements:
             logits = h W + b
@@ -91,133 +135,59 @@ class nn_analogy_model(object):
             logits_: [batch_size, num_classes] Tensor of float32, the logits (hW + b)
         """
         with tf.name_scope("Output_Layer"):
-            W_out_ = tf.get_variable("W_out", shape=[h_.get_shape()[1].value,len(self.vocab)], initializer=tf.random_normal_initializer())
-            b_out_ = tf.get_variable("b_out", shape=[len(self.vocab)], initializer=tf.zeros_initializer())
-            logits_ = tf.add(tf.matmul(h_,W_out_),b_out_) 
+            self.W_out_ = tf.get_variable("W_out", shape=[h_.get_shape()[1].value,len(self.embed[0])], initializer=tf.random_normal_initializer())
+            self.b_out_ = tf.get_variable("b_out", shape=[len(self.embed[0])], initializer=tf.zeros_initializer())
+            self.logits_ = tf.add(tf.matmul(h_,W_out_),b_out_) 
 
-
-        # If no labels provided, don't try to compute loss.
-        if labels_ is None:
-            return None, logits_
-
-        with tf.name_scope("Softmax"):
-            #### YOUR CODE HERE ####
-            loss_ = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=logits_,labels=labels_))  # replace with mean cross-entropy loss over batch
-
-
-            #### END(YOUR CODE) ####
-
-        return loss_, logits_
-
-def BOW_encoder(ids_, ns_, V, embed_dim, hidden_dims, dropout_rate=0,
-                is_training=None,
-                **unused_kw):
-    """Construct a bag-of-words encoder.
-    You don't need to define any variables directly in this function, but you
-    should:
-        - Build the embeddings (using embedding_layer(...))
-        - Apply the mask to zero-out padding indices, and sum the embeddings
-            for each example
-        - Build a stack of hidden layers (using fully_connected_layers(...))
-    Note that this function returns the final encoding h_ as well as the masked
-    embeddings xs_. The latter is used for L2 regularization, so that we can
-    penalize the norm of only those vectors that were actually used for each
-    example.
-    Args:
-        ids_: [batch_size, max_len] Tensor of int32, integer ids
-        ns_:  [batch_size] Tensor of int32, (clipped) length of each sequence
-        V: (int) vocabulary size
-        embed_dim: (int) embedding dimension
-        hidden_dims: list(int) dimensions of the output of each layer
-        dropout_rate: (float) rate to use for dropout
-        is_training: (bool) if true, is in training mode
-    Returns: (h_, xs_)
-        h_: [batch_size, hidden_dims[-1]] Tensor of float32, the activations of
-            the last layer constructed by this function.
-        xs_: [batch_size, max_len, embed_dim] Tensor of float32, the per-word
-            embeddings as returned by embedding_layer and with the mask applied
-            to zero-out the pad indices.
-    """
-    assert is_training is not None, "is_training must be explicitly set to True or False"
-    # Embedding layer should produce:
-    #   xs_: [batch_size, max_len, embed_dim]
-    with tf.variable_scope("Embedding_Layer"):
-        #### YOUR CODE HERE ####
-        xs_ = embedding_layer(ids_, V, embed_dim, init_scale=0.001)  # replace with a call to embedding_layer
-        #### END(YOUR CODE) ####
-
-    #### YOUR CODE HERE ####
-    # Mask off the padding indices with zeros
-    #   mask_: [batch_size, max_len, 1] with values of 0.0 or 1.0
-    mask_ = tf.expand_dims(tf.sequence_mask(ns_, xs_.shape[1],
-                                            dtype=tf.float32), -1)
-    # Multiply xs_ by the mask to zero-out pad indices.
-    xs_ = xs_ * mask_ 
-
-    # Sum embeddings: [batch_size, max_len, embed_dim] -> [batch_size, embed_dim]
-    h_ = tf.reduce_sum(xs_,axis=1) 
-
-    # Build a stack of fully-connected layers
-    h_ = fully_connected_layers(h_, hidden_dims, dropout_rate=dropout_rate, is_training=is_training) 
-
-    #### END(YOUR CODE) ####
-    return h_, xs_
-
-def classifier_model_fn(features, labels, mode, params):
-    # Seed the RNG for repeatability
-    tf.set_random_seed(params.get('rseed', 10))
-
-    # Check if this graph is going to be used for training.
-    is_training = (mode == tf.estimator.ModeKeys.TRAIN)
-
-    if params['encoder_type'] == 'bow':
-        with tf.variable_scope("Encoder"):
-            h_, xs_ = BOW_encoder(features['ids'], features['ns'],
-                                  is_training=is_training,
-                                  **params)
-    else:
-        raise ValueError("Error: unsupported encoder type "
-                         "'{:s}'".format(params['encoder_type']))
-
-    # Construct softmax layer and loss functions
-    with tf.variable_scope("Output_Layer"):
-        ce_loss_, logits_ = softmax_output_layer(h_, labels, params['num_classes'])
-
-    with tf.name_scope("Prediction"):
-        pred_proba_ = tf.nn.softmax(logits_, name="pred_proba")
-        pred_max_ = tf.argmax(logits_, 1, name="pred_max")
-        predictions_dict = {"proba": pred_proba_, "max": pred_max_}
-
-    if mode == tf.estimator.ModeKeys.PREDICT:
-        # If predict mode, don't bother computing loss.
-        return tf.estimator.EstimatorSpec(mode=mode,
-                                          predictions=predictions_dict)
-
-    # L2 regularization (weight decay) on parameters, from all layers
-    with tf.variable_scope("Regularization"):
-        l2_penalty_ = tf.nn.l2_loss(xs_)  # l2 loss on embeddings
-        for var_ in tf.trainable_variables():
-            if "Embedding_Layer" in var_.name:
-                continue
-            l2_penalty_ += tf.nn.l2_loss(var_)
-        l2_penalty_ *= params['beta']  # scale by regularization strength
-        tf.summary.scalar("l2_penalty", l2_penalty_)
-        regularized_loss_ = ce_loss_ + l2_penalty_
-
-    with tf.variable_scope("Training"):
-        if params['optimizer'] == 'adagrad':
-            optimizer_ = tf.train.AdagradOptimizer(params['lr'])
+        with tf.name_scope("Loss"):
+            self.loss_ = tf.reduce_mean(tf.square(tf.norm(labels_ - logits_)))
+            self.optimizer_ = tf.train.GradientDescentOptimizer(learning_rate = self.learning_rate_)
+            self.train_step_ = self.optimizer.minimize(self.loss_)
+    
+    @with_self_graph
+    def buildModel(self, learning_rate, hidden_dims, use_dropout=True):
+        with tf.name_scope("Training_Parameters"):
+            self.learning_rate_ = tf.constant(learning_rate, name="learning_rate")
+            self.is_training_ = tf.placeholder(tf.bool, name="is_training")
+        if use_dropout:
+            dropout_rate = 0.5
         else:
-            optimizer_ = tf.train.GradientDescentOptimizer(params['lr'])
-        train_op_ = optimizer_.minimize(regularized_loss_,
-                                        global_step=tf.train.get_global_step())
+            dropout_rate = 0.0   
 
-    tf.summary.scalar("cross_entropy_loss", ce_loss_)
-    eval_metrics = {"cross_entropy_loss": tf.metrics.mean(ce_loss_),
-                    "accuracy": tf.metrics.accuracy(labels, pred_max_)}
+        self.a_id_ = tf.placeholder(tf.int32, [None], name="A_id")
+        self.b_id_ = tf.placeholder(tf.int32, [None], name="B_id")
+        self.c_id_ = tf.placeholder(tf.int32, [None], name="C_id")
+        self.d_id_ = tf.placeholder(tf.int32, [None], name = "D_id")
+          
+        # Build embedding layer
+        self.W_embed_ = self.embedding_layer()
+        self.a_ = tf.nn.embedding_lookup(self.W_embed_, self.a_id_)
+        self.b_ = tf.nn.embedding_lookup(self.W_embed_, self.b_id_)
+        self.c_ = tf.nn.embedding_lookup(self.W_embed_, self.c_id_)
+        self.labels_ = tf.nn.embedding_lookup(self.W_embed_, self.d_id_)
 
-    return tf.estimator.EstimatorSpec(mode=mode,
-                                      predictions=predictions_dict,
-                                      loss=regularized_loss_,
-                                      train_op=train_op_,
-                                      eval_metric_ops=eval_metrics)
+        # Build fully-connected layers
+        self.diff_ = self.b_ - self.a_
+        self.input_ = tf.concat([self.diff_, self.c_], axis=1)
+        self.Deep_Layer_  = self.fully_connected_layers(self.input_, hidden_dims, activation=tf.tanh,
+                                                  dropout_rate=self.dropout_rate_, is_training=self.is_training_)
+        
+        # Build output layer
+        self.output_layer(self.Deep_Layer_, self.labels_)
+        
+    def trainModel(session, num_epochs, batch_size, training_file):
+        train_file = open(training_file, 'r')
+        train_a = []
+        train_b = []
+        train_c = []
+        train_d = []
+        for line in train_file.readlines()
+            a, b, c, d = line.strip().split()
+            train_a.append(self.word_to_id[a])
+            train_b.append(self.word_to_id[b])
+            train_c.append(self.word_to_id[c])
+            train_d.append(self.word_to_id[d])
+        train_file.close() 
+        batches = multi_batch_generator(data, train_a, train_b, train_c, train_d)
+        for (a, b, c, d) in batches:
+            print(a, b, c, d)
