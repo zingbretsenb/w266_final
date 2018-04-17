@@ -199,7 +199,7 @@ class nn_analogy_model(object):
         for line in train_file.readlines():
             if line[0] != ":" and len(line.strip().split()) == 4:
                 a, b, c, d = line.strip().split()
-                if a in self.vocab and b in self.vocab and c in self.vocab and d in self.vocab:
+                if a in self.word_to_id and b in self.word_to_id and c in self.word_to_id and d in self.word_to_id:
                     train_a.append(self.word_to_id[a])
                     train_b.append(self.word_to_id[b])
                     train_c.append(self.word_to_id[c])
