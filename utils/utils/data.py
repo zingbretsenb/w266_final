@@ -24,7 +24,11 @@ class FileFinder:
             'GLOVE840B_WORD2VEC_FILE': os.path.join(data_dir, "glove.840B.300d.word2vec"),
             'GLOVE840B_TXT_FILE': os.path.join(data_dir, "glove.840B.300d.txt"),
             'RAW_SAT_DATA_FILE': os.path.join(data_dir, "SAT-package-V3.txt"),
-            'JSON_SAT_DATA_FILE': os.path.join(data_dir, "SAT.json")
+            'JSON_SAT_DATA_FILE': os.path.join(data_dir, "SAT.json"),
+            'BATS_DIR': os.path.join(data_dir, "BATS_3.0"),
+            'EMBED_FILE_FOR_BATS': os.path.join(data_dir, ""),
+            'BATS_FULL_FILE': os.path.join(data_dir, "BATS_full_file.txt"),
+            'CUSTOM_GLOVE': os.path.join(data_dir, "custom_glove_embed.txt")            
         }
 
 

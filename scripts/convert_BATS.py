@@ -1,7 +1,9 @@
 import os
+from utils import data
+from subprocess import call
 
-directory = "/home/fcampos/w266_final/data/BATS_3.0"
-embedding_file = "/home/fcampos/w266_final/data/glove.6B.300d.txt"
+directory = data.FileFinder().get_file('BATS_DIR')
+embedding_file = data.FileFinder().get_file('CUSTOM_GLOVE')
 print("Reading embedding file for vocabulary...",end='',flush=True)
 # Read embedding file for vocabulary
 vocab = []
@@ -11,7 +13,22 @@ for line in embed_file.readlines():
 embed_file.close()
 print("OK",flush=True)
 print("Reading BATS files and merging...",end='',flush=True)
-output_file = open(os.path.join(directory,"full_training_file.txt"),'w')
+output_file = open(data.FileFinder().get_file('BATS_FULL_FILE'),'w')
+# Merge regular and irregular plural files
+file1 = os.path.join(directory,"1_Inflectional_morphology/I02 [noun - plural_irreg].txt")
+file2 = os.path.join(directory,"1_Inflectional_morphology/I01 [noun - plural_reg].txt")
+merged = open(os.path.join(directory,"1_Inflectional_morphology/I01 I02 [noun - plurals].txt"),'w')
+file1r = open(file1,'r')
+file2r = open(file2,'r')
+for line in file1r.readlines():
+    merged.write(line)
+file1r.close()
+for line in file2r.readlines():
+    merged.write(line)
+file2r.close()
+merged.close()
+call(["rm","-f",file1])
+call(["rm","-f",file2])
 folders = [folder for folder in os.listdir(directory) if not os.path.isfile(os.path.join(directory,folder))]
 for folder in folders:
     current_dir = os.path.join(directory,folder)
