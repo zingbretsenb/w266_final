@@ -34,7 +34,7 @@ def with_self_graph(function):
             return function(self, *args, **kwargs)
     return wrapper
 
-class nn_analogy_model(object):
+class nn_analogy_model_v2(object):
     
     id_to_word = {}
     word_to_id = {}
@@ -174,8 +174,7 @@ class nn_analogy_model(object):
         self.labels_ = tf.nn.embedding_lookup(self.W_embed_, self.d_id_)
 
         # Build fully-connected layers
-        self.diff_ = self.b_ - self.a_
-        self.input_ = tf.concat([self.diff_, self.c_], axis=1)
+        self.input_ = tf.concat([self.a_, self.b_, self.c_], axis=1)
         self.Deep_Layer_  = self.fully_connected_layers(self.input_, hidden_dims, activation=tf.tanh,
                                                   dropout_rate=self.dropout_rate_, is_training=self.is_training_)
         
