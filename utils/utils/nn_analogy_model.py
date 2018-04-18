@@ -143,7 +143,7 @@ class nn_analogy_model(object):
             self.logits_ = tf.add(tf.matmul(h_,self.W_out_),self.b_out_) 
 
         with tf.name_scope("Loss"):
-            self.loss_ = tf.reduce_mean(tf.norm(tf.subtract(labels_, self.logits_),axis=1))
+            self.loss_ = tf.reduce_sum(tf.square(tf.norm(tf.subtract(labels_, self.logits_),axis=1)))
             self.optimizer_ = tf.train.AdamOptimizer(learning_rate = self.learning_rate_)
             gradients_, variables_ = zip(*self.optimizer_.compute_gradients(self.loss_))
             clipped_grads_, _ = tf.clip_by_global_norm(gradients_, self.max_grad_norm_)
@@ -182,7 +182,7 @@ class nn_analogy_model(object):
         self.output_layer(self.Deep_Layer_, self.labels_)
 
         # Build decoding layer
-        self.output_ids_ = self.decoder(self.logits_, self.W_embed_)
+        self.output_ids_, self.scores_ = self.decoder(self.logits_, self.W_embed_)
         
         print("OK", flush=True)
 
@@ -245,21 +245,24 @@ class nn_analogy_model(object):
             print("OK", flush=True)
     
     @with_self_graph
-    def decoder(self, x_, W_embed_, distance_metric="cosine"):
+    def decoder(self, x_, W_embed_, distance_metric="euclidean"):
         with tf.name_scope("Decoder"):
             if distance_metric == "cosine":
                 W_embed_norm_ = tf.norm(W_embed_, axis=1)
                 x_norm_ = tf.norm(x_, axis=1)
                 mult_norm_ = tf.einsum('i,j->ij', x_norm_,W_embed_norm_)
                 dotprod_ = tf.matmul(x_,tf.transpose(W_embed_))
-                cos_dist_ = tf.divide(dotprod_,mult_norm_)
-                ids_ = tf.argmax(cos_dist_,axis=1)
+                dist_ = tf.divide(dotprod_,mult_norm_)
+                ids_ = tf.argmin(tf.abs(dist_),axis=1)
+            elif distance_metric == 'euclidean':
+                dist_ = tf.sqrt(tf.reduce_sum(tf.map_fn(lambda x: tf.square(x - W_embed_),x_),axis=2))
+                ids_ = tf.argmin(dist_,axis=1)
             else:
                 ids_ = None
-        return ids_
+        return ids_, dist_
 
     @with_self_graph
-    def predict(self, input_file, savedir):
+    def predict_from_file(self, input_file, savedir, return_scores=False):
         trained_filename = os.path.join(savedir, "trained_model")
         infile = open(input_file, 'r')
         a = []
@@ -268,7 +271,7 @@ class nn_analogy_model(object):
         for i, line in enumerate(infile.readlines()):
             words = line.strip().split()
             if len(words) >= 3:
-                if words[0] in self.vocab and words[1] in self.vocab and words[2] in self.vocab:
+                if words[0] in self.word_to_id and words[1] in self.word_to_id and words[2] in self.word_to_id:
                     a.append(self.word_to_id[words[0]])
                     b.append(self.word_to_id[words[1]])
                     c.append(self.word_to_id[words[2]])
@@ -284,6 +287,37 @@ class nn_analogy_model(object):
                          self.a_id_: a,
                          self.b_id_: b,
                          self.c_id_: c}
-            logits, ids = session.run([self.logits_, self.output_ids_], feed_dict)
-        results = [self.id_to_word[word_id] for word_id in ids ]
-        return results
+            ids, scores = session.run([self.output_ids_, self.scores_], feed_dict)
+        results = [self.id_to_word[word_id] for word_id in ids]
+        if return_scores:
+            return results, scores
+        else:
+            return results
+
+    @with_self_graph
+    def predict(self, questions, savedir, return_scores=False):
+        trained_filename = os.path.join(savedir, "trained_model")
+        a = []
+        b = []
+        c = []
+        oov = []
+        for i, words in enumerate(questions): 
+            if words[0] in self.word_to_id and words[1] in self.word_to_id and words[2] in self.word_to_id:
+                a.append(self.word_to_id[words[0]])
+                b.append(self.word_to_id[words[1]])
+                c.append(self.word_to_id[words[2]])
+            else:
+                oov.append(i)
+        saver=tf.train.Saver()
+        with tf.Session(graph=self.graph) as session:
+            saver.restore(session, trained_filename)
+            feed_dict = {self.is_training_: False,
+                         self.a_id_: a,
+                         self.b_id_: b,
+                         self.c_id_: c}
+            ids, scores = session.run([self.output_ids_, self.scores_], feed_dict)
+        results = [self.id_to_word[word_id] for word_id in ids]
+        if return_scores:
+            return results, oov, scores
+        else:
+            return results, oov
