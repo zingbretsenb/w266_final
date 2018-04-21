@@ -67,12 +67,16 @@ def score_model(m):
     print("Total accuracy: {}/{} == {}".format(n_correct, n_total,
                                                n_correct/n_total))
 
-def score_elmo_model(style="pairs"):
+def score_elmo_model(style="pairs", toplayers=3, chooselayer=None):
     """
     Use all layers from an elmo model for scoring
 
 
     """
+
+    assert toplayers in (1, 2, 3)
+    assert style in ('single', 'pairs', 'dictionary')
+
     ee = ElmoEmbedder()
 
     sat = data.FileFinder().get_sat_data()
@@ -104,6 +108,16 @@ def score_elmo_model(style="pairs"):
 
             # So that the first dimensions in both q and a is layers
             a_layers = a_layers.transpose(1, 0, 2)
+
+            # If we just want one layer
+            if chooselayer in (0, 1, 2):
+                q_layers = q_layers[chooselayer].reshape(1, 1024)
+                a_layers = a_layers[chooselayer].reshape(1, -1, 1024)
+
+            # Take top N layers
+            else:
+                q_layers = q_layers[-toplayers:]
+                a_layers = a_layers[-toplayers:]
 
             dists = []
             for i, (ql, als) in enumerate(zip(q_layers, a_layers)):
