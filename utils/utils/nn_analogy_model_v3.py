@@ -34,7 +34,7 @@ def with_self_graph(function):
             return function(self, *args, **kwargs)
     return wrapper
 
-class nn_analogy_model(object):
+class nn_analogy_model_v3(object):
     
     id_to_word = {}
     word_to_id = {}
@@ -86,7 +86,8 @@ class nn_analogy_model(object):
             V_size = len(self.vocab)
             embed_dim = len(self.embed[0]) 
             W_embed_ = tf.get_variable("W_embed",shape=[V_size, embed_dim],trainable=False).assign(np.asarray(self.embed))
-        return W_embed_
+            W_analogy_embed_ = tf.get_variable("W_analogy_embed",shape=[V_size, embed_dim],trainable=True,initializer=tf.random_uniform_initializer(minval=-1,maxval=1))
+        return W_embed_, W_analogy_embed_
 
     @with_self_graph
     def fully_connected_layers(self, h0_, hidden_dims, activation=tf.tanh,
@@ -167,15 +168,20 @@ class nn_analogy_model(object):
         self.d_id_ = tf.placeholder(tf.int32, [None], name = "D_id")
           
         # Build embedding layer
-        self.W_embed_ = self.embedding_layer()
+        self.W_embed_, self.W_analogy_embed_ = self.embedding_layer()
         self.a_ = tf.nn.embedding_lookup(self.W_embed_, self.a_id_)
         self.b_ = tf.nn.embedding_lookup(self.W_embed_, self.b_id_)
         self.c_ = tf.nn.embedding_lookup(self.W_embed_, self.c_id_)
+        self.a_analogy_ = tf.nn.embedding_lookup(self.W_analogy_embed_, self.a_id_)
+        self.b_analogy_ = tf.nn.embedding_lookup(self.W_analogy_embed_, self.b_id_)
+        self.c_analogy_ = tf.nn.embedding_lookup(self.W_analogy_embed_, self.c_id_)
+        self.a_concat_ = tf.concat([self.a_, self.a_analogy_], axis=1)
+        self.b_concat_ = tf.concat([self.b_, self.b_analogy_], axis=1)
+        self.c_concat_ = tf.concat([self.c_, self.c_analogy_], axis=1)
         self.labels_ = tf.nn.embedding_lookup(self.W_embed_, self.d_id_)
 
         # Build fully-connected layers
-        self.diff_ = self.b_ - self.a_
-        self.input_ = tf.concat([self.diff_, self.c_], axis=1)
+        self.input_ = tf.concat([self.a_concat_, self.b_concat_, self.c_concat_], axis=1)
         self.Deep_Layer_  = self.fully_connected_layers(self.input_, hidden_dims, activation=tf.tanh,
                                                   dropout_rate=self.dropout_rate_, is_training=self.is_training_)
         
