@@ -60,7 +60,8 @@ class Model:
                 data_file = os.path.join(self.finder.data_dir, fname)
                 self.vectors = gensim.models.KeyedVectors.load_word2vec_format(data_file,
                                                                                binary=binary)
-            except:
+            except Exception as e:
+                print(e)
                 print('Was not able to load: {}',format(fname))
                 print('Binary was set to: {}',format(binary))
 
