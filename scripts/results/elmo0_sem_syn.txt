@@ -1,0 +1,36 @@
+reading vector file: /root/w266_final/data/elmo0.txt
+gettings sizes
+normalizing
+evaluating
+capital-common-countries.txt:
+ACCURACY TOP1: 0.20% (1/506)
+capital-world.txt:
+ACCURACY TOP1: 0.40% (18/4524)
+currency.txt:
+ACCURACY TOP1: 0.12% (1/866)
+city-in-state.txt:
+ACCURACY TOP1: 0.08% (2/2467)
+family.txt:
+ACCURACY TOP1: 31.03% (157/506)
+gram1-adjective-to-adverb.txt:
+ACCURACY TOP1: 66.63% (661/992)
+gram2-opposite.txt:
+ACCURACY TOP1: 55.05% (447/812)
+gram3-comparative.txt:
+ACCURACY TOP1: 82.51% (1099/1332)
+gram4-superlative.txt:
+ACCURACY TOP1: 85.92% (964/1122)
+gram5-present-participle.txt:
+ACCURACY TOP1: 63.26% (668/1056)
+gram6-nationality-adjective.txt:
+ACCURACY TOP1: 38.21% (611/1599)
+gram7-past-tense.txt:
+ACCURACY TOP1: 55.45% (865/1560)
+gram8-plural.txt:
+ACCURACY TOP1: 90.02% (1199/1332)
+gram9-plural-verbs.txt:
+ACCURACY TOP1: 95.75% (833/870)
+Questions seen/total: 100.00% (19544/19544)
+Semantic accuracy: 2.02%  (179/8869)
+Syntactic accuracy: 68.82%  (7347/10675)
+Total accuracy: 38.51%  (7526/19544)
