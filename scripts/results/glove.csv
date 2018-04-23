@@ -1,0 +1,19 @@
+embedding,category,accuracy,correct,total
+glove,capital-common-countries,93.87,475,506
+glove,capital-world,88.95,4024,4524
+glove,currency,14.20,123,866
+glove,city-in-state,30.81,760,2467
+glove,family,81.62,413,506
+glove,gram1-adjective-to-adverb,24.40,242,992
+glove,gram2-opposite,20.07,163,812
+glove,gram3-comparative,79.13,1054,1332
+glove,gram4-superlative,54.28,609,1122
+glove,gram5-present-participle,69.51,734,1056
+glove,gram6-nationality-adjective,87.87,1405,1599
+glove,gram7-past-tense,55.45,865,1560
+glove,gram8-plural,72.00,959,1332
+glove,gram9-plural-verbs,58.39,508,870
+glove,Questions seen,total, 100.00,19544/19544
+glove,Semantic accuracy, 65.34 ,5795,8869
+glove,Syntactic accuracy, 61.26 ,6539,10675
+glove,Total accuracy, 63.11 ,12334,19544

@@ -1,0 +1,19 @@
+embedding,category,accuracy,correct,total
+elmo0,capital-common-countries,TOP1,0.20,1,506
+elmo0,capital-world.txt,0.40,18,4524
+elmo0,currency.txt,ACCURACY TOP1,0.12,1,866
+elmo0,city-in-state.txt,ACCURACY TOP1,0.08,2,2467
+elmo0,family.txt,ACCURACY TOP1,31.03,157,506
+elmo0,gram1-adjective-to-adverb.txt,ACCURACY TOP1,66.63,661,992
+elmo0,gram2-opposite.txt,ACCURACY TOP1,55.05,447,812
+elmo0,gram3-comparative.txt,ACCURACY TOP1,82.51,1099,1332
+elmo0,gram4-superlative.txt,ACCURACY TOP1,85.92,964,1122
+elmo0,gram5-present-participle.txt,ACCURACY TOP1,63.26,668,1056
+elmo0,gram6-nationality-adjective.txt,ACCURACY TOP1,38.21,611,1599
+elmo0,gram7-past-tense.txt,ACCURACY TOP1,55.45,865,1560
+elmo0,gram8-plural.txt,ACCURACY TOP1,90.02,1199,1332
+elmo0,gram9-plural-verbs.txt,ACCURACY TOP1,95.75,833,870
+elmo0,Questions seen,total,100.00,19544/19544
+elmo0,Semantic accuracy,2.02,179,8869
+elmo0,Syntactic accuracy,68.82,7347,10675
+elmo0,Total accuracy,38.51,7526,19544
