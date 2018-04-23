@@ -20,6 +20,7 @@
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
+\usepackage{graphicx}
 %\setlength\titlebox{5cm}
 
 
@@ -27,7 +28,6 @@
   Scholastic Aptitude of Neural Networks: \\
   \large Improving the performance of word embeddings on analogy questions
 }
-
 
 \author{Felipe Campos \\\And
   Robert Foster \\\And
@@ -121,21 +121,20 @@ use the word embeddings to capture non-linear relationships in the
 analogies. By modifying the word embedding vectors to introduce
 different representations for individual words via a process such as
 generating CoVe embeddings or ELMo representations, we believe that we
-can rival the performance of a human agent (ELMo CITE \#TODO). ( \#TODO
-MOVE UP McCann, et. al., 2017)
+can rival the performance of a human agent (ELMo CITE \#TODO). ( \#TODO MOVE UP McCann, et. al., 2017)
 
 \subsection{Embedding Evaluation}
 
-As noted by Mikolov et. al., word embeddings can encode relational
-similarities in their vector representations and, when well-trained,
-analogies in the form "\emph{king }is to \emph{man }as \emph{queen} is
-to ..." can be answered with very simple arithmetics. Therefore, in a
-word analogy of form a:b::c:d, where (a,b,c,d) are words, it is expected
-that the vector resulting from the operation d - c would share some
-similarity with the vector resulting from b - a. Therefore, we could answer an analogy question such as a:b::c:?
-by calculating:
+As noted by Mikolov et. al., word embeddings can encode relational similarities
+in their vector representations and, when well-trained, analogies in the form
+"\emph{king }is to \emph{man }as \emph{queen }is to ..." can be answered with
+very simple arithmetics. Therefore, in a word analogy of form a:b::c:d, where
+(a,b,c,d) are words, it is expected that the vector resulting from the operation
+d - c would share some similarity with the vector resulting from b - a.
+Therefore, we could answer an analogy question such as a:b::c:? by calculating:
 
-%% \includegraphics[width=0.07910in,height=0.19530in]{./ObjectReplacements/Object 2}\includegraphics[width=1.78660in,height=0.20000in]{./ObjectReplacements/Object 4},
+%% \includegraphics[width=0.07910in,height=0.19530in]{./ObjectReplacements/Object 2}
+%% \includegraphics[width=1.78660in,height=0.20000in]{./ObjectReplacements/Object 4},
 for every
 %% \includegraphics[width=0.39170in,height=0.19530in]{./ObjectReplacements/Object 6}
 
@@ -394,7 +393,7 @@ similar to the one used in the original paper, which aims to reduce the
 sum of the square of norms for the vector resulting from the subtraction
 of the encoding of target word d and the decoded result as shown below:
 
-%% \includegraphics[width=3.51020in,height=0.42990in]{./ObjectReplacements/Object 8}
+\includegraphics[width=3.0in,height=1.5in]{./model_1.png}
 
 As the original paper did not mention the parameters used for the
 fully-connected layers, we have tried with several different network
@@ -425,6 +424,8 @@ subtraction before could be restricting the model to transformations
 that are visible in a linear space. The diagram for this architecture is
 depicted in figure YY.
 
+\includegraphics[width=3.0in,height=1.5in]{./model_2.png}
+
 Our third model added a secondary, trainable embedding that is
 concatenated with the original, primary embedding through the secondary
 encoding function \emph{h}. This aims to augment the original embeddings
@@ -432,6 +433,8 @@ with data from training on analogies and perhaps make more complex
 analogies clearer on the embedding. The diagram for this architecture is
 depicted in figure ZZ. Unfortunately, both models also failed to produce
 a noteworthy result that was better than random chance.
+
+\includegraphics[width=3.0in,height=1.5in]{./model_3.png}
 
 \section{Conclusion}
 
