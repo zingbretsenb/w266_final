@@ -21,6 +21,7 @@
 \usepackage{url}
 \usepackage{latexsym}
 \usepackage{graphicx}
+\usepackage{longtable}
 %\setlength\titlebox{5cm}
 
 
@@ -188,26 +189,23 @@ different sources) as a baseline using both Euclidean and cosine
 distance measurements. The summary of the baseline models of each are in
 Table 1 below:
 
-%% \begin{longtable}[]{@{}lll@{}}
-%% \toprule
-%% \textbf{Embedding Type} & \textbf{Euclidean Distance Accuracy} &
-%% \textbf{Cosine Distance Accuracy}\tabularnewline
-%% word2vec & 119/373 == 0.3190 & 158/373 == 0.4236\tabularnewline
-%% GloVe.6b 50 dimensions & 119/373 == 0.3190 & 133/373 ==
-%% 0.3566\tabularnewline
-%% GloVe.6b 100 dims & 128/373 == 0.3432 & 139/373 == 0.3727\tabularnewline
-%% GloVe.6b 200 dims & 127/373 == 0.3405 & 152/373 == 0.4075\tabularnewline
-%% GloVe.6b 300 dims & 127/373 == 0.3405 & 155/373 == 0.4155\tabularnewline
-%% GloVe.42B 300 dims & 141/373 == 0.3780 & 166/373 ==
-%% 0.4450\tabularnewline
-%% GloVe.840B 300 dims & 135/373 == 0.3619 & 183/373 ==
-%% 0.4906\tabularnewline
-%% Twitter.42B 200 dims & 81/373 == 0.2172 & 97/373 ==
-%% 0.2601\tabularnewline
-%% \bottomrule
-%% \end{longtable}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|ccc|}
+\hline \bf Embeddings & \bf Dims & \bf Euclidean & \bf Cosine \\ \hline
+	\bf word2vec & 300 & 0.3190 & 0.4236 \\
+	\bf GloVe.6B & 50 & 0.3190 & 0.3566 \\
+	\bf GloVe.6B & 100 & 0.3432 & 0.3727 \\
+	\bf GloVe.6B & 200 & 0.3405 & 0.4075 \\
+	\bf GloVe.6B & 300 & 0.3405 & 0.4155 \\
+	\bf GloVe.42B & 300 & 0.3780 & 0.4450 \\
+	\bf GloVe.840B & 300 & 0.3619 & 0.4906 \\
+	\bf Twitter.42B & 200 & 0.2172 & 0.2601 \\\hline
+\end{tabular}
+\end{center}
 
-%% \textbf{Table 1: Baseline accuracy of embeddings.}
+\caption{\label{font-table} Baseline accuracy of embeddings. }
+\end{table}
 
 %% \begin{longtable}[]{@{}lll@{}}
 %% \toprule
@@ -486,23 +484,6 @@ study and experimentation.
 
 
 
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{|l|rl|}
-\hline \bf Embeddings & Euclidean & \bf Cosine \\ \hline
-	\bf word2vec 300d & 0.3190 & 0.4236 \\
-	\bf GloVe.6b 50d & 0.3190 & 0.3566 \\
-	\bf GloVe.6b 100d & 0.3432 & 0.3727 \\
-	\bf GloVe.6b 200d & 0.3405 & 0.4075 \\
-	\bf GloVe.6b 300d & 0.3405 & 0.4155 \\
-	\bf GloVe.42B 300d & 0.3780 & 0.4450 \\
-	\bf GloVe.840B 300d & 0.3619 & 0.4906 \\
-	\bf Twitter.42B 200d & 0.2172 & 0.2601 \\
-\end{tabular}
-\end{center}
-\caption{\label{font-table} Baseline accuracy of embeddings. }
-\end{table}
 
 \begin{thebibliography}{}
 
