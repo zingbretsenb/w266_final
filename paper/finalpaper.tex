@@ -352,7 +352,7 @@ From Table 5, the single word embeddings taken from the middle layer provide the
 biggest increase in accuracy with a total of 8.3 percentage points over the
 baseline accuracy. We validated this finding against the Google Analogy dataset
 (see Table 6) and found that performance increased compared to the GloVe
-baseline for all question types except for those related to countries/places.
+baseline for most question types except for those related to countries/places.
 This is a significant improvement over the baseline.
 
 \begin{table}[h]
@@ -444,15 +444,14 @@ word embeddings in the vicinity of the correct answer in vector space, which
 indicates that perhaps with some more training epochs to reduce loss the model
 could provide better results.
 
-We also developed two other models, which haven't been as thoroughly
-tested. In our second model attempt, we tried a modified version by
-removing the subtraction between the embeddings of the two given words
-(a:b) and inputting a concatenation of all three known words (a:b :: c:)
-into the neural network to check whether it would behave better or worse
-than the previous model. The rationale was that maybe performing the
-subtraction before could be restricting the model to transformations
-that are visible in a linear space. The diagram for this architecture is
-depicted in figure 2.
+We also developed two other models, which haven't been as thoroughly tested. In
+our second model attempt, we tried a modified version by removing the
+subtraction between the embeddings of the two given words (a:b) and inputting a
+concatenation of all three known words (a:b :: c:) into the neural network to
+check whether it would behave better or worse than the previous model. The
+rationale was that performing the subtraction as done previously could be
+restricting the model to transformations that are visible in a linear space. The
+diagram for this architecture is depicted in figure 2.
 
 \begin{figure}
   \centering
@@ -476,23 +475,23 @@ a noteworthy result that was better than random chance.
 
 \section{Conclusion}
 
-There are a few lessons to be learned. Unsurprisingly, the quality and
-site of the training corpus is important for the performance of word
-embeddings on the analogy task, and using the cosine distance as the
-distance metric was universally more accurate. Given the results of our
-direct comparison of Word2vec and GloVe, we would recommend using GloVe
+There are a few lessons to be learned. Unsurprisingly, the quality and site of
+the training corpus is important for the performance of word embeddings on the
+analogy task, and using the cosine distance as the distance metric was
+universally more accurate than using the Euclidean distance. Given the results
+of our direct comparison of Word2vec and GloVe, we would recommend using GloVe
 as the base for future experimentation over Word2vec for this particular
-application. However, further improvements can be made on top of the
-embeddings alone.
+application. However, further improvements can be made on top of the embeddings
+alone.
 
-Using ELMo to improve the GloVe embeddings proved to be particularly
-promising. The key insight was to use the middle layer of ELMo's deep
-net instead of the top layer. Since the lower layers encode more of the
-syntactic information, using the middle layer improved performance in
-nearly all syntactic questions, and in one semantic type of question.
-The ELMo representations did seem to perform poorly on questions
-relating to places (i.e., countries or states), but otherwise improved
-significantly on the performance of the GloVe 100 dimensional vectors.
+Using ELMo to improve the GloVe embeddings proved to be particularly promising.
+The key insight was to use the middle layer of ELMo's deep net instead of the
+top (final) layer. Since the lower layers encode more of the syntactic
+information, using the middle layer improved performance in nearly all syntactic
+questions, and in one semantic type of question. The ELMo representations did
+seem to perform poorly on questions relating to places (i.e., countries or
+states) and currency, but otherwise improved significantly on the performance of the GloVe
+100 dimensional vectors.
 
 The ELMo model that was trained on the Glove 6B 100D emeddings
 outperformed even the Glove 42B 300D embeddings. Given that particularly
@@ -509,9 +508,6 @@ analogy dataset for training, more training epochs and further tuning of
 the model parameters the neural network model could prove to be a useful
 method for solving analogy problems and thus worth the effort of more
 study and experimentation.
-
-
-
 
 \begin{thebibliography}{}
 
