@@ -326,11 +326,12 @@ information. Each layer of the ELMo encodings can be used as the embedding for
 our problem set. In order to test the effectiveness of ELMo, we tested the
 effectiveness of each layer from the ELMo representation separately, as well as
 the best option across all layers. We also tried training the representations on
-each word individually and in pairs. training tests: on each analogy word and on
-each pair of words.
+each word individually and in pairs. 
 
-The baseline vectors in ELMo are the GloVe6B 100 dimension set with a baseline
-accuracy of 37.27\%. Table 5 contains the accuracy from different stages.
+ELMo uses the GloVe.6B 100D embeddings as a basis for its own vectors, so we
+used the performance of those embeddings as our baseline. As noted in Table 1
+above, those embeddings had an accuracy of 37.27\%. Table 5 contains the
+accuracy of the different ELMo layers and training styles.
 
 \begin{table}[h]
 \begin{center}
