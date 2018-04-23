@@ -42,7 +42,8 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Understanding the relationships between abstract concepts is a valuable skill for both humans and computers. A somewhat surprising property of word embeddings trained by CBOW or skip-gram neural network models is that linear relationships form between words. We are putting word embeddings trained on different corpora to the test. First, we show how the embeddings perform on a standardized set of analogy questions from Turney, et. al. In the future, we will explore methods of improving the performance of a subset of these word embeddings.\end{abstract}
+  Understanding the relationships between abstract concepts is a valuable skill for both humans and computers. A somewhat surprising property of word embeddings trained by CBOW or skip-gram neural network models is that linear relationships form between words. We are putting word embeddings trained on different corpora to the test. First, we show how Word2vec and GloVe embeddings perform on a standardized set of analogy questions. Then, we explore methods of improving the performance of a subset of these word embeddings, including using ELMo representations of words and a deep neural network to predict the correct answer to analogy questions.
+\end{abstract}
 
 \section{Introduction}
 
@@ -69,7 +70,7 @@ excel at the task; The average US college applicant only scores a 57\%
 on this particular test (Turney and Littman, 2005). The current state of
 the art on this task is a hybrid ConceptNet implementation which scores
 a 56.1\%, approaching the performance of the average college
-applicant(Speer et. al., 2017).
+applicant (Speer et. al., 2017).
 
 \subsection{Challenges}
 
