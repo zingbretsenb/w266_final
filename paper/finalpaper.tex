@@ -90,7 +90,7 @@ privileged position, as does the capital city. For this reason, a linear
 transformation may not be effective at correctly answering this type of
 analogy. One solution idea to this problem was to use a web search to
 find the words (Bollegala et. al., 2008). Overall this was only
-moderately effective
+moderately effective.
 
 \subsection{Polysemy}
 
@@ -116,13 +116,13 @@ our own embeddings on a full dump of English Wikipedia. We used these
 benchmarks to identify strong and weak aspects of the different
 embeddings.
 
-Using this knowledge, we set out to improve our performance by modifying
-the embeddings via ELMo, as well as trying to train a neural network to
-use the word embeddings to capture non-linear relationships in the
-analogies. By modifying the word embedding vectors to introduce
-different representations for individual words via a process such as
-generating CoVe embeddings or ELMo representations, we believe that we
-can rival the performance of a human agent (ELMo CITE \#TODO). ( \#TODO MOVE UP McCann, et. al., 2017)
+Using this knowledge, we decided that adding some context to our vectors would
+likely help with the performance on the task. Using pre-trained vectors, one can
+further train on a new corpus, and derive new vectors for those words in
+context, as is done with CoVe or ELMo representations (McCann, et. al., 2017;
+Peters, et al., 2018). We modified our embeddings via ELMo, as well as trying to
+train a neural network to use the word embeddings to capture non-linear
+relationships in the analogies.
 
 \subsection{Embedding Evaluation}
 
@@ -309,43 +309,52 @@ network to understand the analogies and make better guesses at the answers.
 
 \subsection{ELMo Encoding Algorithm}
 
-The ELMo algorithm is deep contextualized word representation that
-models both (1) complex characteristics of word use (e.g., syntax and
-semantics), and (2) how these uses vary across linguistic contexts
-(Peters et. al. 2018). The ELMo algorithm can be trained on words or
-sentences to produce word embeddings that include more context around
-each word. ELMo word representations are functions of the entire input
-sentence and are computed on top of two-layer bi-directional LSTMs with
-character convolutions as a linear function of the internal network
-states. (Peters et. al. 2018). Each layer of the ELMo encodings can be
-used as the embedding for our problem set which allows multiple end
-`outputs' to the algorithm.
+The ELMo algorithm is deep contextualized word representation that models both
+(1) complex characteristics of word use (e.g., syntax and semantics), and (2)
+how these uses vary across linguistic contexts (Peters et. al. 2018). The ELMo
+algorithm can be trained on words or sentences to produce word embeddings that
+include more context around each word. ELMo word representations are functions
+of the entire input sentence and are computed on top of two-layer bi-directional
+LSTMs with character convolutions as a linear function of the internal network
+states. (Peters et. al. 2018). Because ELMo operates on a per-character basis,
+we believed that even training on individual words would increase performance,
+particularly on the syntactic questions. It also means that ELMo can operate on
+out of vocabulary words, by deriving meaning from the structure of the words.
 
-For our ELMo testing, we broke down this phase into two separate
-training tests: on each analogy word and on each pair of words. The
-baseline vectors in ELMo are the GloVe6B 100 dimension set with a
-baseline accuracy of 37.27\%. Table 4 contains the accuracy from
-different stages.
+ELMo returns 3 layers for each word, where the lowest layer encodes more
+syntactic information, and the highest layer encodes more general, semantic
+information. Each layer of the ELMo encodings can be used as the embedding for
+our problem set. In order to test the effectiveness of ELMo, we tested the
+effectiveness of each layer from the ELMo representation separately, as well as
+the best option across all layers. We also tried training the representations on
+each word individually and in pairs. training tests: on each analogy word and on
+each pair of words.
 
-%% \begin{longtable}[]{@{}lll@{}}
-%% \toprule
-%% Type & Layer Output & Accuracy\tabularnewline
-%% single & layer-0 & 0.364611\tabularnewline
-%% single & layer-1 & 0.455764\tabularnewline
-%% single & layer-2 & 0.423592\tabularnewline
-%% single & layer-all & 0.412869\tabularnewline
-%% pairs & layer-0 & 0.364611\tabularnewline
-%% pairs & layer-1 & 0.436997\tabularnewline
-%% pairs & layer-2 & 0.399464\tabularnewline
-%% pairs & layer-all & 0.407507\tabularnewline
-%% \bottomrule
-%% \end{longtable}
+The baseline vectors in ELMo are the GloVe6B 100 dimension set with a baseline
+accuracy of 37.27\%. Table 5 contains the accuracy from different stages.
 
-%% \textbf{Table 4: Accuracy per Stage}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|lc|}
+\hline\bf Trained On & Layer & ACC \\\hline
+\bf Single & Bottom & 36.46\% \\
+\bf Single & Middle & 45.57\% \\
+\bf Single & Top & 42.35\% \\
+\bf Single & All & 41.28\% \\
+\bf Pairs & Bottom & 36.46\% \\
+\bf Pairs & Middle & 43.69\% \\
+\bf Pairs & Top & 39.94\% \\
+\bf Pairs & All & 40.75\% \\\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Accuracy of ELMo encoded vectors on SAT test set. Trained on ``single'' denotes that ELMo was trained on each word separately. ``Pairs'' denotes that the question and answer pair words were trained as sentences.}
+\end{table}
 
-From Table 4, the single word embeddings taken from the first layer
-provide the biggest increase in accuracy with a total of 8.3\% from the
-baseline accuracy.
+From Table 5, the single word embeddings taken from the middle layer provide the
+biggest increase in accuracy with a total of 8.3 percentage points over the
+baseline accuracy. We validated this finding against the Google Analogy dataset
+and found that performance increased compared to the GloVe baseline for all
+question types except for those related to countries/places.
 
 \subsection{Neural Network}
 
