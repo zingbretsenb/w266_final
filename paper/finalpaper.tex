@@ -193,38 +193,34 @@ Table 1 below:
 \begin{center}
 \begin{tabular}{|l|ccc|}
 \hline \bf Embeddings & \bf Dims & \bf Euclidean & \bf Cosine \\ \hline
-	\bf word2vec & 300 & 0.3190 & 0.4236 \\
+	\bf Twitter.42B & 200 & 0.2172 & 0.2601 \\
 	\bf GloVe.6B & 50 & 0.3190 & 0.3566 \\
 	\bf GloVe.6B & 100 & 0.3432 & 0.3727 \\
 	\bf GloVe.6B & 200 & 0.3405 & 0.4075 \\
 	\bf GloVe.6B & 300 & 0.3405 & 0.4155 \\
 	\bf GloVe.42B & 300 & 0.3780 & 0.4450 \\
 	\bf GloVe.840B & 300 & 0.3619 & 0.4906 \\
-	\bf Twitter.42B & 200 & 0.2172 & 0.2601 \\\hline
+	\bf Word2vec & 300 & 0.3190 & 0.4236 \\\hline
 \end{tabular}
 \end{center}
-
-\caption{\label{font-table} Baseline accuracy of embeddings. }
+\caption{\label{font-table} Baseline accuracy of embeddings with different distance metrics.}
 \end{table}
 
-%% \begin{longtable}[]{@{}lll@{}}
-%% \toprule
-%% & \textbf{Euclidean} & \textbf{Cosine}\tabularnewline
-%% \textbf{Embedding Type} & \textbf{Different PoS} & \textbf{Same
-%% PoS}\tabularnewline
-%% glove 100 & 0.296 & 0.379\tabularnewline
-%% glove 200 & 0.356 & 0.341\tabularnewline
-%% glove27B twitter 200 & 0.250 & 0.291\tabularnewline
-%% glove 300 & 0.348 & 0.345\tabularnewline
-%% glove42b 300 & 0.396 & 0.369\tabularnewline
-%% glove 50 & 0.326 & 0.323\tabularnewline
-%% word2vec & 0.311 & 0.335\tabularnewline
-%% glove840b 300 & 0.374 & 0.356\tabularnewline
-%% \bottomrule
-%% \end{longtable}
-
-%% \textbf{Table 2: Accuracy of embeddings when the two words in the
-%% analogy were the same or different part of speech.}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|ccc|}
+\hline\bf Embedding & \bf Dims & \bf Diff. PoS & \bf Same PoS \\\hline
+\bf Twitter.42B & 200 & 0.318 & 0.340 \\
+\bf Glove.6B & 50 & 0.356 & 0.366 \\
+\bf Glove.6B & 100 & 0.326 & 0.409 \\
+\bf Glove.6B & 200 & 0.356 & 0.448 \\
+\bf Glove.6B & 300 & 0.370 & 0.453 \\
+\bf Glove.42b & 300 & 0.410 & 0.468 \\
+\bf Word2vec & 300 & 0.407 & 0.448 \\\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Accuracy of embeddings when the two words in the analogy were the same or different part of speech.}
+\end{table}
 
 From this baseline, we decided to do a direct comparison between
 corpora, embeddings and distance metrics. Using the GloVe 42B Twitter
@@ -246,29 +242,11 @@ baseline.
 
 \subsection{Error Discovery}
 
-Next we examined errors from the best performing embeddings, the
-GloVe840b, 300 dimension embedding. The model appeared to have more
-difficulty with a couple of relationships more often than others. For
-example, below is a sample question that all the embeddings got wrong
-(all models had child,parent as the answer that scored the `best'):
-
-Question 370: {[}'sandal', 'footwear'{]}
-
-Sorted distances:
-
-Words: {[}'volume' 'bookcase'{]}, score: -0.13121460378170013
-
-Words: {[}'watch' 'timepiece'{]}, score: -0.053831081837415695
-
-Words: {[}'wax' 'candle'{]}, score: -0.03754980117082596
-
-Words: {[}'monarch' 'castle'{]}, score: 0.010474562644958496
-
-Words: {[}'child' 'parent'{]}, score: 0.03693845123052597
-
-Best answer found: child,parent
-
-Correct answer: {[}'watch', 'timepiece'{]}
+Next we examined errors from the best performing embeddings, the GloVe.840B, 300
+dimension embedding. The model appeared to have more difficulty with a couple of
+relationships more often than others. For example, all of the embeddings got a
+question wrong where the analogy was sandal:footwear. All models chose
+child:parent as the answer, but the answer was watch:timepiece.
 
 A linear relationship does not capture this relationship well. A sandal
 is a type of footwear. However, there are many types of footwear, and
@@ -281,31 +259,46 @@ relationships using the Google analogies dataset published by Mikolov et
 al. The results are shown below in Table 3. As noted in the table, most
 Semantic Questions are answered correctly fairly accurately (with the
 exception of currency) while most Syntactic Questions are answered less
-accurately.
+accurately (Table 4).
 
 For these two reasons, we thought that a purely linear approach to
 solving the problem was limiting the types of questions the model could
 get correct. We decided to try a couple of approaches to see if we could
 overcome this hurdle.
 
-%% \begin{longtable}[]{@{}lll@{}}
-%% \toprule
-%% \textbf{Semantic Questions} & & \textbf{Syntactic
-%% Questions}\tabularnewline
-%% Question Type & ACC &\tabularnewline
-%% Capitals of common countries & 94.66\% &\tabularnewline
-%% Capital of the world & 96.26\% &\tabularnewline
-%% Currency & 5.77\% &\tabularnewline
-%% City in state & 64.69\% &\tabularnewline
-%% Family & 78.46\% &\tabularnewline
-%% & &\tabularnewline
-%% & &\tabularnewline
-%% & &\tabularnewline
-%% & &\tabularnewline
-%% \bottomrule
-%% \end{longtable}
 
-%% \textbf{Table 3: Semantic and Syntactic Accuracies}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline\bf Question Type & \bf ACC \\\hline
+\bf Capitals of common countries & 94.66\% \\
+\bf Capital of the world & 96.26\% \\
+\bf Currency & 5.77\% \\
+\bf City in state & 64.69\% \\
+\bf Family & 78.46\% \\ \hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Accuracy of GloVe.840B 300D embeddings on semantic questions.}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline\bf Question Type & ACC \\\hline
+\bf Adjective to adverb & 29.33\% \\
+\bf Opposite & 31.16\% \\
+\bf Comparative & 77.33\% \\
+\bf Superlative & 38.24\% \\
+\bf Present participle & 59.00\% \\
+\bf Nationality adjective & 92.50\% \\
+\bf Past tense & 48.21\% \\
+\bf Plural & 82.28\% \\
+\bf Plural verbs & 51.38\% \\\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Accuracy of GloVe.840B 300D embeddings on syntactic questions.}
+\end{table}
 
 \subsection{Improving on Baseline}
 
