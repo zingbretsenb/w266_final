@@ -183,7 +183,7 @@ Please email \emph{zingbretsen@berkeley.edu} if you do not have access to the re
 We used pre-trained word embeddings (word2vec and GloVe trained on
 different sources) as a baseline using both Euclidean and cosine
 distance measurements. The summary of the baseline models of each are in
-Table 1 below:
+Table 1 below.
 
 \begin{table}[h]
 \begin{center}
@@ -218,23 +218,26 @@ Table 1 below:
 \caption{\label{font-table} Accuracy of embeddings when the two words in the analogy were the same or different part of speech.}
 \end{table}
 
-From this baseline, we decided to do a direct comparison between
-corpora, embeddings and distance metrics. Using the GloVe 42B Twitter
-Vectors, the Cosine Distance outperformed the Euclidean Distance with a
-26\% vs 22\% accuracy. Also GloVe outperformed word2vec by a small
-margin - 40.5\% to 37\% accuracy when they were both trained on the
-Wikipedia 4.2B word dataset.
+As a side note, using the GloVe embeddings trained on 42 billion tokens from
+Twitter, the accuracies were 26\% and 22\% for cosine and Euclidean distance,
+respectively. While more words generally means better word embeddings, the
+content of the corpus is important, and the authors do not recommend using
+Twitter to train future SAT models.
+
+From this baseline, we decided to do a direct comparison between corpora,
+embeddings and distance metrics. Since the pre-trained Word2vec and GloVe
+vectors were all trained on different corpora, we decided to train both
+algorithms on the same dataset: the latest full dump from wikipedia. This
+included all text that could be parsed from the site, and totaled about 4.2
+billion tokens. GloVe outperformed word2vec by a modest margin: 40.5\% to 37\%
+accuracy. We believe that this provides a rationale for using GloVe embeddings
+for this particular task going forward.
 
 We have so far found the best performance from embeddings with higher
 dimensionality, trained on more data, and using cosine distance as the
 distance metric. However, there may be cases when the Euclidean distance
 is more appropriate to use (e.g., when the analogy has more to do with
 the magnitude of the difference between words than direction).
-
-We intend to experiment with different ways of modifying the embeddings
-to better encode relationships between words as well as try to train our
-own analogy-focused word embeddings to see how they compare against the
-baseline.
 
 \subsection{Error Discovery}
 
