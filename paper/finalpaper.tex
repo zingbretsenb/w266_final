@@ -6,12 +6,12 @@
 %% Based on the style files for ACL-2014, which were, in turn,
 %% Based on the style files for ACL-2013, which were, in turn,
 %% Based on the style files for ACL-2012, which were, in turn,
-%% based on the style files for ACL-2011, which were, in turn, 
-%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-2011, which were, in turn,
+%% based on the style files for ACL-2010, which were, in turn,
 %% based on the style files for ACL-IJCNLP-2009, which were, in turn,
 %% based on the style files for EACL-2009 and IJCNLP-2008...
 
-%% Based on the style files for EACL 2006 by 
+%% Based on the style files for EACL 2006 by
 %%e.agirre@ehu.es or Sergi.Balari@uab.es
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
@@ -132,8 +132,7 @@ analogies in the form "\emph{king }is to \emph{man }as \emph{queen} is
 to ..." can be answered with very simple arithmetics. Therefore, in a
 word analogy of form a:b::c:d, where (a,b,c,d) are words, it is expected
 that the vector resulting from the operation d - c would share some
-similarity with the vector resulting from b - a (Li and Summers-Stay,
-2017) . Therefore, we could answer an analogy question such as a:b::c:?
+similarity with the vector resulting from b - a. Therefore, we could answer an analogy question such as a:b::c:?
 by calculating:
 
 %% \includegraphics[width=0.07910in,height=0.19530in]{./ObjectReplacements/Object 2}\includegraphics[width=1.78660in,height=0.20000in]{./ObjectReplacements/Object 4},
@@ -413,8 +412,7 @@ After the set amount of epochs, the training still showed room for loss
 reduction in case more epochs were executed. The resulting model,
 however, failed to produce useful results. It is worth mentioning,
 however, that the model did produce word embeddings in the vicinity of
-the correct answer in vector space when decoded using Euclidean
-distance, which indicates that perhaps with some more training epochs to
+the correct answer in vector space, which indicates that perhaps with some more training epochs to
 reduce loss the model could provide better results.
 
 We also developed two other models, which haven't been as thoroughly
