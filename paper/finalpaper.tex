@@ -131,8 +131,8 @@ relationships in the analogies.
 
 As noted by Mikolov et. al., word embeddings can encode relational similarities
 in their vector representations and, when well-trained, analogies in the form
-"\emph{king }is to \emph{man }as \emph{queen }is to ..." can be answered with
-very simple arithmetics. Therefore, in a word analogy of form a:b::c:d, where
+"\emph{king }is to \emph{man }as \emph{queen }is to ..." can be answered with some
+simple arithmetic. Therefore, in a word analogy of form a:b::c:d, where
 (a,b,c,d) are words, it is expected that the vector resulting from the operation
 d - c would share some similarity with the vector resulting from b - a.
 Therefore, we could answer an analogy question such as a:b::c:? by calculating:
@@ -186,14 +186,14 @@ Table 1 below.
 \begin{center}
 \begin{tabular}{|l|ccc|}
 \hline \bf Embeddings & \bf Dims & \bf Euclidean & \bf Cosine \\ \hline
-	\bf Twitter.42B & 200 & 0.2172 & 0.2601 \\
-	\bf GloVe.6B & 50 & 0.3190 & 0.3566 \\
-	\bf GloVe.6B & 100 & 0.3432 & 0.3727 \\
-	\bf GloVe.6B & 200 & 0.3405 & 0.4075 \\
-	\bf GloVe.6B & 300 & 0.3405 & 0.4155 \\
-	\bf GloVe.42B & 300 & 0.3780 & 0.4450 \\
-	\bf GloVe.840B & 300 & 0.3619 & 0.4906 \\
-	\bf Word2vec & 300 & 0.3190 & 0.4236 \\\hline
+	\bf Twitter.42B & 200 & 21.72\% & 26.01\% \\
+	\bf GloVe.6B & 50 & 31.90\% & 35.66\% \\
+	\bf GloVe.6B & 100 & 34.32\% & 37.27\% \\
+	\bf GloVe.6B & 200 & 34.05\% & 40.75\% \\
+	\bf GloVe.6B & 300 & 34.05\% & 41.55\% \\
+	\bf GloVe.42B & 300 & 37.80\% & 44.50\% \\
+	\bf GloVe.840B & 300 & 36.19\% & 49.06\% \\
+	\bf Word2vec & 300 & 31.90\% & 42.36\% \\\hline
 \end{tabular}
 \end{center}
 \caption{\label{font-table} Baseline accuracy of embeddings with different distance metrics.}
@@ -203,13 +203,14 @@ Table 1 below.
 \begin{center}
 \begin{tabular}{|l|ccc|}
 \hline\bf Embedding & \bf Dims & \bf Diff. PoS & \bf Same PoS \\\hline
-\bf Twitter.42B & 200 & 0.318 & 0.340 \\
-\bf Glove.6B & 50 & 0.356 & 0.366 \\
-\bf Glove.6B & 100 & 0.326 & 0.409 \\
-\bf Glove.6B & 200 & 0.356 & 0.448 \\
-\bf Glove.6B & 300 & 0.370 & 0.453 \\
-\bf Glove.42b & 300 & 0.410 & 0.468 \\
-\bf Word2vec & 300 & 0.407 & 0.448 \\\hline
+\bf Twitter.42B & 200 & 31.8\% & 34.0\% \\
+\bf Glove.6B & 50 & 35.6\% & 36.6\% \\
+\bf Glove.6B & 100 & 32.6\% & 40.9\% \\
+\bf Glove.6B & 200 & 35.6\% & 44.8\% \\
+\bf Glove.6B & 300 & 37.0\% & 45.3\% \\
+\bf Glove.42B & 300 & 41.0\% & 46.8\% \\
+\bf Glove.840B & 300 & 43.2\% & 52.8\% \\
+\bf Word2vec & 300 & 40.7\% & 44.8\% \\\hline
 \end{tabular}
 \end{center}
 \caption{\label{font-table} Accuracy of embeddings when the two words in the analogy were the same or different part of speech.}
@@ -224,7 +225,7 @@ Twitter to train future SAT models.
 From this baseline, we decided to do a direct comparison between corpora,
 embeddings and distance metrics. Since the pre-trained Word2vec and GloVe
 vectors were all trained on different corpora, we decided to train both
-algorithms on the same dataset: the latest full dump from wikipedia. This
+algorithms on the same dataset: the latest full dump from Wikipedia. This
 included all text that could be parsed from the site, and totaled about 4.2
 billion tokens. GloVe outperformed word2vec by a modest margin: 40.5\% to 37\%
 accuracy. We believe that this provides a rationale for using GloVe embeddings
@@ -300,7 +301,7 @@ overcome this hurdle.
 
 To solve the analogy problem, we tried a few different solutions. The first was
 to train new embeddings that has more context included for the words using the
-ELMo embedding algorithm. The second was to train a deep convolutional neural
+ELMo embedding algorithm. The second was to train a deep neural
 network to understand the analogies and make better guesses at the answers.
 
 \subsection{ELMo Encoding Algorithm}
