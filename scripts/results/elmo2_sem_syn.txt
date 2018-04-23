@@ -1,36 +1,32 @@
-reading vector file: /root/w266_final/data/elmo2.txt
-gettings sizes
-normalizing
-evaluating
-capital-common-countries.txt:
-ACCURACY TOP1: 7.51% (38/506)
-capital-world.txt:
-ACCURACY TOP1: 1.81% (82/4524)
-currency.txt:
-ACCURACY TOP1: 3.00% (26/866)
-city-in-state.txt:
-ACCURACY TOP1: 5.72% (141/2467)
-family.txt:
-ACCURACY TOP1: 80.83% (409/506)
-gram1-adjective-to-adverb.txt:
-ACCURACY TOP1: 24.50% (243/992)
-gram2-opposite.txt:
-ACCURACY TOP1: 37.07% (301/812)
-gram3-comparative.txt:
-ACCURACY TOP1: 90.69% (1208/1332)
-gram4-superlative.txt:
-ACCURACY TOP1: 83.07% (932/1122)
-gram5-present-participle.txt:
-ACCURACY TOP1: 66.48% (702/1056)
-gram6-nationality-adjective.txt:
-ACCURACY TOP1: 19.70% (315/1599)
-gram7-past-tense.txt:
-ACCURACY TOP1: 64.49% (1006/1560)
-gram8-plural.txt:
-ACCURACY TOP1: 85.89% (1144/1332)
-gram9-plural-verbs.txt:
-ACCURACY TOP1: 85.40% (743/870)
-Questions seen/total: 100.00% (19544/19544)
-Semantic accuracy: 7.85%  (696/8869)
-Syntactic accuracy: 61.77%  (6594/10675)
-Total accuracy: 37.30%  (7290/19544)
+capital-common-countries:
+ACCURACY TOP1: 7.51 (38,506)
+capital-world:
+ACCURACY TOP1: 1.81 (82,4524)
+currency:
+ACCURACY TOP1: 3.00 (26,866)
+city-in-state:
+ACCURACY TOP1: 5.72 (141,2467)
+family:
+ACCURACY TOP1: 80.83 (409,506)
+gram1-adjective-to-adverb:
+ACCURACY TOP1: 24.50 (243,992)
+gram2-opposite:
+ACCURACY TOP1: 37.07 (301,812)
+gram3-comparative:
+ACCURACY TOP1: 90.69 (1208,1332)
+gram4-superlative:
+ACCURACY TOP1: 83.07 (932,1122)
+gram5-present-participle:
+ACCURACY TOP1: 66.48 (702,1056)
+gram6-nationality-adjective:
+ACCURACY TOP1: 19.70 (315,1599)
+gram7-past-tense:
+ACCURACY TOP1: 64.49 (1006,1560)
+gram8-plural:
+ACCURACY TOP1: 85.89 (1144,1332)
+gram9-plural-verbs:
+ACCURACY TOP1: 85.40 (743,870)
+Questions seen,total: 100.00 (19544/19544)
+Semantic accuracy: 7.85  (696,8869)
+Syntactic accuracy: 61.77  (6594,10675)
+Total accuracy: 37.30  (7290,19544)
