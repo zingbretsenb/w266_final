@@ -115,7 +115,7 @@ class nn_analogy_model(object):
         return h_
 
     @with_self_graph
-    def output_layer(self, h_, labels_):
+    def output_layer(self, h_, labels_, c_):
         """Construct a softmax output layer.
         Implements:
             logits = h W + b
@@ -141,10 +141,11 @@ class nn_analogy_model(object):
             self.W_out_ = tf.get_variable("W_out", shape=[h_.get_shape()[1].value,len(self.embed[0])], initializer=tf.random_normal_initializer())
             self.b_out_ = tf.get_variable("b_out", shape=[len(self.embed[0])], initializer=tf.zeros_initializer())
             self.logits_ = tf.add(tf.matmul(h_,self.W_out_),self.b_out_)
-            self.activated_out_ = tf.tanh(self.logits_) 
+            self.activated_out_ = tf.tanh(self.logits_)
+            self.result_embed_ = tf.add(c_,self.activated_out_) 
 
         with tf.name_scope("Loss"):
-            self.loss_ = tf.reduce_sum(tf.square(tf.norm(tf.subtract(labels_, self.activated_out_),axis=1)))
+            self.loss_ = tf.reduce_sum(tf.square(tf.norm(tf.subtract(labels_, self.result_embed_),axis=1)))
             self.optimizer_ = tf.train.AdamOptimizer(learning_rate = self.learning_rate_)
             gradients_, variables_ = zip(*self.optimizer_.compute_gradients(self.loss_))
             clipped_grads_, _ = tf.clip_by_global_norm(gradients_, self.max_grad_norm_)
@@ -180,10 +181,10 @@ class nn_analogy_model(object):
                                                   dropout_rate=self.dropout_rate_, is_training=self.is_training_)
         
         # Build output layer
-        self.output_layer(self.Deep_Layer_, self.labels_)
+        self.output_layer(self.Deep_Layer_, self.labels_, self.c_)
 
         # Build decoding layer
-        self.output_ids_, self.scores_ = self.decoder(self.activated_out_, self.W_embed_)
+        self.output_ids_, self.scores_ = self.decoder(self.result_embed_, self.W_embed_)
         
         print("OK", flush=True)
 
@@ -246,7 +247,7 @@ class nn_analogy_model(object):
             print("OK", flush=True)
     
     @with_self_graph
-    def decoder(self, x_, W_embed_, distance_metric="euclidean"):
+    def decoder(self, x_, W_embed_, distance_metric="cosine"):
         with tf.name_scope("Decoder"):
             if distance_metric == "cosine":
                 W_embed_norm_ = tf.norm(W_embed_, axis=1)
@@ -254,7 +255,7 @@ class nn_analogy_model(object):
                 mult_norm_ = tf.einsum('i,j->ij', x_norm_,W_embed_norm_)
                 dotprod_ = tf.matmul(x_,tf.transpose(W_embed_))
                 dist_ = tf.divide(dotprod_,mult_norm_)
-                ids_ = tf.argmin(tf.abs(dist_),axis=1)
+                ids_ = tf.argmax(dist_,axis=1)
             elif distance_metric == 'euclidean':
                 dist_ = tf.sqrt(tf.reduce_sum(tf.map_fn(lambda x: tf.square(x - W_embed_),x_),axis=2))
                 ids_ = tf.argmin(dist_,axis=1)
