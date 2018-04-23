@@ -300,7 +300,7 @@ overcome this hurdle.
 \subsection{Improving on Baseline}
 
 To solve the analogy problem, we tried a few different solutions. The first was
-to train new embeddings that has more context included for the words using the
+to train new embeddings that have more context included for the words using the
 ELMo embedding algorithm. The second was to train a deep neural
 network to understand the analogies and make better guesses at the answers.
 
@@ -351,9 +351,36 @@ accuracy of the different ELMo layers and training styles.
 From Table 5, the single word embeddings taken from the middle layer provide the
 biggest increase in accuracy with a total of 8.3 percentage points over the
 baseline accuracy. We validated this finding against the Google Analogy dataset
-and found that performance increased compared to the GloVe baseline for all
-question types except for those related to countries/places. This is a
-significant improvement over the baseline.
+(see Table 6) and found that performance increased compared to the GloVe
+baseline for all question types except for those related to countries/places.
+This is a significant improvement over the baseline.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|cc|}
+\hline\bf Category & GloVe & ELMo L1 \\\hline
+\bf Common Country Capitals & 93.87 & 6.72 \\
+\bf Country Capitals & 88.95 & 2.03 \\
+\bf City in State & 30.81 & 5.23 \\
+\bf Currency & 14.2 & 3.81 \\
+\bf Family & 81.62 & 84.58 \\
+\bf Adjective to Adverb & 24.4 & 47.18 \\
+\bf Opposite & 20.07 & 52.96 \\
+\bf Comparative & 79.13 & 92.57 \\
+\bf Superlative & 54.28 & 89.3 \\
+\bf Present Participle & 69.51 & 83.62 \\
+\bf Nationality Adjective & 87.87 & 30.52 \\
+\bf Past Tense & 55.45 & 72.05 \\
+\bf Plural & 72 & 92.94 \\
+\bf Plural Verbs & 58.39 & 96.9 \\
+\bf Semantic Accuracy & 65.34 & 8.07 \\
+\bf Syntactic Accuracy & 61.26 & 72.22 \\
+\bf Total Accuracy & 63.11 & 43.11 \\\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Baseline accuracy of embeddings with different distance metrics.}
+\end{table}
+
 
 \subsection{Neural Network}
 
@@ -385,12 +412,7 @@ word (c) to achieve the final embedding. This embedding was then decoded
 back using decoder function \emph{g }to a word (d) by picking the
 closest word in the embedding matrix through either cosine similarity or
 euclidean distance. The architecture diagram for the neural network is
-shown in figure XX.
-
-The neural network was trained using the following objective function,
-similar to the one used in the original paper, which aims to reduce the
-sum of the square of norms for the vector resulting from the subtraction
-of the encoding of target word d and the decoded result as shown below:
+shown in figure 1.
 
 \begin{figure}
   \centering
@@ -398,24 +420,29 @@ of the encoding of target word d and the decoded result as shown below:
   \caption{Model 1}
 \end{figure}
 
+The neural network was trained using the following objective function,
+similar to the one used in the original paper, which aims to reduce the
+sum of the square of norms for the vector resulting from the subtraction
+of the encoding of target word d and the decoded result as shown below:
+$$L=\sum_{a,b,c,d \in V}\| f(d) - \left \{T[f(b)-f(a),f(c)]+f(c)\right \} \|_{2}^2$$
+
 As the original paper did not mention the parameters used for the
-fully-connected layers, we have tried with several different network
-sizes. Initially, we tried with a single 600-dimensional layer, and then
-tried with a bigger model using 4096-2048-1024 dimensional layers.
-Training was performed for 4500 epochs with mini-batches of 50 using
-Adam Optimizer with gradient clippings with maximum gradient norm of
-1.0, learning rate of 0.00001, and with dropout rate of 0.5 using the
-Google Analogy dataset. The word embeddings were fixed and made not
-trainable in the model, as the interest of our study was to use the
-neural network to find word features encoded in the embeddings and not
-refine them with analogy data.
+fully-connected layers, we tried several different network sizes. Initially, we
+tried with a single 600-dimensional layer, and then tried with a bigger model
+using 4096-2048-1024 dimensional layers. Training was performed for 4500 epochs
+with mini-batches of 50 using Adam Optimizer with gradient clipping with a
+maximum gradient norm of 1.0, a learning rate of 0.00001, and with a dropout
+rate of 0.5 using the Google Analogy dataset. The word embeddings were fixed and
+made not trainable in the model, as the interest of our study was to use the
+neural network to find word features encoded in the embeddings and not refine
+them with analogy data.
 
 After the set amount of epochs, the training still showed room for loss
-reduction in case more epochs were executed. The resulting model,
-however, failed to produce useful results. It is worth mentioning,
-however, that the model did produce word embeddings in the vicinity of
-the correct answer in vector space, which indicates that perhaps with some more training epochs to
-reduce loss the model could provide better results.
+reduction if more epochs had been executed. The resulting model, however, failed
+to produce useful results. It is worth mentioning that the model did produce
+word embeddings in the vicinity of the correct answer in vector space, which
+indicates that perhaps with some more training epochs to reduce loss the model
+could provide better results.
 
 We also developed two other models, which haven't been as thoroughly
 tested. In our second model attempt, we tried a modified version by
@@ -425,7 +452,7 @@ into the neural network to check whether it would behave better or worse
 than the previous model. The rationale was that maybe performing the
 subtraction before could be restricting the model to transformations
 that are visible in a linear space. The diagram for this architecture is
-depicted in figure YY.
+depicted in figure 2.
 
 \begin{figure}
   \centering
@@ -438,7 +465,7 @@ concatenated with the original, primary embedding through the secondary
 encoding function \emph{h}. This aims to augment the original embeddings
 with data from training on analogies and perhaps make more complex
 analogies clearer on the embedding. The diagram for this architecture is
-depicted in figure ZZ. Unfortunately, both models also failed to produce
+depicted in figure 3. Unfortunately, both models also failed to produce
 a noteworthy result that was better than random chance.
 
 \begin{figure}
@@ -530,11 +557,11 @@ S. Reed, Y. Zhang, Y. Zhang, H. Lee
 \newblock {\em Deep Visual Analogy-Making}
 \newblock http://papers.nips.cc/paper/5845-deep-visual-analogy-making.pdf
 
-\bibitem[\protect\citename{Reed}2017]{Reed:2017}
-S. Ruder
-\newblock 2017.
-\newblock {\em Word Embeddings in 2017: Trends and future direction}
-\newblock http://ruder.io/word-embeddings-2017/
+%% \bibitem[\protect\citename{Ruder}2017]{Ruder:2017}
+%% S. Ruder
+%% \newblock 2017.
+%% \newblock {\em Word Embeddings in 2017: Trends and future direction}
+%% \newblock http://ruder.io/word-embeddings-2017/
 
 \bibitem[\protect\citename{Speer, Chin, Havasi}2016]{Speer, Chin, Havasi:2016}
 R. Speer, J. Chin, C. Havasi
