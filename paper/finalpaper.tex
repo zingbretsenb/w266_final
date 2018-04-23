@@ -137,15 +137,12 @@ very simple arithmetics. Therefore, in a word analogy of form a:b::c:d, where
 d - c would share some similarity with the vector resulting from b - a.
 Therefore, we could answer an analogy question such as a:b::c:? by calculating:
 
-%% \includegraphics[width=0.07910in,height=0.19530in]{./ObjectReplacements/Object 2}
-%% \includegraphics[width=1.78660in,height=0.20000in]{./ObjectReplacements/Object 4},
-for every
-%% \includegraphics[width=0.39170in,height=0.19530in]{./ObjectReplacements/Object 6}
+$$arg max (sim(d,b-a+c))$$
 
-Where \emph{sim }can be any similarity function such as cosine, when
-other works usually refer to the equation by the name \emph{3CosAdd}
-(Levy and Goldberg, 2014) or Euclidean. In this paper, we use both
-similarity functions for experimentation purposes.
+for every $dV$, where \emph{sim }can be any similarity function such as cosine
+similarity. Other works usually refer to the equation by the name \emph{3CosAdd}
+(Levy and Goldberg, 2014). In this paper, we use both cosine similarity and
+Euclidean distance functions for experimentation purposes.
 
 We also evaluate the performance of word embeddings when used in a
 neural network trained and focused on solving analogy questions, based
