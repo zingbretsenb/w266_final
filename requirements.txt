@@ -30,5 +30,5 @@ smart-open==1.5.7
 traitlets==4.3.2
 urllib3==1.22
 wcwidth==0.1.7
-tensorflow==1.7.0
+tensorflow==2.5.3
 google-compute-engine==2.7.6
